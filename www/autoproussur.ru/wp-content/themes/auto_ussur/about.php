@@ -343,8 +343,12 @@ Template Name: about
                 <div class="p-4 md:p-16 z-100">
                     <h2 class="text-xl lg:text-5xl font-extrabold relative pb-4 text-white">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
                     <div class="flex justify-start gap-10">
-                        <img src="<?php echo get_template_directory_uri() .'/src/img/icons/tg__white.svg'; ?>" alt="">
-                        <img src="<?php echo get_template_directory_uri() .'/src/img/icons/youtube__white.svg'; ?>" alt="">
+                        <a href="">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/icons/tg__white.svg'; ?>" alt="">
+                        </a>
+                        <a href="">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/icons/youtube__white.svg'; ?>" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
