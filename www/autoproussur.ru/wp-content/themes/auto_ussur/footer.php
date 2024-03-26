@@ -1,30 +1,40 @@
 <footer class="footer page-section-3 pt-12 md:pt-36">
             <div class="container">
                 <a href="index.html">
-                    <img class="block sm:hidden md:hidden" src="src/img/logo.svg" alt="">
+                    <img class="block sm:hidden md:hidden" src="<?php echo get_template_directory_uri() .'/src/img/logo.svg'; ?>" alt="">
                 </a>
                 <div class="container flex justify-between md:flex-nowrap flex-wrap text-white pt-10">
                     <div class="hidden sm:block md:block">
                         <a href="index.html">
-                            <img src="src/img/logo.svg" alt="">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/logo.svg'; ?>" alt="">
                         </a>
                     </div>
                     <div>
                         <ul class="text-gray md:text-base text-xs columns-1 sm:columns-1 md:columns-3">
                             <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
-                                Каталог
+                                <a href='/catalog'>
+                                    Каталог
+                                </a>
                             </li>  
                             <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
-                                О компании
+                                <a href='/about__company'>
+                                    О компании
+                                </a>
                             </li>  
                             <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
-                                Отзывы
+                                <a href='/reviews'>
+                                    Отзывы
+                                </a>
                             </li>  
                             <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
-                                Контакты
+                                <a href='/contacts'>
+                                    Контакты
+                                </a>
                             </li>  
                             <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
-                                Договор
+                                <a href='/contract'>
+                                    Договор
+                                </a>
                             </li>  
                         </ul>
                     </div>
@@ -59,17 +69,17 @@
                     <div class="flex flex-row sm:flex-col md:flex-row gap-1">
                         <li class="mr-4 list-none gap-2">
                             <a href="https://api.whatsapp.com/send/?phone=79510154751">
-                                <img class=" transform hover:scale-105 transition-all" src="src/img/icons/sap.svg" alt="" >
+                                <img class=" transform hover:scale-105 transition-all" src="<?php echo get_template_directory_uri().'/src/img/icons/sap.svg'; ?>" alt="" >
                             </a>
                         </li>
                         <li class="mr-4 list-none gap-2">
                             <a href="https://t.me/autoprouss">
-                                <img class=" transform hover:scale-105 transition-all" src="src/img/icons/tg.svg" alt="" >
+                                <img class=" transform hover:scale-105 transition-all" src="<?php echo get_template_directory_uri().'/src/img/icons/tg.svg'; ?>" alt="" >
                             </a>
                         </li>
                         <li class="mr-4 list-none gap-2">
                             <a href="">
-                                <img class=" transform hover:scale-105 transition-all" src="src/img/icons/youtube.svg" alt="" >
+                                <img class=" transform hover:scale-105 transition-all" src="<?php echo get_template_directory_uri().'/src/img/icons/youtube.svg'; ?>" alt="" >
                             </a>
                         </li>
                     </div> 
@@ -89,7 +99,7 @@
             
         </footer>
 
-        <?php wp_footer(); ?>
+        <!-- <?php wp_footer(); ?> -->
 
 
         <!-- Подобрать авто -->
@@ -267,12 +277,12 @@
 
         
     <div class="scroll-top">
-        <img src="./src/img/icons/arrow.svg" alt="стрелка вверх">
+        <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow.svg'; ?>" alt="стрелка вверх">
     </div>
-    <script src="<?php echo get_template_directory_uri() . '/js/wow.js';?>"></script>
-    <script src="<?php echo get_template_directory_uri() . '/js/baguettebox.js';?>"></script>
-    <script src="<?php echo get_template_directory_uri() . '/js/swiper-bundle.min.js';?>"></script>
-    <script type="module" src="<?php echo get_template_directory_uri() . '/js/main.js';?>"></script>
+    <script src="<?php echo get_template_directory_uri() . '/js/wow.js'; ?>"></script>
+    <script src="<?php echo get_template_directory_uri() . '/js/baguettebox.js'; ?>"></script>
+    <script src="<?php echo get_template_directory_uri() . '/js/swiper-bundle.min.js'; ?>"></script>
+    <script type="module" src="<?php echo get_template_directory_uri() . '/js/main.js'; ?>"></script>
 </body>
 
 </html>

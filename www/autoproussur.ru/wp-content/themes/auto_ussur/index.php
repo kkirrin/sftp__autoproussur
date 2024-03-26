@@ -30,64 +30,65 @@ Template Name: auto_ussur
                                 <li class="text-gray pb-2 pl-3 font-light">Доставка по всей России</li>
                             </ul>
                             <button class="btn__catalog pulse__btn"> Перейти в <br> каталог </button>
-                            <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 -z-10" src="./src/img/main/circle__right.png" alt="">
-                            <img class="absolute bottom-0.5 left-0 -z-20" src="./src/img/main/circle__left.png" alt="">
-                            <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 z-10" src="./src/img/main/circle__car.png" alt="">
+                            <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 -z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__right.png'; ?>" alt="">
+                            <img class="absolute bottom-0.5 left-0 -z-20" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__left.png'; ?>" alt="">
+                            <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__car.png'; ?>" alt="">
                         </div>
 
                         <div class="hidden sm:hidden md:block">
-                            <img class="rounded-2xl" src="./src/img/main/main__car__slide__1.png" alt="">
+                            <img class="rounded-2xl" src="<?php echo get_template_directory_uri() . '/src/img/main/main__car__slide__1.png'; ?>" alt="">
                         </div>
                         </div>
                     </div>
                     <div class="swiper-slide relative -z-10">
                         <div class="flex flex-col md:flex-row gap-5">
-                        <div class="w-full md:w-1/3 relative rounded-2xl overflow-hidden">
-                            <h2 class="pb-5">
-                                <span class="text-red text-lg md:text-2xl font-normal">Автомобили из Японии </span> 
-                                <span class="font-extrabold text-2xl md:text-6xl">в Уссурийске по  выгодной цене</span>
-                            </h2>
-
-                            <ul class="list-desc">
-                                <li class="text-gray pb-2 list-disc">Большой выбор автомобилей</li>
-                                <li class="text-gray pb-2 list-disc">Подбор и доставка под ключ</li>
-                                <li class="text-gray pb-2 list-disc">Доставка по всей России</li>
-                            </ul>
-                            <button class="btn__catalog pulse__btn"> Перейти в <br> каталог </button>
-                            <img class="scale-90 absolute -bottom-3 -right-4 -z-10" src="./src/img/main/circle__right.png" alt="">
-                            <img class="absolute bottom-0.5 left-0 -z-20" src="./src/img/main/circle__left.png" alt="">
-                            <img class="scale-90 absolute -bottom-3 -right-4 z-10" src="./src/img/main/circle__car.png" alt="">
-                        </div>
-
-                        <div class="hidden sm:hidden md:block">
-                            <img class="rounded-2xl" src="./src/img/main/main__car__slide__1.png" alt="">
-                        </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide relative -z-10">
-                        <div class="flex flex-col md:flex-row gap-5">
-                        <div class="w-full md:w-1/3 relative rounded-2xl overflow-hidden">
-                            <h2 class="pb-5">
+                        <div class="w-full md:w-1/3 relative rounded-2xl overflow-hidden h-[60vh] md:h-[auto]">
+                            <h2 class="mt-16 md:mt-5">
                                 <span class="text-red text-lg md:text-2xl font-normal">Автомобили из Японии <br></span> 
-                                <span class="font-extrabold text-2xl md:text-6xl">в Уссурийске по  <br> выгодной цене</span>
+                                <span class="font-extrabold text-4xl sm:text-6xl md:text-6xl">в Уссурийске по  <br> выгодной цене</span>
                             </h2>
 
-                            <ul class="list-desc">
-                                <li class="text-gray pb-2 list-disc">Большой выбор автомобилей</li>
-                                <li class="text-gray pb-2 list-disc">Подбор и доставка под ключ</li>
-                                <li class="text-gray pb-2 list-disc">Доставка по всей России</li>
+                            <ul class="list-disc">
+                                <li class="text-gray pb-2 pl-3 font-light">Большой выбор автомобилей</li>
+                                <li class="text-gray pb-2 pl-3 font-light">Подбор и доставка под ключ</li>
+                                <li class="text-gray pb-2 pl-3 font-light">Доставка по всей России</li>
                             </ul>
                             <button class="btn__catalog pulse__btn"> Перейти в <br> каталог </button>
-                            <img class="scale-90 absolute -bottom-3 -right-4 -z-10" src="./src/img/main/circle__right.png" alt="">
-                            <img class="absolute bottom-0.5 left-0 -z-20" src="./src/img/main/circle__left.png" alt="">
-                            <img class="scale-90 absolute -bottom-3 -right-4 z-10" src="./src/img/main/circle__car.png" alt="">
+                            <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 -z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__right.png'; ?>" alt="">
+                            <img class="absolute bottom-0.5 left-0 -z-20" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__left.png'; ?>" alt="">
+                            <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__car.png'; ?>" alt="">
                         </div>
 
                         <div class="hidden sm:hidden md:block">
-                            <img class="rounded-2xl" src="./src/img/main/main__car__slide__1.png" alt="">
+                            <img class="rounded-2xl" src="<?php echo get_template_directory_uri() . '/src/img/main/main__car__slide__1.png'; ?>" alt="">
                         </div>
                         </div>
                     </div>
+                    <div class="swiper-slide relative -z-10">
+                        <div class="flex flex-col md:flex-row gap-5">
+                        <div class="w-full md:w-1/3 relative rounded-2xl overflow-hidden h-[60vh] md:h-[auto]">
+                            <h2 class="mt-16 md:mt-5">
+                                <span class="text-red text-lg md:text-2xl font-normal">Автомобили из Японии <br></span> 
+                                <span class="font-extrabold text-4xl sm:text-6xl md:text-6xl">в Уссурийске по  <br> выгодной цене</span>
+                            </h2>
+
+                            <ul class="list-disc">
+                                <li class="text-gray pb-2 pl-3 font-light">Большой выбор автомобилей</li>
+                                <li class="text-gray pb-2 pl-3 font-light">Подбор и доставка под ключ</li>
+                                <li class="text-gray pb-2 pl-3 font-light">Доставка по всей России</li>
+                            </ul>
+                            <button class="btn__catalog pulse__btn"> Перейти в <br> каталог </button>
+                            <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 -z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__right.png'; ?>" alt="">
+                            <img class="absolute bottom-0.5 left-0 -z-20" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__left.png'; ?>" alt="">
+                            <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__car.png'; ?>" alt="">
+                        </div>
+
+                        <div class="hidden sm:hidden md:block">
+                            <img class="rounded-2xl" src="<?php echo get_template_directory_uri() . '/src/img/main/main__car__slide__1.png'; ?>" alt="">
+                        </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -100,7 +101,7 @@ Template Name: auto_ussur
                 </svg>
             </button>
             <div class="bg-black rounded-3xl p-10 relative w-[400px]">
-                <img class="absolute -right-5 top-0 pb-5" src="src/img/icons/percent.png" alt="" >
+                <img class="absolute -right-5 top-0 pb-5" src="<?php echo get_template_directory_uri(). '/src/img/icons/percent.png'; ?>" alt="" >
                 <h3 class="text-white text-2xl font-bold pb-5">Успей забрать сегодня !</h3>
                 <p class="font-medium text-white text-base pb-5">Toyota Land Cruiser Prado <span class="font-extrabold"> cо скидкой 20%</span></p>
                 <a class="button popup-link flex py-4" href="#popup5">Подробнее</a>
@@ -475,7 +476,7 @@ Template Name: auto_ussur
             <div class="filter-item w-0 min-w-[100%] overflow-hidden pt-12 md:pt-10">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide flex flex-col w-[310px]">
-                        <img src="./src/img/catalog/car_2.png" alt="">
+                        <img src="<?php echo get_template_directory_uri() . '/src/img/catalog/car_2.png'; ?>" alt="">
                         <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                         <ul>
                         <div class="flex justify-between flex-row">
@@ -503,12 +504,12 @@ Template Name: auto_ussur
                         <div class="flex gap-5 justify-between items-center">
                             <button class="button__order">Заказать</button>
                             <button class="button__circle">
-                                <img src="./src/img/icons/arrow__order.svg" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
                             </button>
                         </div>
                     </div>    
                     <div class="swiper-slide flex flex-col w-[310px]">
-                        <img src="./src/img/catalog/car_1.png" alt="">
+                        <img src="<?php echo get_template_directory_uri() . '/src/img/catalog/car_2.png'; ?>" alt="">
                         <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                         <ul>
                         <div class="flex justify-between flex-row">
@@ -536,12 +537,12 @@ Template Name: auto_ussur
                         <div class="flex gap-5 justify-between items-center">
                             <button class="button__order">Заказать</button>
                             <button class="button__circle">
-                                <img src="./src/img/icons/arrow__order.svg" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
                             </button>
                         </div>
                     </div>    
                     <div class="swiper-slide flex flex-col w-[310px]">
-                        <img src="./src/img/catalog/car_1.png" alt="">
+                        <img src="<?php echo get_template_directory_uri() . '/src/img/catalog/car_2.png'; ?>" alt="">
                         <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                         <ul>
                         <div class="flex justify-between flex-row">
@@ -569,10 +570,11 @@ Template Name: auto_ussur
                         <div class="flex gap-5 justify-between items-center">
                             <button class="button__order">Заказать</button>
                             <button class="button__circle">
-                                <img src="./src/img/icons/arrow__order.svg" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
                             </button>
                         </div>
                     </div>    
+
                 </div>                      
             </div>
                 
@@ -589,7 +591,7 @@ Template Name: auto_ussur
             <div class="popular-item w-0 min-w-[100%] overflow-hidden pt-6 md:pt-12">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide flex flex-col w-[310px]">
-                        <img src="./src/img/catalog/car_1.png" alt="">
+                        <img src="<?php echo get_template_directory_uri() . '/src/img/catalog/car_1.png'; ?>" alt="">
                         <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                         <ul>
                         <div class="flex justify-between flex-row">
@@ -617,12 +619,12 @@ Template Name: auto_ussur
                         <div class="flex gap-5 justify-between items-center">
                             <button class="button__order">Заказать</button>
                             <button class="button__circle">
-                                <img src="./src/img/icons/arrow__order.svg" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
                             </button>
                         </div>
                     </div>    
                     <div class="swiper-slide flex flex-col w-[310px]">
-                        <img src="./src/img/catalog/car_1.png" alt="">
+                        <img src="<?php echo get_template_directory_uri() . '/src/img/catalog/car_1.png'; ?>" alt="">
                         <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                         <ul>
                         <div class="flex justify-between flex-row">
@@ -650,12 +652,12 @@ Template Name: auto_ussur
                         <div class="flex gap-5 justify-between items-center">
                             <button class="button__order">Заказать</button>
                             <button class="button__circle">
-                                <img src="./src/img/icons/arrow__order.svg" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
                             </button>
                         </div>
                     </div>    
                     <div class="swiper-slide flex flex-col w-[310px]">
-                        <img src="./src/img/catalog/car_1.png" alt="">
+                        <img src="<?php echo get_template_directory_uri() . '/src/img/catalog/car_1.png'; ?>" alt="">
                         <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                         <ul>
                         <div class="flex justify-between flex-row">
@@ -683,10 +685,11 @@ Template Name: auto_ussur
                         <div class="flex gap-5 justify-between items-center">
                             <button class="button__order">Заказать</button>
                             <button class="button__circle">
-                                <img src="./src/img/icons/arrow__order.svg" alt="">
+                                <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
                             </button>
                         </div>
                     </div>    
+
                 </div>                      
             </div>
 
@@ -698,7 +701,7 @@ Template Name: auto_ussur
     <!-- Counter  -->
     <section class="relative pt-20 z-0 pb-40">
         <div class="container bg-red px-5 md:py-16 py-0 md:px-28 rounded-3xl relative h-[450px]">
-            <img class="sm:-top-20 sm:scale-[.7] md:scale-100 absolute md:top-0 right-0 -z-0" src="./src/img/catalog/car_3.png" alt="">
+            <img class="sm:-top-20 sm:scale-[.7] md:scale-100 absolute md:top-0 right-0 -z-0" src="<?php echo get_template_directory_uri() . '/src/img/catalog/car_3.png'; ?>" alt="">
             <h2 class="text-white text-center md:text-start font-bold md:text-3xl text-sm uppercase pt-60 md:pt-4 pb-8 z-10">
                 AutoPROussur - ваш надеждый <br> партнёр в покупке автомобиля
             </h2>
@@ -737,14 +740,14 @@ Template Name: auto_ussur
     <!-- Как происходит работа -->
     <section class="pt-52 md:pt-36">
         <div class="container relative h-max">
-            <img class="hidden sm:hidden md:block absolute bg-no-repeat bg-center top-10 scale-75 md:scale-100" src="./src/img/how/how__bg.png" alt="">
-            <img class="block sm:block md:hidden absolute bg-no-repeat bg-center top-10 scale-75 md:scale-100" src="./src/img/how/how__bg__small.png" alt="">
+            <img class="hidden sm:hidden md:block absolute bg-no-repeat bg-center top-10 scale-75 md:scale-100" src="<?php echo get_template_directory_uri() . '/src/img/how/how__bg.png'; ?>" alt="">
+            <img class="block sm:block md:hidden absolute bg-no-repeat bg-center top-10 scale-75 md:scale-100" src="<?php echo get_template_directory_uri() . '/src/img/how/how__bg__small.png'; ?>" alt="">
             
             <h2 class="font-bold md:text-5xl text-4xl pb-0 md:text-start text-center">Как происходит работа?</h2>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 pt-10 how__we__work">
                 <div style="width: -webkit-fill-available;" class="h-min relative p-7  bg-black rounded-2xl">
-                    <img class="absolute -top-5 right-0 left-0 m-auto" src="./src/img/how/1.svg" alt="">
+                    <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/1.svg'; ?>" alt="">
                     <div>
                         <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-bold">
                             Выбор автомобиля
@@ -756,7 +759,7 @@ Template Name: auto_ussur
                     </div>
                 </div>
                 <div style="width: -webkit-fill-available;" class="h-min relative mt-0 md:mt-14 p-7  bg-black rounded-2xl">
-                    <img class="absolute -top-5 right-0 left-0 m-auto" src="./src/img/how/2.svg" alt="">
+                    <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/2.svg'; ?>" alt="">
                     <div>g
                         <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-bold">
                             Заключение договора
@@ -769,7 +772,7 @@ Template Name: auto_ussur
                     </div>
                 </div>
                 <div style="width: -webkit-fill-available;" class="h-min relative p-7 bg-black rounded-2xl">
-                    <img class="absolute -top-5 right-0 left-0 m-auto" src="./src/img/how/3.svg" alt="">
+                    <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/3.svg'; ?>" alt="">
                     <div>
                         <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-bold">
                             Вносится предоплата
@@ -781,7 +784,7 @@ Template Name: auto_ussur
                     </div>
                 </div>
                 <div style="width: -webkit-fill-available;" class="h-min relative mt-0 md:mt-14 p-7 bg-black rounded-2xl">
-                    <img class="absolute -top-5 right-0 left-0 m-auto" src="./src/img/how/4.svg" alt="">
+                    <img class="absolute -top-5 right-0 left-0 m-auto" src=".<?php echo get_template_directory_uri() . '/src/img/how/4.svg'; ?>" alt="">
                     <div>
                         <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-bold">
                             Передача автомобиля или доставка по РФ
@@ -800,7 +803,7 @@ Template Name: auto_ussur
     <!-- Рассчитаем стоимость -->
     <section class="pt-12 md:pt-36 relative p-5 md:p-0">
         <div class="container rounded-3xl relative  h-[45vh] sm:h-[55vh] md:h-[69vh]">
-            <img class="block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="./src/img/price/price__bg.png" alt="">
+            <img class="block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/price/price__bg.png'; ?>" alt="">
             <div class="p-5 md:p-32 text-center md:text-start">
                 <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative">РАССЧИТАЕМ СТОИМОСТЬ!</h2>
                 <p class="text-sm md:font-base font-normal text-black py-5">
@@ -822,11 +825,11 @@ Template Name: auto_ussur
             <div class="arrows__slider">             
                 <button
                     class="parking-prev rounded-full bg-yellow p-4">
-                    <img src="./src/img/icons/arrow_prev.svg" alt="влево">
+                    <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_prev.svg'; ?>" alt="влево">
                 </button>
                 <button
                     class="parking-next rounded-full bg-yellow p-4">
-                    <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
+                    <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_next.svg'; ?>" alt="вправо" >
                 </button>
             </div>
 
@@ -835,17 +838,17 @@ Template Name: auto_ussur
                     <div class="swiper-wrapper gallery-wrapper">
                         <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
                             <a href="src/img/stop/stopping.png">
-                                <img class="rounded-3xl" src="./src/img/stop/stopping.png" alt="" data-caption="Image caption">
+                                <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                             </a>
                         </div>            
                         <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
                             <a href="src/img/stop/stopping.png">
-                                <img class="rounded-3xl" src="./src/img/stop/stopping.png" alt="" data-caption="Image caption">
+                                <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                             </a>
                         </div>            
                         <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
                             <a href="src/img/stop/stopping.png">
-                                <img class="rounded-3xl" src="./src/img/stop/stopping.png" alt="" data-caption="Image caption">
+                                <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                             </a>
                         </div>            
                     </div>
@@ -863,11 +866,11 @@ Template Name: auto_ussur
             <div class="arrows__slider">             
                 <button
                     class="review-prev rounded-full bg-yellow p-4">
-                    <img src="./src/img/icons/arrow_prev.svg" alt="влево">
+                    <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_prev.svg'; ?>" alt="влево">
                 </button>
                 <button
                     class="review-next rounded-full bg-yellow p-4">
-                    <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
+                    <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_next.svg'; ?>" alt="вправо" >
                 </button>
             </div>
             
@@ -898,8 +901,8 @@ Template Name: auto_ussur
                                 </div>
 
                                 <div class="flex gap-7 pb-7">
-                                    <img class="rounded-2xl" src="./src/img/review/review_2.png">
-                                    <img class="rounded-2xl" src="./src/img/review/review_2.png">
+                                    <img class="rounded-2xl" src="<?php echo get_template_directory_uri() . '/src/img/review/review_2.png'; ?>">
+                                    <img class="rounded-2xl" src="<?php echo get_template_directory_uri() . '/src/img/review/review_2.png'; ?>">
                                 </div>
 
                                 <div class="text-gray">
@@ -923,12 +926,12 @@ Template Name: auto_ussur
                         ?> -->
                         <div class="swiper-slide p-5">
                             <div class="flex flex-col rounded-2xl transform hover:scale-105 transition-all w-full">
-                                <video poster="./src/img/review/review_3.png"></video>
+                                <video poster="<?php echo get_template_directory_uri() . '/src/img/review/review_3.png'; ?>"></video>
                             </div>
                         </div>            
                         <div class="swiper-slide p-5">
                             <div class="flex flex-col rounded-2xl transform hover:scale-105 transition-all">
-                                <video poster="./src/img/review/review_1.png"></video>
+                                <video poster="<?php echo get_template_directory_uri() . '/src/img/review/review_1.png'; ?>"></video>
                             </div>
                         </div>            
                     </div>
@@ -1009,13 +1012,13 @@ Template Name: auto_ussur
     <!-- Новости -->
     <section class="pt-12 md:pt-36 p-5 ">
         <div class="container h-[40vh] md:h-auto bg-black relative rounded-2xl overflow-hidden">
-            <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="src/img/news/news.png" alt="">
-            <img class="block left-0 md:hidden absolute bottom-0" src="src/img/news/news_small.png" alt="">
+            <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="<?php echo get_template_directory_uri() . '/src/img/news/news.png'; ?>" alt="">
+            <img class="block left-0 md:hidden absolute bottom-0" src="<?php echo get_template_directory_uri() . '/src/img/news/news_small.png'; ?>" alt="">
             <div class="p-4 md:p-16 z-100">
                 <h2 class="text-xl lg:text-5xl font-extrabold relative pb-4 text-white">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
                 <div class="flex justify-start gap-10">
-                    <img src="src/img/icons/tg__white.svg" alt="">
-                    <img src="src/img/icons/youtube__white.svg" alt="">
+                    <img src="<?php echo get_template_directory_uri() . '/src/img/icons/tg__white.svg'; ?>" alt="">
+                    <img src="<?php echo get_template_directory_uri() . '/src/img/icons/youtube__white.svg'; ?>" alt="">
                 </div>
             </div>
         </div>
@@ -1030,7 +1033,7 @@ Template Name: auto_ussur
                 </div>
                 <ul>
                     <li class="pb-8">
-                        <img class="pb-2" src="./src/img/icons_nav/phonw.svg" alt="">
+                        <img class="pb-2" src="<?php echo get_template_directory_uri() . '/src/img/icons_nav/phonw.svg'; ?>" alt="">
                         <a class="text-white font-bold" href="tel:79510288418">
                             +7 951 028-84-18 
                         </a>
@@ -1039,16 +1042,16 @@ Template Name: auto_ussur
                         </a>
                     </li>
                     <li class="pb-8">
-                        <img class="pb-2" src="./src/img/icons_nav/email.svg" alt="">
+                        <img class="pb-2" src="<?php echo get_template_directory_uri() . '/src/img/icons_nav/email.svg'; ?>" alt="">
                         <a href="mailto:lehachechel10@gmail.com" class="text-white font-bold">lehachechel10@gmail.com</a>
                     
                     </li>
                     <li class="pb-8">
-                        <img class="pb-2" src="./src/img/icons_nav/geo.svg" alt="">
+                        <img class="pb-2" src="<?php echo get_template_directory_uri() . '/src/img/icons_nav/geo.svg'; ?>" alt="">
                             <p class="text-white">г. Уссурийск, ул. Тургенева, 42</p>
                     </li>
                     <li class="pb-8">
-                        <img class="pb-2" src="./src/img/icons_nav/clock.svg" alt="">
+                        <img class="pb-2" src="<?php echo get_template_directory_uri() . '/src/img/icons_nav/clock.svg'; ?>" alt="">
                             <p class="text-white">Режим работы: 10:00–18:00</p>
                     </li>
                     

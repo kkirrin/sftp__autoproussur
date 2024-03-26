@@ -32,16 +32,16 @@ window.addEventListener('DOMContentLoaded', () => {
     initStickyHeader();
     baguetteBox.run('.gallery-wrapper');
 
-    const wow = new WOW(
-        {
-        boxClass:     'wow',
-        animateClass: 'animated',
-        offset:       0,
-        mobile:       false,
-        live:         true,
-    }
-    )
-    wow.init();
+    // const wow = new WOW(
+    //     {
+    //     boxClass:     'wow',
+    //     animateClass: 'animated',
+    //     offset:       0,
+    //     mobile:       false,
+    //     live:         true,
+    // }
+    // )
+    // wow.init();
 
 
     

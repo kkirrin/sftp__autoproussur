@@ -23,9 +23,10 @@ function theme_add_scripts()
 
     // Подключаем файл main.css
     wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css');
-    
+
     // Подключаем файл main.css
-    wp_enqueue_style('main', get_template_directory_uri() . '/style.css');
+    wp_enqueue_style('swiper', get_template_directory_uri() . '/css/swiper-bundle.min.css');
+    
 
     // Подключаем js файл swiper-bundle.min.js
     wp_enqueue_script('swiper', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), null, true);
