@@ -45,20 +45,20 @@
                     
                     <div class="grid grid-cols-1 md:grid-cols-3">
                         <div class="rounded-2xl transform hover:scale-105 transition-all w-full">
-                            <video poster="./src/img/review/review_3.png"></video>
+                            <video poster="<?php echo get_template_directory_uri() . '/src/img/review/review_3.png'; ?>"></video>
                         </div>
 
                         <div class="p-5 w-full md:w-auto">
                             <div class="flex flex-col shadow-md bg-white p-7 rounded-2xl transform hover:scale-105 transition-all">
                                 <div class="flex flex-row justify-between pb-7">
                                     <div class="flex gap-5">
-                                        <p>Аватар</p>
+                                    <p>Аватар</p>
                                         <p>Дмитрий</p>
                                     </div>
     
                                     <div class="flex gap-2">
                                         <p>5.0</p>
-                                        <p><img src="./src/img/icons/star.svg" alt=""></p>
+                                        <p><img src="<?php echo get_template_directory_uri() . '/src/img/icons/star.svg'; ?>" alt=""></p>
                                     </div>
                                 </div>
     
@@ -67,8 +67,8 @@
                                 </div>
     
                                 <div class="flex gap-7 pb-7">
-                                    <img class="rounded-2xl" src="./src/img/review/review_2.png">
-                                    <img class="rounded-2xl" src="./src/img/review/review_2.png">
+                                    <img class="rounded-2xl" src="<?php echo get_template_directory_uri() . '/src/img/review/review_2.png'; ?>">
+                                    <img class="rounded-2xl" src="<?php echo get_template_directory_uri() . '/src/img/review/review_2.png'; ?>">
                                 </div>
     
                                 <div class="text-gray">
@@ -78,7 +78,7 @@
                         </div>
             
                         <div class="rounded-2xl transform hover:scale-105 transition-all w-full">
-                            <video poster="./src/img/review/review_3.png"></video>
+                            <video poster="<?php echo get_template_directory_uri() . '/src/img/review/review_3.png'; ?>"></video>
                         </div>
                     </div>
                   

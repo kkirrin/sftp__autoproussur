@@ -947,9 +947,9 @@ Template Name: auto_ussur
             <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative pb-5">Банки-партнеры </h2>
             <p class="text-xl pb-8">Мы сотрудничаем с банками для вашего удобства</p>
             <div class="flex justify-center md:justify-start gap-10 items-center flex-wrap">
-                <img class="transform hover:scale-105 transition-all" src="src/img/banks/atb.png" alt="">
-                <img class="transform hover:scale-105 transition-all" src="src/img/banks/sber.png" alt="">
-                <img class="transform hover:scale-105 transition-all" src="src/img/banks/vtb.png" alt="">
+                <img class="transform hover:scale-105 transition-all" src="<?php echo get_template_directory_uri() .'/src/img/banks/atb.png'; ?>" alt="">
+                <img class="transform hover:scale-105 transition-all" src="<?php echo get_template_directory_uri() .'/src/img/banks/sber.png'; ?>" alt="">
+                <img class="transform hover:scale-105 transition-all" src="<?php echo get_template_directory_uri() .'/src/img/banks/vtb.png'; ?>" alt="">
             </div>
         </div>
     </section> 

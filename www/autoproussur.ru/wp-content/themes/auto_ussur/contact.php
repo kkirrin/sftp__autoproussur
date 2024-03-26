@@ -89,11 +89,11 @@ Template Name: contact
                     <div class="arrows__slider">             
                         <button
                             class="parking-prev rounded-full bg-yellow p-4">
-                            <img src="./src/img/icons/arrow_prev.svg" alt="влево">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow_prev.svg'; ?>" alt="влево">
                         </button>
                         <button
                             class="parking-next rounded-full bg-yellow p-4">
-                            <img src="./src/img/icons/arrow_next.svg" alt="вправо" >
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow_next.svg'; ?>" alt="вправо" >
                         </button>
                     </div>
         
@@ -101,18 +101,18 @@ Template Name: contact
                         <div class="parking-item">
                             <div class="swiper-wrapper gallery-wrapper">
                                 <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
-                                    <a href="src/img/stop/stopping.png">
-                                        <img class="rounded-3xl" src="./src/img/stop/stopping.png" alt="" data-caption="Image caption">
+                                    <a href="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>" ?>
+                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                                     </a>
                                 </div>            
                                 <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
-                                    <a href="src/img/stop/stopping.png">
-                                        <img class="rounded-3xl" src="./src/img/stop/stopping.png" alt="" data-caption="Image caption">
+                                    <a href="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>">
+                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                                     </a>
                                 </div>            
                                 <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
-                                    <a href="src/img/stop/stopping.png">
-                                        <img class="rounded-3xl" src="./src/img/stop/stopping.png" alt="" data-caption="Image caption">
+                                    <a href="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>">
+                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                                     </a>
                                 </div>            
                             </div>
@@ -124,13 +124,13 @@ Template Name: contact
            <!-- Новости -->
            <section class="pt-12 md:pt-36 p-5 ">
             <div class="container h-[40vh] md:h-auto bg-black relative rounded-2xl overflow-hidden">
-                <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="src/img/news/news.png" alt="">
-                <img class="block left-0 md:hidden absolute bottom-0" src="src/img/news/news_small.png" alt="">
+                <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="<?php echo get_template_directory_uri() .'/src/img/news/news.png'; ?>" alt="">
+                <img class="block left-0 md:hidden absolute bottom-0" src="<?php echo get_template_directory_uri() .'/src/img/news/news_small.png'; ?>" alt="">
                 <div class="p-4 md:p-16 z-100">
                     <h2 class="text-xl lg:text-5xl font-extrabold relative pb-4 text-white">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
                     <div class="flex justify-start gap-10">
-                        <img src="src/img/icons/tg__white.svg" alt="">
-                        <img src="src/img/icons/youtube__white.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri() . '/src/img/icons/tg__white.svg'; ?>" alt="">
+                        <img src="<?php echo get_template_directory_uri() . '/src/img/icons/youtube__white.svg'; ?>" alt="">
                     </div>
                 </div>
             </div>

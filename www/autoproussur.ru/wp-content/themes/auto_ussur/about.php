@@ -33,7 +33,7 @@ Template Name: about
 
             <section class="pt-12 md:pt-14">
                 <div class="relative container rounded-3xl">
-                    <img class="rounded-3xl object-cover h-[50vh] md:h-auto w-full" src="<?php echo get_template_directory_uri() . 'src/img/about/about__bg.png'; ?>" alt="Background Image">
+                    <img class="rounded-3xl object-cover h-[50vh] md:h-auto w-full" src="<?php echo get_template_directory_uri() .'/src/img/about/about__bg.png'; ?>" alt="Background Image">
                     <div class="z-0 left-0 md:left-32 absolute inset-0 flex flex-col justify-center items-start text-left p-8">
                         <h2 class="text-start text-4xl lg:text-5xl font-extrabold relative text-white pb-5 md:pb-10">
                             Компания AutoPROussur
@@ -272,9 +272,9 @@ Template Name: about
                     <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative pb-5 md:pb-10">Банки-партнеры </h2>
                     <p class="text-xl pb-8">Мы сотрудничаем с банками для вашего удобства</p>
                     <div class="flex justify-center md:justify-start gap-10 items-center flex-wrap">
-                        <img class="transform hover:scale-105 transition-all" src="<?php echo get_template_directory_uri().'src/img/banks/atb.png'; ?>" alt="">
-                        <img class="transform hover:scale-105 transition-all" src="<?php echo get_template_directory_uri().'src/img/banks/sber.png'; ?>" alt="">
-                        <img class="transform hover:scale-105 transition-all" src="<?php echo get_template_directory_uri().'src/img/banks/vtb.png'; ?>" alt="">
+                        <img class="transform hover:scale-105 transition-all" src="<?php echo get_template_directory_uri().'/src/img/banks/atb.png'; ?>" alt="">
+                        <img class="transform hover:scale-105 transition-all" src="<?php echo get_template_directory_uri().'/src/img/banks/sber.png'; ?>" alt="">
+                        <img class="transform hover:scale-105 transition-all" src="<?php echo get_template_directory_uri().'/src/img/banks/vtb.png'; ?>" alt="">
                     </div>
                 </div>
             </section> 
@@ -338,13 +338,13 @@ Template Name: about
            <!-- Новости -->
            <section class="pt-12 md:pt-36 p-5 ">
             <div class="container h-[40vh] md:h-auto bg-black relative rounded-2xl overflow-hidden">
-                <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="src/img/news/news.png" alt="">
-                <img class="block left-0 md:hidden absolute bottom-0" src="src/img/news/news_small.png" alt="">
+                <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="<?php echo get_template_directory_uri() .'/src/img/news/news.png'; ?>" alt="">
+                <img class="block left-0 md:hidden absolute bottom-0" src="<?php echo get_template_directory_uri() .'/src/img/news/news_small.png'; ?>" alt="">
                 <div class="p-4 md:p-16 z-100">
                     <h2 class="text-xl lg:text-5xl font-extrabold relative pb-4 text-white">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
                     <div class="flex justify-start gap-10">
-                        <img src="src/img/icons/tg__white.svg" alt="">
-                        <img src="src/img/icons/youtube__white.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri() .'/src/img/icons/tg__white.svg'; ?>" alt="">
+                        <img src="<?php echo get_template_directory_uri() .'/src/img/icons/youtube__white.svg'; ?>" alt="">
                     </div>
                 </div>
             </div>

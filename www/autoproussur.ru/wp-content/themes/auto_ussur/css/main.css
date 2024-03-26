@@ -804,7 +804,7 @@
   right: 20px;
   width: 45px;
   height: 45px;
-  background-image: url('/src/img/icons/btn__tabs.svg');
+  background-image: url('https://autoproussur.ru/wp-content/themes/auto_ussur/src/img/icons/btn__tabs.svg');
   background-repeat: no-repeat;
   transition: transform 0.3s ease-in-out;
 }
@@ -815,7 +815,7 @@
 
 .faq__btn._active.faq__btn::before {
   transform: rotate(-30deg);
-  background-image: url('/src/img/icons/btn__tabs__red.svg');
+  background-image: url('https://autoproussur.ru/wp-content/themes/auto_ussur/src/img/icons/btn__tabs__red.svg');
 }
 
 /* .faq__btn._active._tabs-button::before svg path {

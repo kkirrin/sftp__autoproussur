@@ -399,7 +399,73 @@ Template Name: catalog
 
                 <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4  overflow-hidden pt-12 md:pt-32 gap-10">
                         <div class="w-auto flex flex-col">
-                            <img src="./src/img/catalog/car_2.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/catalog/car_2.png'; ?>" alt="">
+                            <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
+                            <ul>
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Год выпуска</li>
+                                    <li class="pb-6">2019</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Пробег</li>
+                                    <li class="pb-6">68 000 км</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Топливо</li>
+                                    <li class="pb-6">дизель</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Объём двигателя</li>
+                                    <li class="pb-6">2.8 л</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Привод</li>
+                                    <li>4WD</li>
+                            </div> 
+                            </ul>
+                            <p class="text-black py-6">3 895 000 ₽</p>
+                            <div class="flex gap-5 justify-between items-center">
+                                <button class="button__order">Заказать</button>
+                                <button class="button__circle">
+                                    <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow__order.svg'; ?>" alt="">
+                                </button>
+                            </div>
+                        </div>    
+                        <div class="w-auto flex flex-col">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/catalog/car_2.png'; ?>" alt="">
+                            <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
+                            <ul>
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Год выпуска</li>
+                                    <li class="pb-6">2019</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Пробег</li>
+                                    <li class="pb-6">68 000 км</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Топливо</li>
+                                    <li class="pb-6">дизель</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Объём двигателя</li>
+                                    <li class="pb-6">2.8 л</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Привод</li>
+                                    <li>4WD</li>
+                            </div> 
+                            </ul>
+                            <p class="text-black py-6">3 895 000 ₽</p>
+                            <div class="flex gap-5 justify-between items-center">
+                                <button class="button__order">Заказать</button>
+                                <button class="button__circle">
+                                    <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow__order.svg'; ?>" alt="">
+                                </button>
+                            </div>
+                        </div>    
+                        <div class="w-auto flex flex-col">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/catalog/car_2.png'; ?>" alt="">
                             <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                             <ul>
                             <div class="flex justify-between flex-row">
@@ -432,7 +498,7 @@ Template Name: catalog
                             </div>
                         </div>    
                         <div class="w-auto flex flex-col">
-                            <img src="./src/img/catalog/car_2.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/catalog/car_2.png'; ?>" alt="">
                             <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                             <ul>
                             <div class="flex justify-between flex-row">
@@ -460,12 +526,12 @@ Template Name: catalog
                             <div class="flex gap-5 justify-between items-center">
                                 <button class="button__order">Заказать</button>
                                 <button class="button__circle">
-                                    <img src="./src/img/icons/arrow__order.svg" alt="">
+                                    <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow__order.svg'; ?>" alt="">
                                 </button>
                             </div>
                         </div>    
                         <div class="w-auto flex flex-col">
-                            <img src="./src/img/catalog/car_2.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/catalog/car_2.png'; ?>" alt="">
                             <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                             <ul>
                             <div class="flex justify-between flex-row">
@@ -493,12 +559,12 @@ Template Name: catalog
                             <div class="flex gap-5 justify-between items-center">
                                 <button class="button__order">Заказать</button>
                                 <button class="button__circle">
-                                    <img src="./src/img/icons/arrow__order.svg" alt="">
+                                    <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow__order.svg'; ?>" alt="">
                                 </button>
                             </div>
                         </div>    
                         <div class="w-auto flex flex-col">
-                            <img src="./src/img/catalog/car_2.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/catalog/car_2.png'; ?>" alt="">
                             <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                             <ul>
                             <div class="flex justify-between flex-row">
@@ -526,12 +592,12 @@ Template Name: catalog
                             <div class="flex gap-5 justify-between items-center">
                                 <button class="button__order">Заказать</button>
                                 <button class="button__circle">
-                                    <img src="./src/img/icons/arrow__order.svg" alt="">
+                                    <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow__order.svg'; ?>" alt="">
                                 </button>
                             </div>
                         </div>    
                         <div class="w-auto flex flex-col">
-                            <img src="./src/img/catalog/car_2.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/catalog/car_2.png'; ?>" alt="">
                             <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                             <ul>
                             <div class="flex justify-between flex-row">
@@ -559,12 +625,12 @@ Template Name: catalog
                             <div class="flex gap-5 justify-between items-center">
                                 <button class="button__order">Заказать</button>
                                 <button class="button__circle">
-                                    <img src="./src/img/icons/arrow__order.svg" alt="">
+                                    <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow__order.svg'; ?>" alt="">
                                 </button>
                             </div>
                         </div>    
                         <div class="w-auto flex flex-col">
-                            <img src="./src/img/catalog/car_2.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/catalog/car_2.png'; ?>" alt="">
                             <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                             <ul>
                             <div class="flex justify-between flex-row">
@@ -592,12 +658,12 @@ Template Name: catalog
                             <div class="flex gap-5 justify-between items-center">
                                 <button class="button__order">Заказать</button>
                                 <button class="button__circle">
-                                    <img src="./src/img/icons/arrow__order.svg" alt="">
+                                    <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow__order.svg'; ?>" alt="">
                                 </button>
                             </div>
                         </div>    
                         <div class="w-auto flex flex-col">
-                            <img src="./src/img/catalog/car_2.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/catalog/car_2.png'; ?>" alt="">
                             <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                             <ul>
                             <div class="flex justify-between flex-row">
@@ -625,12 +691,12 @@ Template Name: catalog
                             <div class="flex gap-5 justify-between items-center">
                                 <button class="button__order">Заказать</button>
                                 <button class="button__circle">
-                                    <img src="./src/img/icons/arrow__order.svg" alt="">
+                                    <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow__order.svg'; ?>" alt="">
                                 </button>
                             </div>
                         </div>    
                         <div class="w-auto flex flex-col">
-                            <img src="./src/img/catalog/car_2.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/catalog/car_2.png'; ?>" alt="">
                             <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                             <ul>
                             <div class="flex justify-between flex-row">
@@ -658,12 +724,12 @@ Template Name: catalog
                             <div class="flex gap-5 justify-between items-center">
                                 <button class="button__order">Заказать</button>
                                 <button class="button__circle">
-                                    <img src="./src/img/icons/arrow__order.svg" alt="">
+                                    <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow__order.svg'; ?>" alt="">
                                 </button>
                             </div>
                         </div>    
                         <div class="w-auto flex flex-col">
-                            <img src="./src/img/catalog/car_2.png" alt="">
+                            <img src="<?php echo get_template_directory_uri() .'/src/img/catalog/car_2.png'; ?>" alt="">
                             <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
                             <ul>
                             <div class="flex justify-between flex-row">
@@ -691,73 +757,7 @@ Template Name: catalog
                             <div class="flex gap-5 justify-between items-center">
                                 <button class="button__order">Заказать</button>
                                 <button class="button__circle">
-                                    <img src="./src/img/icons/arrow__order.svg" alt="">
-                                </button>
-                            </div>
-                        </div>    
-                        <div class="w-auto flex flex-col">
-                            <img src="./src/img/catalog/car_2.png" alt="">
-                            <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
-                            <ul>
-                            <div class="flex justify-between flex-row">
-                                    <li class="text-gray pb-2">Год выпуска</li>
-                                    <li class="pb-6">2019</li>
-                            </div> 
-                            <div class="flex justify-between flex-row">
-                                    <li class="text-gray pb-2">Пробег</li>
-                                    <li class="pb-6">68 000 км</li>
-                            </div> 
-                            <div class="flex justify-between flex-row">
-                                    <li class="text-gray pb-2">Топливо</li>
-                                    <li class="pb-6">дизель</li>
-                            </div> 
-                            <div class="flex justify-between flex-row">
-                                    <li class="text-gray pb-2">Объём двигателя</li>
-                                    <li class="pb-6">2.8 л</li>
-                            </div> 
-                            <div class="flex justify-between flex-row">
-                                    <li class="text-gray pb-2">Привод</li>
-                                    <li>4WD</li>
-                            </div> 
-                            </ul>
-                            <p class="text-black py-6">3 895 000 ₽</p>
-                            <div class="flex gap-5 justify-between items-center">
-                                <button class="button__order">Заказать</button>
-                                <button class="button__circle">
-                                    <img src="./src/img/icons/arrow__order.svg" alt="">
-                                </button>
-                            </div>
-                        </div>    
-                        <div class="w-auto flex flex-col">
-                            <img src="./src/img/catalog/car_2.png" alt="">
-                            <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
-                            <ul>
-                            <div class="flex justify-between flex-row">
-                                    <li class="text-gray pb-2">Год выпуска</li>
-                                    <li class="pb-6">2019</li>
-                            </div> 
-                            <div class="flex justify-between flex-row">
-                                    <li class="text-gray pb-2">Пробег</li>
-                                    <li class="pb-6">68 000 км</li>
-                            </div> 
-                            <div class="flex justify-between flex-row">
-                                    <li class="text-gray pb-2">Топливо</li>
-                                    <li class="pb-6">дизель</li>
-                            </div> 
-                            <div class="flex justify-between flex-row">
-                                    <li class="text-gray pb-2">Объём двигателя</li>
-                                    <li class="pb-6">2.8 л</li>
-                            </div> 
-                            <div class="flex justify-between flex-row">
-                                    <li class="text-gray pb-2">Привод</li>
-                                    <li>4WD</li>
-                            </div> 
-                            </ul>
-                            <p class="text-black py-6">3 895 000 ₽</p>
-                            <div class="flex gap-5 justify-between items-center">
-                                <button class="button__order">Заказать</button>
-                                <button class="button__circle">
-                                    <img src="./src/img/icons/arrow__order.svg" alt="">
+                                    <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow__order.svg'; ?>" alt="">
                                 </button>
                             </div>
                         </div>    
@@ -772,7 +772,7 @@ Template Name: catalog
         <!-- Рассчитаем стоимость -->
         <section class="pt-12 md:pt-36 relative p-5 md:p-0">
             <div class="container rounded-3xl relative  h-[45vh] sm:h-[55vh] md:h-[69vh]">
-                <img class="block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="./src/img/price/price__bg.png" alt="">
+                <img class="block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() .'/src/img/price/price__bg.png'; ?>" alt="">
                 <div class="p-5 md:p-32 text-center md:text-start">
                     <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative">РАССЧИТАЕМ СТОИМОСТЬ!</h2>
                     <p class="text-sm md:font-base font-normal text-black py-5">
