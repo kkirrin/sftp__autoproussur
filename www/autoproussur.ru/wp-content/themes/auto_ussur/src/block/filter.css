@@ -1,0 +1,21 @@
+#formForMain div select option {
+    color: rgb(136, 136, 136);
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+}
+
+#formForMain div label {
+    color: rgb(32, 32, 32);
+    font-family: Muller;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+#formForMain div select {
+    border: none;
+    color: rgb(136, 136, 136);
+    font-weight: 300;
+}

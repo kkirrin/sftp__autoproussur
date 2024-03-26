@@ -1,0 +1,119 @@
+
+.faq__title {
+    color: #FFF;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: uppercase;
+    max-width: 460px;
+}
+
+.faq__list {
+    column-count: 2;
+}
+
+@media(max-width:769px) {
+.faq__list {
+    column-count: 1;
+}
+}
+
+._tabs-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    padding: 0 45px 10px 42px;
+    border-radius: 0 0 40px 10px;
+    margin-bottom: 15px;
+    color: rgb(136, 136, 136);
+}
+
+._tabs-content._active {
+    opacity: 1;
+}
+
+.faq__btn {
+   
+    position: relative;
+    width: 100%;
+    text-align: left;
+
+    color: #323232;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 30px 45px 30px 42px;
+    border-radius: 10px 10px 40px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq__btn::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    background-image: url('/src/img/icons/btn__tabs.svg');
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease-in-out;
+}
+
+.faq__btn._active {
+    border-radius: 10px 10px 0 0;
+}
+
+.faq__btn._active.faq__btn::before {
+    transform: rotate(-30deg);
+    background-image: url('/src/img/icons/btn__tabs__red.svg');
+}
+
+
+/* .faq__btn._active._tabs-button::before svg path {
+    fill: #B7090A;
+} */
+
+
+
+.faq__item {
+    break-inside: avoid-column;
+    border-radius: 20px;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+}
+
+.faq__item--green .faq__btn,
+.faq__item--green ._tabs-content {
+    background-color: #2CC304;
+}
+
+@media (max-width: 767px) {
+    .faq__wrapper {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        justify-items: left;
+    }
+
+    .faq__title {
+        font-size: 24px;
+    }
+
+    .faq__btn {
+        font-size: 14px;
+        padding: 20px 65px 20px 14px;
+    }
+
+    .faq__btn::before {
+        top: 5px;
+        right: 20px;
+    }
+
+    ._tabs-content {
+        padding: 0 45px 10px 14px;
+    }
+}

@@ -1,0 +1,5 @@
+# ignore ALL .vscode fi
+
+
+# ignore ALL files in ANY directory named .vscode
+vscode/

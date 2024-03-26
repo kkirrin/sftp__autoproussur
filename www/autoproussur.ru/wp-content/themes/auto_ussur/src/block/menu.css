@@ -1,0 +1,47 @@
+.mobile-menu {
+    background-color: #b7090a;
+    transition: opacity 0.8s ease;
+    opacity: 0;
+    visibility: hidden;
+    height: 100%;
+    width: -webkit-fill-available;
+
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+    overflow: auto;
+}
+
+
+.mobile-menu.is-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+
+.menu {
+    background-color: rgba(44, 44, 44, 0.80);
+    transition: opacity 0.8s ease;
+    opacity: 0;
+    visibility: hidden;
+    height: 100%;
+    position: fixed;
+    top: 80px;
+    left: 20px;
+    padding: 20px;
+
+}
+
+.menu.is-active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+
+@media(max-width:1388px) {
+    .mobile__menu__style {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}

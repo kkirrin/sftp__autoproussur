@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Алиса знает, что делать, центр развлечений - это игровое пространство по мотивам мультфильма режиссера Тимура Бекмамбетова">
+    <title>AutoPROussur</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel=" stylesheet" href="css/main.css">
+</head>
+
+<body class="wrapper">
+    
+    <div class="">
+        <header class="z-10 w-full md-28 transition-colors header py-5 fixed">
+            <div class="container">
+        
+                <div class="flex items-center justify-between">
+                        
+                    <!-- Левая часть шапки -->
+                    <div class="hidden md:flex justify-between items-center gap-10">
+                        <div class="flex items-center justify-between gap-2">
+                            <a href="/" class="flex items-center justify-between gap-2">
+                                <img src="/logo.png" alt="логотип в шапке">     
+                            </a>
+                        </div>
+        
+                        <div> 
+                            <ul class="mobile gap-2 flex-wrap text-main-black hidden md:flex items-center justify-center mobile__menu__style">
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/catalog.html">Каталог</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/about.html">О компании</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/review.html">Отзывы</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/contact.html">Контакты</a></li>
+                                <li class="transform hover:scale-105 transition-all mr-4  "><a class="text-black font-semibold" href="/">Договор</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <div class="flex md:hidden items-center justify-between gap-2">
+                        <a href="/" class="flex md:hidden items-center justify-between gap-2">
+                            <img src="/logo.png" class="" alt="логотип в шапке">
+                        </a>
+                    </div>
+        
+        
+                    <!-- Правая часть шапки -->
+                    <ul class="hidden md:flex items-center justify-between gap-7">       
+                        <li class="flex flex-col">
+                           <address class="font-semibold" style="font-style: normal;">г. Уссурийск, <br>
+                            ул. Тургенева, 42 </address>
+                        </li>
+
+                        <li class="flex flex-col">
+                            <a class="text-black font-bold nav-link" href="tel:+79510154751">
+                                8 (951) 028-84-18 
+                            </a>
+                            <a class="text-black font-bold nav-link" href="tel:+79510154751">
+                                8 (951) 015-47-51
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="button popup-link" href="#popup1">
+                                Подобрать автомобиль
+                            </a>
+                        </li>
+                        
+                        <li class="list-none flex gap-3">
+                            <a href="https://api.whatsapp.com/send/?phone=79510154751">
+                                <svg class="button__icons" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="47" height="47" rx="23.5" fill="#B7090A"/>
+                                    <path d="M23.5029 11.75H23.4971C17.0184 11.75 11.75 17.0199 11.75 23.5C11.75 26.0703 12.5784 28.4526 13.9869 30.387L12.5226 34.7521L17.039 33.3083C18.8969 34.5391 21.1133 35.25 23.5029 35.25C29.9816 35.25 35.25 29.9787 35.25 23.5C35.25 17.0213 29.9816 11.75 23.5029 11.75ZM30.34 28.3425C30.0565 29.1429 28.9314 29.8068 28.034 30.0007C27.4201 30.1314 26.6182 30.2357 23.9186 29.1165C20.4656 27.6859 18.2419 24.1771 18.0686 23.9494C17.9026 23.7218 16.6733 22.0915 16.6733 20.4053C16.6733 18.7192 17.5295 17.8982 17.8747 17.5457C18.1582 17.2563 18.6267 17.1242 19.0761 17.1242C19.2215 17.1242 19.3523 17.1315 19.4697 17.1374C19.8149 17.1521 19.9882 17.1726 20.2159 17.7175C20.4993 18.4005 21.1897 20.0866 21.2719 20.2599C21.3556 20.4333 21.4393 20.6683 21.3218 20.8959C21.2117 21.1309 21.1147 21.2352 20.9414 21.4349C20.7681 21.6347 20.6036 21.7874 20.4303 22.0019C20.2717 22.1884 20.0925 22.3882 20.2922 22.7333C20.492 23.0711 21.1823 24.1977 22.1987 25.1024C23.5103 26.2701 24.5737 26.6431 24.9541 26.8018C25.2375 26.9193 25.5753 26.8913 25.7824 26.671C26.0453 26.3876 26.3699 25.9176 26.7004 25.4549C26.9354 25.123 27.2321 25.0818 27.5435 25.1993C27.8607 25.3095 29.5395 26.1393 29.8847 26.3112C30.2298 26.4845 30.4575 26.5668 30.5412 26.7122C30.6234 26.8576 30.6234 27.5405 30.34 28.3425Z" fill="white"/>
+                                </svg>            
+                            </a>
+    
+                            <a href="">
+                                <svg class="button__icons" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="47" height="47" rx="23.5" fill="#B7090A"/>
+                                    <path d="M20.9712 26.8643L20.5825 32.7694C21.1387 32.7694 21.3795 32.5113 21.6684 32.2015L24.276 29.5102L29.6791 33.7835C30.6701 34.3799 31.3682 34.0659 31.6356 32.799L35.1822 14.8512L35.1832 14.8501C35.4975 13.2681 34.6534 12.6495 33.688 13.0376L12.841 21.6572C11.4182 22.2536 11.4398 23.1102 12.5991 23.4983L17.9289 25.2886L30.3088 16.9228C30.8914 16.5062 31.4211 16.7367 30.9854 17.1533L20.9712 26.8643Z" fill="white"/>
+                                </svg>                                 
+                            </a>    
+                        </li>
+                        
+                       
+                    </ul>
+        
+            
+        
+                    <!-- Кнопка для мобильного меню -->
+                    <div class="flex md:hidden items-center">
+
+                        <li class=" hidden xs:flex sm:flex md:hidden items-center justify-center sm:gap-0 xs:gap-0 gap-0 md:gap-2 transform hover:scale-105 transition-all">
+                            <img src="" alt="">
+                            <a class="text-black font-bold phone nav-link p-2" href="tel:+79532109127">
+                                +7-953-210-91-27
+                            </a>
+                        </li>
+        
+                        <li class="flex xs:flex sm:flex md:hidden sm:list-none">
+                            <a href="https://www.instagram.com/geometry_nhk/">
+                                <img class="transform hover:scale-105 transition-all p-2" src="src/img/icons/tg.svg" alt="" >
+                            </a>
+                        </li>
+        
+                        <li class="flex xs:flex sm:flex md:hidden">
+                            <a class="nav-link" href="https://api.whatsapp.com/send/?phone=79510154751">
+                            <img class="transform hover:scale-105 transition-all p-2" src="src/img/icons/sap.svg" alt="" >
+                            </a>
+                        </li>
+
+                        <button class="btn__menu--mobile md:hidden flex z-100">
+                                <svg class="h-3 w-3" viewBox="0 0 64 48">
+                                    <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                                    <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                                    <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                                </svg>
+                        </button>
+                    </div>
+        
+                    <!-- Мобильное меню -->
+                    <div class="mobile-menu">
+                        <div class="container">
+
+                            <nav class="catalog-menu">
+                                <!-- <?php wp_nav_menu([
+                                    'theme_location' => 'mobile-menu',
+                                    'container' => 'ul',
+                                    'menu_class' => 'mobile-menu--nav', 
+                                    ]); 
+                                ?> -->
+                                    <ul>
+                                        <li class="text-white pt-2 pb-5 nav-link"><a href="catalog.">Каталог</a></li>
+                                        <li class="text-white pt-2 pb-5 nav-link"><a href="about.html">О компании</a></li>
+                                        <li class="text-white pt-2 pb-5 nav-link"><a href="review.html">Отзывы</a></li>
+                                        <li class="text-white pt-2 pb-5 nav-link"><a href="contact.html"></a>Контакты</li>
+                                        <li class="text-white pt-2 pb-5 nav-link">Договор</li>
+
+                                        <li class="mr-4 flex pt-2 pb-5 gap-2">
+                                            <img src="" alt="">
+                                            <a class="text-white font-bold nav-link" href="tel:+79532109127">
+                                                +7-953-210-91-27
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                    <a class="py-4 px-5 w-[238px] text-red bg-white rounded-2xl font-bold popup-link " href="#popup1">
+                                        Подобрать авто
+                                    </a>
+
+
+                                        
+                                    <ul class="flex justify-start padding__bottom__link pt-7">
+                                        <li class="mr-2 list-none pt-2 pb-5 gap-2">
+                                            <a href="https://api.whatsapp.com/send/?phone=79510154751">
+                                                <img class="" src="src/img/icons/sap__white.svg" alt="" >
+                                            </a>
+                                        </li>
+                                        <li class="mr-2 list-none pt-2 pb-5 gap-2">
+                                            <a href="https://www.instagram.com/geometry_nhk/">
+                                                <img class="" src="src/img/icons/tg__white1.svg" alt="" >
+                                            </a>
+                                        </li>
+                                        
+                                        <li class="mr-4 list-none pt-2 pb-5 gap-2 padding__bottom__link">
+                                            <a href="https://api.whatsapp.com/send/?phone=79532109127">
+                                                <img class="" src="src/img/icons/youtube_white.svg" alt="" >
+                                            </a>
+                                        </li>
+                                    </ul>  
+                            </nav>                
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </header>
+        <main>
+
+            <h1 class="visually-hidden">Скрытый заголовок</h1>
+
+            <section class="pt-32">
+                <div class="container">
+
+                    <div class="breadcrumb">
+                        <ul class="breadcrumb__list flex items-center justify-start gap-2">
+                            <li class="breadcrumb__item text-bg-black opacity-60 ">
+                                <a href="/" class="font-medium">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="opacity-60 text-bg-black">
+                                -
+                            </li>
+                            <li class="breadcrumb__item">
+                                <span class="font-bold text-bg-black">Каталог</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pt-12 md:pt-20">
+                <div class="container relative">
+                    <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
+                        <div class="flex flex-col w-auto">
+                            
+                            <div class="flex flex-col w-auto">
+                                <div class="flex justify-start items-center gap-4 pb-7">
+                                    <p class="text-xs md:text-sm py-2 px-6 bg-yellow rounded-3xl">
+                                        <!-- <?php the_field('price'); ?>₽ -->
+                                        В наличии
+                                    </p>
+                                    <p class="text-xs md:text-sm py-2 px-6 bg-red rounded-3xl text-white">
+                                        <!-- <?php the_field('price'); ?>₽ -->
+                                        -20%
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <img src="./src/img/catalog/car_2.png" alt="">
+                            <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
+                            <ul>
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Год выпуска</li>
+                                    <li class="pb-6">2019</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Пробег</li>
+                                    <li class="pb-6">68 000 км</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Топливо</li>
+                                    <li class="pb-6">дизель</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Объём двигателя</li>
+                                    <li class="pb-6">2.8 л</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Привод</li>
+                                    <li>4WD</li>
+                            </div> 
+                            </ul>
+                            <p class="text-black py-6">3 895 000 ₽</p>
+                            <div class="flex gap-5 justify-between items-center">
+                                <button class="button__order">Заказать</button>
+                                <button class="button__circle">
+                                    <img src="./src/img/icons/arrow__order.svg" alt="">
+                                </button>
+                            </div>
+                        </div>    
+                        <div class="flex flex-col w-auto">
+                            
+                            <div class="flex flex-col w-auto">
+                                <div class="flex justify-start items-center gap-4 pb-7">
+                                    <p class="text-xs md:text-sm py-2 px-6 bg-yellow rounded-3xl">
+                                        <!-- <?php the_field('price'); ?>₽ -->
+                                        В наличии
+                                    </p>
+                                    <p class="text-xs md:text-sm py-2 px-6 bg-red rounded-3xl text-white">
+                                        <!-- <?php the_field('price'); ?>₽ -->
+                                        -20%
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <img src="./src/img/catalog/car_2.png" alt="">
+                            <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
+                            <ul>
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Год выпуска</li>
+                                    <li class="pb-6">2019</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Пробег</li>
+                                    <li class="pb-6">68 000 км</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Топливо</li>
+                                    <li class="pb-6">дизель</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Объём двигателя</li>
+                                    <li class="pb-6">2.8 л</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Привод</li>
+                                    <li>4WD</li>
+                            </div> 
+                            </ul>
+                            <p class="text-black py-6">3 895 000 ₽</p>
+                            <div class="flex gap-5 justify-between items-center">
+                                <button class="button__order">Заказать</button>
+                                <button class="button__circle">
+                                    <img src="./src/img/icons/arrow__order.svg" alt="">
+                                </button>
+                            </div>
+                        </div>    
+                        <div class="flex flex-col w-auto">
+                            
+                            <div class="flex flex-col w-auto">
+                                <div class="flex justify-start items-center gap-4 pb-7">
+                                    <p class="text-xs md:text-sm py-2 px-6 bg-yellow rounded-3xl">
+                                        <!-- <?php the_field('price'); ?>₽ -->
+                                        В наличии
+                                    </p>
+                                    <p class="text-xs md:text-sm py-2 px-6 bg-red rounded-3xl text-white">
+                                        <!-- <?php the_field('price'); ?>₽ -->
+                                        -20%
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <img src="./src/img/catalog/car_2.png" alt="">
+                            <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
+                            <ul>
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Год выпуска</li>
+                                    <li class="pb-6">2019</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Пробег</li>
+                                    <li class="pb-6">68 000 км</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Топливо</li>
+                                    <li class="pb-6">дизель</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Объём двигателя</li>
+                                    <li class="pb-6">2.8 л</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Привод</li>
+                                    <li>4WD</li>
+                            </div> 
+                            </ul>
+                            <p class="text-black py-6">3 895 000 ₽</p>
+                            <div class="flex gap-5 justify-between items-center">
+                                <button class="button__order">Заказать</button>
+                                <button class="button__circle">
+                                    <img src="./src/img/icons/arrow__order.svg" alt="">
+                                </button>
+                            </div>
+                        </div>    
+                        <div class="flex flex-col w-auto">
+                            
+                            <div class="flex flex-col w-auto">
+                                <div class="flex justify-start items-center gap-4 pb-7">
+                                    <p class="text-xs md:text-sm py-2 px-6 bg-yellow rounded-3xl">
+                                        <!-- <?php the_field('price'); ?>₽ -->
+                                        В наличии
+                                    </p>
+                                    <p class="text-xs md:text-sm py-2 px-6 bg-red rounded-3xl text-white">
+                                        <!-- <?php the_field('price'); ?>₽ -->
+                                        -20%
+                                    </p>
+                                </div>
+                            </div>
+    
+                            <img src="./src/img/catalog/car_2.png" alt="">
+                            <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
+                            <ul>
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Год выпуска</li>
+                                    <li class="pb-6">2019</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Пробег</li>
+                                    <li class="pb-6">68 000 км</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Топливо</li>
+                                    <li class="pb-6">дизель</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Объём двигателя</li>
+                                    <li class="pb-6">2.8 л</li>
+                            </div> 
+                            <div class="flex justify-between flex-row">
+                                    <li class="text-gray pb-2">Привод</li>
+                                    <li>4WD</li>
+                            </div> 
+                            </ul>
+                            <p class="text-black py-6">3 895 000 ₽</p>
+                            <div class="flex gap-5 justify-between items-center">
+                                <button class="button__order">Заказать</button>
+                                <button class="button__circle">
+                                    <img src="./src/img/icons/arrow__order.svg" alt="">
+                                </button>
+                            </div>
+                        </div>    
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Новости -->
+            <section class="pt-12 md:pt-36 p-5 ">
+                <div class="container h-[40vh] md:h-auto bg-black relative rounded-2xl overflow-hidden">
+                    <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="src/img/news/news.png" alt="">
+                    <img class="block left-0 md:hidden absolute bottom-0" src="src/img/news/news_small.png" alt="">
+                    <div class="p-4 md:p-16 z-100">
+                        <h2 class="text-xl lg:text-5xl font-extrabold relative pb-4 text-white">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
+                        <div class="flex justify-start gap-10">
+                            <img src="src/img/icons/tg__white.svg" alt="">
+                            <img src="src/img/icons/youtube__white.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer class="footer page-section-3 pt-12 md:pt-36">
+            <div class="container">
+                <a href="index.html">
+                    <img class="block sm:hidden md:hidden" src="src/img/logo.svg" alt="">
+                </a>
+                <div class="container flex justify-between md:flex-nowrap flex-wrap text-white pt-10">
+                    <div class="hidden sm:block md:block">
+                        <a href="index.html">
+                            <img src="src/img/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <ul class="text-gray md:text-base text-xs columns-1 sm:columns-1 md:columns-3">
+                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                Каталог
+                            </li>  
+                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                О компании
+                            </li>  
+                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                Отзывы
+                            </li>  
+                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                Контакты
+                            </li>  
+                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                Договор
+                            </li>  
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="text-gray md:text-base text-xs">
+                            <li class="pb-5">
+                                <a class=" font-bold text-black transform hover:scale-105 transition-all" href="tel:+79510288418">
+                                    +7 951 028-84-18 
+                                </a>
+                            </li>
+                            <li class="pb-5">
+                                <a class=" font-bold text-black transform hover:scale-105 transition-all" href="tel:+79510154751">
+                                    +7 951 015-47-51
+                                </a>
+                            </li>
+                            <li class="pb-5">
+                                <a href="mailto:lehachechel10@gmail.com" class=" font-bold text-black transform hover:scale-105 transition-all">lehachechel10@gmail.com</a>
+                            </li>
+    
+                            <li class=" text-black md:text-base text-xs block md:hidden">г. Уссурийск, 
+                                ул. Тургенева, 42</li>
+    
+                          
+                        </ul>
+                    </div>
+    
+                    <div>
+                        <p class="text-black md:text-base text-xs hidden md:block">г. Уссурийск, 
+                            ул. Тургенева, 42</p>
+                    </div>
+    
+                    <div class="flex flex-row sm:flex-col md:flex-row gap-1">
+                        <li class="mr-4 list-none gap-2">
+                            <a href="https://api.whatsapp.com/send/?phone=79510154751">
+                                <img class=" transform hover:scale-105 transition-all" src="src/img/icons/sap.svg" alt="" >
+                            </a>
+                        </li>
+                        <li class="mr-4 list-none gap-2">
+                            <a href="https://t.me/autoprouss">
+                                <img class=" transform hover:scale-105 transition-all" src="src/img/icons/tg.svg" alt="" >
+                            </a>
+                        </li>
+                        <li class="mr-4 list-none gap-2">
+                            <a href="">
+                                <img class=" transform hover:scale-105 transition-all" src="src/img/icons/youtube.svg" alt="" >
+                            </a>
+                        </li>
+                    </div> 
+                </div>
+                
+                <div class="container py-10">
+                    <div class="flex items-center justify-between text-gray pt-10">
+                        <div class="md:text-sm text-xs">
+                            © AutoPROussur. Все права защищены
+                        </div>
+                        <a href="" class="md:text-sm text-xs underline">
+                            Политика конфиденциальности
+                        </a>
+                    </div>    
+                </div> 
+            </div>
+            
+        </footer>
+
+
+        <!-- Подобрать авто -->
+        <section id="popup1" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                            <path d="M4 1.45508L19.9099 17.365" stroke="#333"/>
+                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
+                            </svg>
+                    </button>
+                    <h2 class="text-start text-black z-10  md:text-4xl text-xl pb-7 font-bold">Подобрать автомобиль</h2>
+                    <div class="flex items-start justify-start">
+                        <p class="text-black md:text-base text-sm text-start pb-7">Оставьте контакты и наш менеджер свяжется с вами в течение 15 минут и поможет подобрать автомобиль</p>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <input class="form__input" placeholder="Введите имя" />
+                        <input class="form__input" placeholder="Введите номер" />
+                        
+                        <button class="form__button">
+                            Подобрать автомобиль
+                        </button>
+
+                        <p class="text-gray text-sm text-start pt-7">
+                            Нажимая кнопку «Подобрать автомобиль» вы даёте <br> согласие на обработку персональных данных
+                        </p>
+
+                        <p class="text-red text-start font-bold pt-7">Если не хотите ждать напишите на <a href="https://" class="underline">WhatsApp<a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Получить бесплатный расчет -->
+        <section id="popup2" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                            <path d="M4 1.45508L19.9099 17.365" stroke="#333"/>
+                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
+                            </svg>
+                    </button>
+                    <h2 class="text-start text-black z-10  md:text-4xl text-xl pb-7 font-bold">Получите бесплатный расчет</h2>
+                    <div class="flex items-start justify-start">
+                        <p class="text-black md:text-base text-sm text-start pb-7">Оставьте контакты и наш менеджер свяжется с вами в течение 15 минут и рассчитает конечную стоимость автомобиля</p>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <input class="form__input" placeholder="Введите имя" />
+                        <input class="form__input" placeholder="Введите номер" />
+                        
+                        <button class="form__button">
+                            Рассчитать стоимость
+                        </button>
+
+                        <p class="text-gray text-sm text-start pt-7">
+                            Нажимая кнопку «Рассчитать стоимость» вы даёте <br> согласие на обработку персональных данных
+                        </p>
+
+                        <p class="text-red text-start font-bold pt-7">Если не хотите ждать напишите на <a href="https://" class="underline">WhatsApp<a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Заявка на обратный звонок -->
+        <section id="popup3" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                            <path d="M4 1.45508L19.9099 17.365" stroke="#333"/>
+                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
+                            </svg>
+                    </button>
+                    <h2 class="text-start text-black z-10  md:text-4xl text-xl pb-7 font-bold">Закажите обратный звонок</h2>
+                    <div class="flex items-start justify-start">
+                        <p class="text-black md:text-base text-sm text-start pb-7">Оставьте контакты и наш менеджер свяжется с вами</p>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <input class="form__input" placeholder="Введите имя" />
+                        <input class="form__input" placeholder="Введите номер" />
+                        
+                        <button class="form__button">
+                            Заказать звонок
+                        </button>
+
+                        <p class="text-gray text-sm text-start pt-7">
+                            Нажимая кнопку «Заказать звонок» вы даёте согласие <br> на обработку персональных данных
+                        </p>
+
+                        <p class="text-red text-start font-bold pt-7">Если не хотите ждать напишите на <a href="https://" class="underline">WhatsApp<a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Заявка на купить авто -->
+        <section id="popup4" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                            <path d="M4 1.45508L19.9099 17.365" stroke="#333"/>
+                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
+                            </svg>
+                    </button>
+                    <h2 class="text-start text-black z-10  md:text-4xl text-xl pb-7 font-bold">Хотите купить автомобиль?</h2>
+                    <div class="flex items-start justify-start">
+                        <p class="text-black md:text-base text-sm text-start pb-7">Оставьте контакты и наш менеджер свяжется с вами 
+                            в течение 15 минут и проконсультирует по всем вопросам</p>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <input class="form__input" placeholder="Введите имя" />
+                        <input class="form__input" placeholder="Введите номер" />
+                        
+                        <button class="form__button">
+                            Купить автомобиль
+                        </button>
+
+                        <p class="text-gray text-sm text-start pt-7">
+                            Нажимая кнопку «Заказать звонок» вы даёте согласие <br> на обработку персональных данных
+                        </p>
+
+                        <p class="text-red text-start font-bold pt-7">Если не хотите ждать напишите на <a href="https://" class="underline">WhatsApp<a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Акция -->
+    <section id="popup5" class="popup">
+            <div class="popup__body">
+                <div class="popup__content__today">
+                    <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                            <path d="M4 1.45508L19.9099 17.365" stroke="#333"/>
+                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
+                        </svg>
+                    </button>
+                    <div class="grid grid-cols-1 md:grid-cols-2">
+                        <div>
+                            <h2 class="text-start text-black z-10  md:text-4xl text-xl pb-7 font-bold">
+                                Успей забрать сегодня!
+                            </h2>
+                            <!-- PHP -->
+    
+                            <p class="text-black md:text-base text-sm text-start pb-7">Toyota Land Cruiser Prado cо скидкой 20%</p>
+                            
+                        
+                        </div>
+
+    
+                        <div>
+                            <img src="src/img/catalog/car_2.png" alt="" >
+                        </div>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button w-full flex justify-center py-4">
+                            Смотреть
+                        </a>
+                       
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        
+    <div class="scroll-top">
+        <img src="./src/img/icons/arrow.svg" alt="стрелка вверх">
+    </div>
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/wow.js"></script>
+    <script src="/js/baguettebox.js"></script>
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>

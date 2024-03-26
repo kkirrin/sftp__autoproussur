@@ -1,0 +1,121 @@
+.popup {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 16, 27, .9);
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: opacity 0.3s ease;
+    z-index: -2;
+}
+
+.popup.open {
+    opacity: 1;
+    visibility: visible;
+    z-index: 70;
+}
+
+.popup__body {
+    width: 100%;
+    min-height: 100%;
+    padding: 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup__content {
+    position: relative;
+    box-sizing: border-box;
+    max-width: 550px;
+    min-height: 430px;
+    padding: 40px;
+    /* background: rgba(41, 41, 41, 0.80); */
+    text-align: center;
+    /* background: rgba(41, 41, 41, 0.80); */
+    background: white;
+    border-radius: 20px;
+}
+.popup__content__today {
+    max-width: auto;
+    min-height: auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+}
+
+
+.popup__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.popup__btn {
+    margin-top: -10px;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: -30px;
+    right: -10px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    background-color: white;
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .popup__title {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+}
+
+.form__input {
+    border-radius: 6px;
+    background: rgb(244, 244, 244); 
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 14px 20px;
+}
+
+.form__textarea {
+    border-radius: 6px;
+    background: rgb(244, 244, 244);
+    width: 100%;
+    min-height: 140px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.form__file {
+    box-sizing: border-box;
+    border: 1px dashed rgb(136, 136, 136);
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+.form__button {
+    border-radius: 40px;
+    /* red */
+    background: rgb(183, 9, 10);
+    padding: 14px 20px;
+    color: white;
+    width: 100%;
+}

@@ -1,0 +1,275 @@
+/* Импорт шрифтов */
+
+
+/* Импорт кастомных стилей для компонентов */
+@import './block/button.css';
+@import './block/menu-button.css';
+@import './block/menu.css';
+@import './block/scrool-top.css';
+@import './block/popup.css';
+@import './block/animateSocialsBtn.css';
+@import './block/filter.css';
+@import './block/checkbox.css';
+@import './block/tabs.css';
+@import './block/item.css';
+@import './block/404.css';
+
+/* Импорт TailWind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Переменные цвета */
+:root {
+	--red: #b7090a;
+	--black: #202020;
+	--gray: #888;
+	--white: #fff;
+	--yellow: #ffcf55;
+}
+
+/* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../fonts/FuturaPT-Bold.ttf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FuturaBold';
+    src: url('../fonts/FuturaPT-Book.ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+/* 
+@font-face {
+    font-family: 'Mont';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+} */
+
+@font-face {
+    font-family: 'MullerR';
+    src: url('../src/fonts/MullerRegular.ttf');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Muller';
+    src: url('../src/fonts/MullerMedium.ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Muller';
+    src: url('../src/fonts/MullerBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Muller';
+    src: url('../src/fonts/MullerExtraBold.ttf');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Muller', sans-serif;
+        color: #262626;
+        background: linear-gradient(166deg, #FFF 5.27%, rgba(255, 255, 255, 0.00) 78.75%);
+        font-weight: 400;
+    }
+
+    h2, h3 {
+        font-family: 'Muller';
+        line-height: 85px;
+    }
+
+    span.counter-items,
+    span.counter-client,
+    span.counter-years {
+        font-family: 'Muller';
+    }
+}
+
+@layer components {
+    .container {
+        @apply max-w-[1440px]
+    }
+}
+
+/* Директивы классов */
+
+@media(max-width:769px) {
+    h2 {
+        line-height: 100%;
+    }
+}
+
+
+@media(max-width:480px) {
+    h2 {
+        line-height: 100%;
+    }
+}
+
+
+/* Прочие классы */
+
+.lock {
+    overflow: hidden;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.important {
+    background-image: url('../src/img/pattern-3.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+@media (max-width: 767px) {
+    .important {
+        background-image: none;
+    }
+}
+
+@media (max-width: 1023px) {
+    .hero-bg img {
+        display: none;
+    }
+}
+
+.header-fix {
+    background: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 3px 6px rgba(235, 235, 235, 0.16), 0 3px 6px rgba(0, 0, 0, .23) !important;
+    padding-bottom: 10px;
+}
+
+.title {
+    line-height: 85px !important;
+}
+
+
+
+.arrows__slider {
+    position: absolute;
+    top: 55%;
+    left: 0px;
+    right: 0px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  
+  @media(max-width:1025px) {
+    .arrows__slider {
+      display: none;
+    }
+  }
+
+
+
+iframe {
+    border-radius: 40px;
+    /* width: inherit; */
+}
+
+.contact__map iframe {
+     width: inherit !important;
+}
+
+@media(max-width:1300px) {
+    iframe {
+        width: 700px;
+    }
+}
+
+
+@media(max-width:769px) {
+    iframe {
+        width: 700px;
+    }
+}
+
+@media(max-width:728px) {
+    iframe {
+        width: 500px;
+    }
+}
+
+@media(max-width:480px) {
+    iframe {
+        width: 396px;
+    }
+}
+
+@media(max-width:426px) {
+    iframe {
+        width: 389px;
+    }
+}
+
+@media(max-width:385px) {
+    iframe {
+        width: 300px;
+    }
+}
+
+@media(max-width:375px) {
+    iframe {
+        width: 340px;
+    }
+}
+
+@media(max-width:320px) {
+    iframe {
+        width: 280px;
+    }
+}
+
+.lock-padding {
+    padding: 0;
+}
+
+
+@media(max-width: 480px) {
+    .counter-list li {
+        width: -webkit-fill-available;
+        text-align: center;
+    }
+}
+
+@media(max-width:769px) {
+    .how__we__work div {
+        height: -webkit-fill-available;
+    }
+}
