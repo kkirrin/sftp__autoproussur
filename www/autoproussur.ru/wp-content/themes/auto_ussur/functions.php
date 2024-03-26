@@ -14,8 +14,6 @@ show_admin_bar(false);
 function theme_add_scripts()
 {
 
-    // Подключаем главный файл стилей
-    wp_enqueue_style('main', get_template_directory_uri() . 'style.css');
 
     // Подключаем файл baguetteBox.min.css
     wp_enqueue_style('baguetteBox', get_template_directory_uri() . '/css/baguetteBox.min.css');
@@ -23,6 +21,11 @@ function theme_add_scripts()
     // Подключаем файл animate.css
     wp_enqueue_style('animate', get_template_directory_uri() . '/css/animate.css');
 
+    // Подключаем файл main.css
+    wp_enqueue_style('main', get_template_directory_uri() . '/css/main.css');
+    
+    // Подключаем файл main.css
+    wp_enqueue_style('main', get_template_directory_uri() . '/style.css');
 
     // Подключаем js файл swiper-bundle.min.js
     wp_enqueue_script('swiper', get_template_directory_uri() . '/js/swiper-bundle.min.js', array(), null, true);
@@ -36,8 +39,6 @@ function theme_add_scripts()
     // Подключаем основной main.js файл
     wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), null, true);
     
-    // Подключаем japan файл
-    wp_enqueue_script('japan', get_template_directory_uri() . '/js/japan.js', array(), null, true);
 
 
 
