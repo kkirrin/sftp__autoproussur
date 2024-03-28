@@ -34,194 +34,75 @@
     <section class="pt-12 md:pt-20">
         <div class="container relative">
             <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
-                <div class="flex flex-col w-auto">
-                    
-                    <div class="flex flex-col w-auto">
-                        <div class="flex justify-start items-center gap-4 pb-7">
-                            <p class="text-xs md:text-sm py-2 px-6 bg-yellow rounded-3xl">
-                                <!-- <?php the_field('price'); ?>₽ -->
-                                В наличии
-                            </p>
-                            <p class="text-xs md:text-sm py-2 px-6 bg-red rounded-3xl text-white">
-                                <!-- <?php the_field('price'); ?>₽ -->
-                                -20%
-                            </p>
-                        </div>
-                    </div>
+            <?php
+                    $my_posts = get_posts(array(
+                        'numberposts' => 25,
+                        'category_name' => 'promotion',
+                        'order' => 'title',
+                        'orderby' => 'rand',
+                        'post_type' => 'post',
+                        'suppress_filters' => true
+                    ));
 
-                    <img src="./src/img/catalog/car_2.png" alt="">
-                    <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
-                    <ul>
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Год выпуска</li>
-                            <li class="pb-6">2019</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Пробег</li>
-                            <li class="pb-6">68 000 км</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Топливо</li>
-                            <li class="pb-6">дизель</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Объём двигателя</li>
-                            <li class="pb-6">2.8 л</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Привод</li>
-                            <li>4WD</li>
-                    </div> 
-                    </ul>
-                    <p class="text-black py-6">3 895 000 ₽</p>
-                    <div class="flex gap-5 justify-between items-center">
-                        <button class="button__order">Заказать</button>
-                        <button class="button__circle">
-                            <img src="./src/img/icons/arrow__order.svg" alt="">
-                        </button>
-                    </div>
-                </div>    
-                <div class="flex flex-col w-auto">
-                    
-                    <div class="flex flex-col w-auto">
-                        <div class="flex justify-start items-center gap-4 pb-7">
-                            <p class="text-xs md:text-sm py-2 px-6 bg-yellow rounded-3xl">
-                                <!-- <?php the_field('price'); ?>₽ -->
-                                В наличии
-                            </p>
-                            <p class="text-xs md:text-sm py-2 px-6 bg-red rounded-3xl text-white">
-                                <!-- <?php the_field('price'); ?>₽ -->
-                                -20%
-                            </p>
-                        </div>
-                    </div>
+                    foreach ($my_posts as $post) : 
+                        setup_postdata($post);
+                        $photos = get_field('photo_slide', $post->ID);
+                        $firstPhoto = reset($photos);
+                    ?>
+                        <div class="swiper-slide flex flex-col w-[310px]">
+                        <img class="rounded-3xl pb-5" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
+                                <p class="font-bold text-black text-base md:text-xl pb-6">
+                                <?php echo get_field('marka_name', $post->ID); ?>
+                                <?php echo get_field('model_name', $post->ID); ?>
 
-                    <img src="./src/img/catalog/car_2.png" alt="">
-                    <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
-                    <ul>
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Год выпуска</li>
-                            <li class="pb-6">2019</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Пробег</li>
-                            <li class="pb-6">68 000 км</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Топливо</li>
-                            <li class="pb-6">дизель</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Объём двигателя</li>
-                            <li class="pb-6">2.8 л</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Привод</li>
-                            <li>4WD</li>
-                    </div> 
-                    </ul>
-                    <p class="text-black py-6">3 895 000 ₽</p>
-                    <div class="flex gap-5 justify-between items-center">
-                        <button class="button__order">Заказать</button>
-                        <button class="button__circle">
-                            <img src="./src/img/icons/arrow__order.svg" alt="">
-                        </button>
-                    </div>
-                </div>    
-                <div class="flex flex-col w-auto">
-                    
-                    <div class="flex flex-col w-auto">
-                        <div class="flex justify-start items-center gap-4 pb-7">
-                            <p class="text-xs md:text-sm py-2 px-6 bg-yellow rounded-3xl">
-                                <!-- <?php the_field('price'); ?>₽ -->
-                                В наличии
-                            </p>
-                            <p class="text-xs md:text-sm py-2 px-6 bg-red rounded-3xl text-white">
-                                <!-- <?php the_field('price'); ?>₽ -->
-                                -20%
-                            </p>
-                        </div>
-                    </div>
+                                <ul>
+                                    <div class="flex justify-between flex-row">
+                                            <li class="text-gray pb-2">Год выпуска</li>
+                                            <li class="pb-6">
+                                            <?= get_field('year') ? get_field('year') : '-'; ?>
+                                            </li>
+                                    </div> 
+                                    <div class="flex justify-between flex-row">
+                                            <li class="text-gray pb-2">Пробег</li>
+                                            <li class="pb-6">
+                                                <?php echo get_field('milleage') ? get_field('milleage') : '-'  ?>
+                                            </li>
+                                    </div> 
+                                    <div class="flex justify-between flex-row">
+                                            <li class="text-gray pb-2">Топливо</li>
+                                            <li class="pb-6">
+                                            <?php echo get_field('fuel') ? get_field('fuel') : '-'; ?>
+                                            </li>
+                                    </div> 
+                                    <div class="flex justify-between flex-row">
+                                            <li class="text-gray pb-2">Объём двигателя</li>
+                                            <li class="pb-6">
+                                                <?php echo get_field('volume') ? get_field('volume') : '-'; ?>
+                                            </li>
+                                    </div> 
+                                    <div class="flex justify-between flex-row">
+                                            <li class="text-gray pb-2">Привод</li>
+                                            <li>
+                                                <?php echo get_field('drive') ? get_field('drive') : '-'; ?>
+                                            </li>
+                                    </div> 
+                                </ul>
 
-                    <img src="./src/img/catalog/car_2.png" alt="">
-                    <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
-                    <ul>
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Год выпуска</li>
-                            <li class="pb-6">2019</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Пробег</li>
-                            <li class="pb-6">68 000 км</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Топливо</li>
-                            <li class="pb-6">дизель</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Объём двигателя</li>
-                            <li class="pb-6">2.8 л</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Привод</li>
-                            <li>4WD</li>
-                    </div> 
-                    </ul>
-                    <p class="text-black py-6">3 895 000 ₽</p>
-                    <div class="flex gap-5 justify-between items-center">
-                        <button class="button__order">Заказать</button>
-                        <button class="button__circle">
-                            <img src="./src/img/icons/arrow__order.svg" alt="">
-                        </button>
-                    </div>
-                </div>    
-                <div class="flex flex-col w-auto">
-                    
-                    <div class="flex flex-col w-auto">
-                        <div class="flex justify-start items-center gap-4 pb-7">
-                            <p class="text-xs md:text-sm py-2 px-6 bg-yellow rounded-3xl">
-                                <!-- <?php the_field('price'); ?>₽ -->
-                                В наличии
-                            </p>
-                            <p class="text-xs md:text-sm py-2 px-6 bg-red rounded-3xl text-white">
-                                <!-- <?php the_field('price'); ?>₽ -->
-                                -20%
-                            </p>
-                        </div>
-                    </div>
+                                <p class="text-black py-6"> 
+                                    <?php echo get_field('price', $post->ID); ?> ₽
+                                </p>
 
-                    <img src="./src/img/catalog/car_2.png" alt="">
-                    <p class="font-bold text-black text-base md:text-xl pb-6">Toyota Land Cruiser Prado</p>
-                    <ul>
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Год выпуска</li>
-                            <li class="pb-6">2019</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Пробег</li>
-                            <li class="pb-6">68 000 км</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Топливо</li>
-                            <li class="pb-6">дизель</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Объём двигателя</li>
-                            <li class="pb-6">2.8 л</li>
-                    </div> 
-                    <div class="flex justify-between flex-row">
-                            <li class="text-gray pb-2">Привод</li>
-                            <li>4WD</li>
-                    </div> 
-                    </ul>
-                    <p class="text-black py-6">3 895 000 ₽</p>
-                    <div class="flex gap-5 justify-between items-center">
-                        <button class="button__order">Заказать</button>
-                        <button class="button__circle">
-                            <img src="./src/img/icons/arrow__order.svg" alt="">
-                        </button>
-                    </div>
-                </div>    
+
+                                <div class="flex gap-5 justify-between items-center">
+                                    <a href="#popup5" class="button__order popup-link">Заказать</a>
+                                    <a href="<?php echo the_permalink(); ?>" class="button__circle">
+                                        <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
+                                    </a>
+                                </div>
+                        </div>
+
+                    <?php endforeach; ?>
+                    <?php wp_reset_postdata(); ?>
 
             </div>
         </div>

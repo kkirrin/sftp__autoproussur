@@ -14,10 +14,11 @@
 
 </head>
 
-<body class="wrapper">
+
+<body class="wrapper hidden">
     
     <div class="">
-        <header class="z-10 w-full md-28 transition-colors header py-5 fixed">
+        <header style="z-index: 11;" class=" w-full md-28 transition-colors header py-5 fixed">
             <div class="container">
         
                 <div class="flex items-center justify-between">

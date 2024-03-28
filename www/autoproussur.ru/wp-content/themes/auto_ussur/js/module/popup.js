@@ -6,6 +6,23 @@ export const initPopup = () => {
 
     const timeout = 800;
 
+    const promo = document.querySelector('.popup_promo');
+    setTimeout(function() {
+        if (promo) {
+            promo.classList.add('open');
+        }
+    }, 10000);
+
+    const popup6__btn = document.querySelector('#popup6__btn');
+    console.log(popup6__btn);
+
+    popup6__btn.addEventListener('click', function(e) {
+        if (promo) {
+            promo.classList.remove('open');
+        }
+    });
+
+
     if (popupLinks.length > 0) {
         for (let index = 0; index < popupLinks.length; index++) {
             
@@ -129,6 +146,14 @@ export const initPopup = () => {
                 Element.prototype.msMatchesSelector;
         }
     })();
+
+
+    // Promo
     
+    // Появляется через 10 секунд
+
+  
+       
+
 };
 

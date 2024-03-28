@@ -99,7 +99,7 @@
             
         </footer>
 
-        <!-- <?php wp_footer(); ?> -->
+        <?php wp_footer(); ?>
 
 
         <!-- Подобрать авто -->
@@ -246,30 +246,65 @@
                             <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
                         </svg>
                     </button>
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div>
-                            <h2 class="text-start text-black z-10  md:text-4xl text-xl pb-7 font-bold">
-                                Успей забрать сегодня!
-                            </h2>
-                            <!-- PHP -->
-    
-                            <p class="text-black md:text-base text-sm text-start pb-7">Toyota Land Cruiser Prado cо скидкой 20%</p>
-                            
-                        
+
+                    <?php
+                        $my_posts = get_posts(array(
+                            'numberposts' => 1,
+                            'category_name' => 'promotion',
+                            'orderby' => 'rand',
+                            'post_type' => 'post',
+                            'suppress_filters' => true
+                        ));
+
+                        foreach ($my_posts as $post) :
+                            setup_postdata($post);
+                            $photos = get_field('photo_slide', $post->ID);
+                            $firstPhoto = reset($photos);
+                        ?>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2" style="gap: 30px;">
+                            <div>
+                                <h2 class="text-start text-black z-10 md:text-4xl text-xl pb-7 font-bold">
+                                    Успей забрать сегодня!
+                                </h2>
+                                
+                                <p class="text-black md:text-base text-sm text-start pb-7">
+                                    <?php echo get_field('marka_name', $post->ID); ?>
+                                    <?php echo get_field('model_name', $post->ID); ?>
+                                </p>
+                            </div>
+
+                            <div>
+                                <img width="300px" style="border-radius: 20px;" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>" alt="">
+                            </div>
                         </div>
 
-    
-                        <div>
-                            <img src="src/img/catalog/car_2.png" alt="" >
+                        <div style="margin-top: 20px;">
+                            <a  href="<?php the_permalink(); ?>" class="button w-full flex justify-center py-4">
+                                Смотреть
+                            </a>
                         </div>
-                    </div>
 
-                    <div>
-                        <a href="/today__car.html" class="button w-full flex justify-center py-4">
-                            Смотреть
-                        </a>
-                       
-                    </div>
+                        <?php endforeach; ?>
+                        <?php wp_reset_postdata(); ?>
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Акция -->
+        <section id="popup6" class="popup">
+            <div class="popup__body">
+                <div class="">
+                    <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                            <path d="M4 1.45508L19.9099 17.365" stroke="#333"/>
+                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
+                        </svg>
+                    </button>
+                    
+                    <?php echo do_shortcode('[testimonial_view id="2"]'); ?>
                     
                 </div>
             </div>

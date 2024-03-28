@@ -46,6 +46,20 @@ Template Name: about
 
                     </div>
                 </div>
+
+                <!-- Акция -->
+                <div class="popup__today fixed right-0 top-2/3" style="z-index: 1000;">
+                    <section id="popup_promo" class="popup_promo" style="display: flex; justify-content: end;">
+                        <div class="">
+                            <div class="bg-black rounded-3xl p-10 relative w-[400px]">
+                                <img class="absolute -right-5 top-0 pb-5" src="<?php echo get_template_directory_uri(). '/src/img/icons/percent.png'; ?>" alt="" >
+                                <h3 class="text-white text-2xl font-bold pb-5">Успей забрать сегодня !</h3>
+                                <p class="font-medium text-white text-base pb-5">Toyota Land Cruiser Prado <span class="font-extrabold"> cо скидкой 20%</span></p>
+                                <a class="button popup-link flex py-4" href="#popup5" id="popup6__btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </section>
 
             <section class="pt-12 md:pt-32">

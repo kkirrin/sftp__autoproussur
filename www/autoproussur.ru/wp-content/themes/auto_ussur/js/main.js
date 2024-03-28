@@ -12,10 +12,24 @@ import { initAccordion } from "./module/tabs.js";
 import { initCardItemSlider } from "./module/sliders.js";
 import { init404 } from "./module/404.js";
 import { initStickyHeader } from "./module/sticky-header.js";
+import { initLoader } from './module/loader.js';
+
+    initLoader()
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
 
+    const spans = document.querySelectorAll('.wpc-dropdown-default');
+
+    spans.forEach(span => {
+        if (span) {
+            if (span.textContent.includes('Select')) {
+                span.textContent = span.textContent.replace('Select', '');
+            }
+        }
+    });
+
+    
     initMobileMenu();
     initScrollToTop();
     initScroll();
@@ -30,6 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
     init404();
     initCardItemSlider();
     initStickyHeader();
+
     baguetteBox.run('.gallery-wrapper');
 
     // const wow = new WOW(

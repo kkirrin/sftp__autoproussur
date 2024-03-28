@@ -41,6 +41,7 @@ function theme_add_scripts()
     wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), null, true);
     
 
+    // wp_enqueue_script( 'jquery' , 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js' );
 
 
     function my_scripts() {
@@ -53,6 +54,13 @@ function theme_add_scripts()
    
     
 }
+
+    // Добавляем поддержку шорткодов в текстовых виджетах
+    add_filter('widget_text', 'do_shortcode');
+
+    // Добавляем поддержку шорткодов в тексте записей и страниц
+    add_filter('the_content', 'do_shortcode');
+    add_filter('widget_text_content', 'do_shortcode');
 
     add_filter( 'redirect_canonical', 'my_redirect_canonical_filter', 10, 2 );
 
@@ -73,26 +81,57 @@ function theme_add_scripts()
     }
 
 
-    // Делает редирект disable
-    function page_disable_redirect_canonical($redirect_url) {
-        if(is_page())
-            $redirect_url = false;
 
-        return $redirect_url;
-    }
-
-    remove_action('template_redirect', 'redirect_canonical');
-
-
-
-    add_theme_support('post-thumbnails');
-    add_theme_support('title-tag');
-    add_theme_support('custom-logo');    
 
     function add_menu() {
         // register_nav_menu('top-left', 'левое меню шапки');
         // register_nav_menu('top-right', 'правое меню шапки');
         // register_nav_menu('menu-catalog', 'меню-каталога');
     }
+
+
+    add_filter( 'wpc_theme_dependencies', 'my_theme_dependencies' );
+function my_theme_dependencies( $theme_dependencies ){
+
+    /* my_theme_folder_name - name of the directory of your current WordPress
+    theme. All letters should be lowercase even if the theme directory
+    has uppercase letters. If you use child theme, you should specify
+    parent theme name */
+
+    $theme_dependencies['my_theme_folder_name'] = array(
+        // HTML selector of the container included posts. E.g. '#primary' or
+        // '.main-wrapper .posts'
+        'posts_container'   => '#primary',
+        // Primary color of your theme. E.g. '#ff0000'
+        'primary_color'     => '#cc0000',
+        // Array with names of the do_action() hooks of your theme, where you want
+        // to display button, that opens Filters widget E.g. 'before_main_content'
+        'button_hook'       => array('generate_before_main_content'),
+        // Array with names of the do_action() hooks of your theme, where you want
+        // to display chips. E.g. 'before_posts_list' 
+        // Don't forget to add Chips list on the 404 page.
+        'chips_hook'        => array(
+                                    'generate_before_posts_list', 
+                                    'generate_no_posts_found'
+                               )
+    );
+
+    return $theme_dependencies;
+}
+
+/**
+ * Let's capitalize all terms for Product type 
+ * and Product visibility
+ */
+add_filter('wpc_filter_taxonomy_term_name', 'wpc_modify_taxonomy_term_name', 10, 2 );
+function wpc_modify_taxonomy_term_name($term_name, $e_name)
+{
+    if (in_array($e_name, array('product_type', 'product_visibility'))) {
+        $term_name = ucfirst($term_name);
+    }
+    return $term_name;
+}
+
+/* Post meta term name */
 
 ?>
