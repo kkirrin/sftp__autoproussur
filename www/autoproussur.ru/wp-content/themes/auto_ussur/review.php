@@ -43,65 +43,111 @@
                         
                     </div>
                     
-                    <div class="grid grid-cols-1 md:grid-cols-3">
-                        <div class="rounded-2xl transform hover:scale-105 transition-all w-full">
-                            <video poster="<?php echo get_template_directory_uri() . '/src/img/review/review_3.png'; ?>"></video>
-                        </div>
 
-                        <div class="p-5 w-full md:w-auto">
-                            <div class="flex flex-col shadow-md bg-white p-7 rounded-2xl transform hover:scale-105 transition-all">
-                                <div class="flex flex-row justify-between pb-7">
-                                    <div class="flex gap-5">
-                                    <p>Аватар</p>
-                                        <p>Дмитрий</p>
-                                    </div>
-    
-                                    <div class="flex gap-2">
-                                        <p>5.0</p>
-                                        <p><img src="<?php echo get_template_directory_uri() . '/src/img/icons/star.svg'; ?>" alt=""></p>
-                                    </div>
-                                </div>
-    
-                                <div class="text-base pb-7 textFull">
-                                    Благодарю компанию AutoPROussur, в помощи приобретения автомобиля Toyota Raсtis из Японии. В особенности менеджеру Алексею, за отличное сотрудничество и понимание. Автомобиль был доставлен в срок, в состоянии соответствуещему фото без нареканий. Забирал машину сам, эмоции переполняли т.к оказалось лучше чем ожидал. Заказывайте автомобили через эту компанию, все честно, грамотно, и без всякого обмана!
-                                </div>
-    
-                                <div class="flex gap-7 pb-7">
-                                    <img class="rounded-2xl" src="<?php echo get_template_directory_uri() . '/src/img/review/review_2.png'; ?>">
-                                    <img class="rounded-2xl" src="<?php echo get_template_directory_uri() . '/src/img/review/review_2.png'; ?>">
-                                </div>
-    
-                                <div class="text-gray">
-                                    26.02.2024  
-                                </div>
+
+                    <div class="tabs-container">
+                        <button class="_tabs-item md:text-lg text-xs" data-tab="#review">Отзывы</button>
+                        <button class="_tabs-item md:text-lg text-xs" data-tab="#video">Видео - отзывы</button>
+                
+                        <!-- Первый таб со слайдерами -->
+                        <div id="video" class="_tabs-block"> 
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                                <?php
+                                    $my_posts = get_posts(array(
+                                        'numberposts' => 25,
+                                        'category_name' => 'file__reviews',
+                                        'order' => 'title',
+                                        'orderby' => 'rand',
+                                        'post_type' => 'post',
+                                        'suppress_filters' => true
+                                    ));
+
+                                    foreach ($my_posts as $post) :
+                                        setup_postdata($post);
+                                        $img = get_field('file__img');
+                                        $video = get_field('file__video');
+                                        $poster = get_field('file__poster');
+
+                                        if ($poster && $video) {
+                                    ?>
+                                            <div class="rounded-2xl transform hover:scale-105 transition-all w-full">  
+                                                <video class="" controls poster="<?php echo $poster; ?>" alt="отзыв">
+                                                    <source src="<?php echo $video; ?>" type="video/mp4"> 
+                                                    <source src="<?php echo $video; ?>" type="video/webm"> 
+                                                </video>
+                                            </div>
+                                    <?php
+                                        } else {
+                                    ?>
+                                            <img class="rounded-3xl pb-5" src="<?php echo $img; ?>" alt="">
+                                    <?php
+                                        }
+                                    endforeach;
+                                    wp_reset_postdata(); 
+                                ?>
                             </div>
                         </div>
 
-                        <?php echo do_shortcode('[testimonial_view id="2"]'); ?>
+                        <div id="review" class="_tabs-block _active"> 
+                           
 
-                        <?php echo do_shortcode('[testimonial_view id="1"]'); ?>
-            
-                        <div class="rounded-2xl transform hover:scale-105 transition-all w-full">
-                            <video poster="<?php echo get_template_directory_uri() . '/src/img/review/review_3.png'; ?>"></video>
+                           <?php
+                                $file_path = 'reviews-functions.php';
+                                 require_once $file_path;
+
+                                 echo show_reviews();
+
+                           ?>
+                            
+                           <div class="review__page">
+                               <?php echo do_shortcode('[testimonial_view id="2"]'); ?>
+                           </div>
+
+
                         </div>
-                    </div>
-                  
+                    </div>      
                 </div>
 
-                <!-- Акция -->
+                 <!-- Акция -->
                 <div class="popup__today fixed right-0 top-2/3" style="z-index: 1000;">
-                    <section id="popup_promo" class="popup_promo" style="display: flex; justify-content: end;">
+                    <div id="popup_promo" class="popup_promo" style="display: flex; justify-content: end;">
                         <div class="">
                             <div class="bg-black rounded-3xl p-10 relative w-[400px]">
-                                <img class="absolute -right-5 top-0 pb-5" src="<?php echo get_template_directory_uri(). '/src/img/icons/percent.png'; ?>" alt="" >
-                                <h3 class="text-white text-2xl font-bold pb-5">Успей забрать сегодня !</h3>
-                                <p class="font-medium text-white text-base pb-5">Toyota Land Cruiser Prado <span class="font-extrabold"> cо скидкой 20%</span></p>
+                            <?php
+                                $my_posts = get_posts(array(
+                                    'numberposts' => 25,
+                                    'category_name' => 'promotion',
+                                    'order' => 'title',
+                                    'orderby' => 'rand',
+                                    'post_type' => 'post',
+                                    'suppress_filters' => true
+                                ));
+
+                                foreach ($my_posts as $post) :
+                                    setup_postdata($post);
+                                    $photos = get_field('photo_slide', $post->ID);
+                                    $firstPhoto = reset($photos);
+                                ?>
+                                    <img  class="absolute -right-5 top-0 pb-5" src="<?php echo get_template_directory_uri() . '/src/img/icons/percent.png'; ?>" alt="">
+                                    <h3 class="text-white text-2xl font-bold pb-5">Успей забрать сегодня!</h3>
+                                    
+                                    <p class="font-medium text-white text-base pb-5">
+                                        <?php echo get_field('marka_name', $post->ID); ?>
+                                        <?php echo get_field('model_name', $post->ID); ?>
+                                    </p>
+
+                            <?php endforeach; ?>
+                            <?php wp_reset_postdata(); ?>
+                            
                                 <a class="button popup-link flex py-4" href="#popup5" id="popup6__btn">Подробнее</a>
                             </div>
                         </div>
-                    </section>
+                                </div>
                 </div>
             </section>
+
+
+            
             
         </main>
 

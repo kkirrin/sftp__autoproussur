@@ -280,7 +280,7 @@
                         </div>
 
                         <div style="margin-top: 20px;">
-                            <a  href="<?php the_permalink(); ?>" class="button w-full flex justify-center py-4">
+                            <a  href="/promotion__auto" class="button w-full flex justify-center py-4">
                                 Смотреть
                             </a>
                         </div>
@@ -294,15 +294,16 @@
 
 
         <!-- Акция -->
-        <section id="popup6" class="popup">
+        <section id="popup6" class="popup popup__test">
             <div class="popup__body">
-                <div class="">
+                <div class="popup__content">
                     <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
                             <path d="M4 1.45508L19.9099 17.365" stroke="#333"/>
                             <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
                         </svg>
                     </button>
+                    <h2 class="text-start text-4xl lg:text-5xl font-extrabold relative pb-5"> Оставьте отзыв</h2>
                     
                     <?php echo do_shortcode('[testimonial_view id="2"]'); ?>
                     

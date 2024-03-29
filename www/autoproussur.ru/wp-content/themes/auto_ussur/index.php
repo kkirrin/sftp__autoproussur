@@ -163,15 +163,15 @@ Template Name: auto_ussur
             <div class="filter-item w-0 min-w-[100%] overflow-hidden pt-12 md:pt-10">
                 <div class="swiper-wrapper">                  
                 <?php
-                    $my_posts = get_posts(array(
-                        'numberposts' => 25,
-                        'category_name' => '',
-                        'order' => 'title',
-                        'orderby' => 'rand',
-                        'post_type' => 'post',
-                        'suppress_filters' => true
-                    ));
-
+                   $categories_ids = array(3, 4, 5, 6, 7, 1);
+                   $my_posts = get_posts(array(
+                       'numberposts' => -1,
+                       'category__in' => $categories_ids, 
+                       'order' => 'title',
+                       'orderby' => 'rand',
+                       'post_type' => 'post',
+                       'suppress_filters' => true
+                   ));
                     foreach ($my_posts as $post) : 
                         setup_postdata($post);
                         $photos = get_field('photo_slide', $post->ID);

@@ -13,8 +13,18 @@ import { initCardItemSlider } from "./module/sliders.js";
 import { init404 } from "./module/404.js";
 import { initStickyHeader } from "./module/sticky-header.js";
 import { initLoader } from './module/loader.js';
+import { initTabsReview } from "./module/tabsReview.js";
 
-    initLoader()
+initLoader();
+
+    
+// function rebuild_input_file(input) {
+//     let input_id = input.attr('id');
+//     input.attr('accept', 'image/*').wrap('<span class="hidden"></span>').parent().after('<label for="' + input_id + '" class="file__button"></label>');
+// }
+
+
+
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('подключен скрипт main.js');
@@ -44,21 +54,23 @@ window.addEventListener('DOMContentLoaded', () => {
     init404();
     initCardItemSlider();
     initStickyHeader();
+    initTabsReview();
 
     baguetteBox.run('.gallery-wrapper');
 
-    // const wow = new WOW(
-    //     {
-    //     boxClass:     'wow',
-    //     animateClass: 'animated',
-    //     offset:       0,
-    //     mobile:       false,
-    //     live:         true,
-    // }
-    // )
-    // wow.init();
-
 
     
+    // rebuild_input_file(jQuery('input[name="featured_image"]'));
+
+    // jQuery('body').on('change', 'input[name="featured_image"]', function(event_object)
+    // {
+    //     let input_file = jQuery(event_object.currentTarget);
+    //     console.log(input_file);
+    //     let file_name = input_file.val().split("\\").reverse()[0];
+        
+    //     jQuery('label[for="'+ input_file.attr('id') +'"].file__button').text(file_name);
+    // });
+
+
 
 });
