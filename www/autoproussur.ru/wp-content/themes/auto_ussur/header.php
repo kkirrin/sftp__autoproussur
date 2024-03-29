@@ -136,11 +136,11 @@
                                     ]); 
                                 ?> -->
                                     <ul>
-                                        <li class="text-white pt-2 pb-5 nav-link"><a href="catalog.">Каталог</a></li>
-                                        <li class="text-white pt-2 pb-5 nav-link"><a href="about.html">О компании</a></li>
-                                        <li class="text-white pt-2 pb-5 nav-link"><a href="review.html">Отзывы</a></li>
-                                        <li class="text-white pt-2 pb-5 nav-link"><a href="contact.html"></a>Контакты</li>
-                                        <li class="text-white pt-2 pb-5 nav-link">Договор</li>
+                                        <li class="text-white pt-2 pb-5 nav-link"><a href="/catalog">Каталог</a></li>
+                                        <li class="text-white pt-2 pb-5 nav-link"><a href="/about">О компании</a></li>
+                                        <li class="text-white pt-2 pb-5 nav-link"><a href="/review">Отзывы</a></li>
+                                        <li class="text-white pt-2 pb-5 nav-link"><a href="/contact"></a>Контакты</li>
+                                        <li class="text-white pt-2 pb-5 nav-link"><a href="/contract">Договор</a></li>
 
                                         <li class="mr-4 flex pt-2 pb-5 gap-2">
                                             <img src="" alt="">

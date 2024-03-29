@@ -32,10 +32,18 @@
 
 
             <section class="pt-12 md:pt-14">
-                <div class="container relative">
+                <div class="container relative gallery-wrapper">
+                    <a href="<?php echo get_template_directory_uri() . '/src/img/contract/contract_1.png'; ?>"">
+                        <img src="<?php echo get_template_directory_uri() . '/src/img/contract/contract_1.png'; ?>" alt="">
+                    </a>
 
-                    <?php the_content(); ?>
+                    <a href="<?php echo get_template_directory_uri() . '/src/img/contract/contract_2.png'; ?>"">
+                        <img src="<?php echo get_template_directory_uri() . '/src/img/contract/contract_1.png'; ?>" alt="">
+                    </a>
 
+                    <a href="<?php echo get_template_directory_uri() . '/src/img/contract/contract_3.png'; ?>"">
+                        <img src="<?php echo get_template_directory_uri() . '/src/img/contract/contract_1.png'; ?>" alt="">
+                    </a>
                 </div>
             </section>
         </main>

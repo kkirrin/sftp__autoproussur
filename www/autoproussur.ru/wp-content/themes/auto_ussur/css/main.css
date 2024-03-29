@@ -5,6 +5,9 @@
 
 /* Импорт кастомных стилей для компонентов */
 
+.contract__img__small {}
+
+
 .form-field.field-rating {
   display: flex;
   order: -1;

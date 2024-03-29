@@ -16,11 +16,13 @@ export const initPopup = () => {
     const popup6__btn = document.querySelector('#popup6__btn');
     console.log(popup6__btn);
 
-    popup6__btn.addEventListener('click', function(e) {
-        if (promo) {
-            promo.classList.remove('open');
-        }
-    });
+    if(popup6__btn) {
+        popup6__btn.addEventListener('click', function(e) {
+            if (promo) {
+                promo.classList.remove('open');
+            }
+        });
+    }
 
 
     if (popupLinks.length > 0) {
