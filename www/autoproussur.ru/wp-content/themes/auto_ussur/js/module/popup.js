@@ -2,6 +2,7 @@ export const initPopup = () => {
     const popupLinks = document.querySelectorAll('.popup-link');
     const body = document.querySelector('body');
     const lockPadding = document.querySelectorAll(".lock-padding");
+    const popupPromoBtn = document.querySelector('.popup__today__btn');
     let unlock = true;
 
     const timeout = 800;
@@ -13,8 +14,18 @@ export const initPopup = () => {
         }
     }, 10000);
 
+
     const popup6__btn = document.querySelector('#popup6__btn');
     console.log(popup6__btn);
+
+    if(promo) {
+    popupPromoBtn.addEventListener('click', function(e) {
+        if (promo) {
+            promo.classList.remove('open');
+        }
+    }
+    )
+    }
 
     if(popup6__btn) {
         popup6__btn.addEventListener('click', function(e) {
@@ -23,6 +34,34 @@ export const initPopup = () => {
             }
         });
     }
+
+    const popupElements = document.querySelectorAll('.popup4');
+
+   
+    popupElements.forEach(popupElement => {
+        const nextElement = popupElement.nextElementSibling;
+        if (nextElement && nextElement.tagName.toLowerCase() === 'a') {
+            nextElement.remove();
+        }
+    });
+
+
+    // Получаю коллекцию карточек машин
+    const cars = document.querySelectorAll('.cars');
+    cars.forEach(car => {
+        car.addEventListener('click', function (e) {
+            const marka_name = e.target.parentNode.parentNode.childNodes[5].textContent;
+            const model_price = e.target.parentNode.parentNode.childNodes[8].textContent;
+        
+            const name = document.querySelector('#order-name').value = marka_name;
+            const price =  document.querySelector('#order-price').value = model_price;
+
+            console.log(name);
+            console.log(price);
+        });
+    });
+
+
 
 
     if (popupLinks.length > 0) {

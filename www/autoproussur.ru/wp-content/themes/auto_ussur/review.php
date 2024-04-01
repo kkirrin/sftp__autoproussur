@@ -71,7 +71,7 @@
                                         if ($poster && $video) {
                                     ?>
                                             <div class="rounded-2xl transform hover:scale-105 transition-all w-full">  
-                                                <video class="" controls poster="<?php echo $poster; ?>" alt="отзыв">
+                                                <video class="rounded-2xl" controls poster="<?php echo $poster; ?>" alt="отзыв">
                                                     <source src="<?php echo $video; ?>" type="video/mp4"> 
                                                     <source src="<?php echo $video; ?>" type="video/webm"> 
                                                 </video>
@@ -79,7 +79,7 @@
                                     <?php
                                         } else {
                                     ?>
-                                            <img class="rounded-3xl pb-5" src="<?php echo $img; ?>" alt="">
+                                            <img class="rounded-3xl pb-5 transform hover:scale-105 transition-all w-full" src="<?php echo $img; ?>" alt="">
                                     <?php
                                         }
                                     endforeach;
@@ -108,10 +108,16 @@
                     </div>      
                 </div>
 
-                 <!-- Акция -->
+                <!-- Акция -->
                 <div class="popup__today fixed right-0 top-2/3" style="z-index: 1000;">
                     <div id="popup_promo" class="popup_promo" style="display: flex; justify-content: end;">
                         <div class="">
+                            <button class="popup__today__btn" aria-label="Закрыть" tabindex="4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                                    <path d="M4 1.45508L19.9099 17.365" stroke="#333"/>
+                                    <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
+                                </svg>
+                            </button>
                             <div class="bg-black rounded-3xl p-10 relative w-[400px]">
                             <?php
                                 $my_posts = get_posts(array(

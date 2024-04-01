@@ -49,7 +49,8 @@
                         $photos = get_field('photo_slide', $post->ID);
                         $firstPhoto = reset($photos);
                     ?>
-                        <div class="swiper-slide flex flex-col w-[310px]">
+                        <div class="swiper-slide flex flex-col w-[310px] relative">
+                        <?php echo get_field('state') ? '<span style="width: max-content; top: 10px; left: 10px;" class="absolute bg-yellow py-2 px-4 rounded-3xl">' . get_field('state') . '</span>' : ''; ?>
                         <img class="rounded-3xl pb-5" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
                                 <p class="font-bold text-black text-base md:text-xl pb-6">
                                 <?php echo get_field('marka_name', $post->ID); ?>
@@ -94,7 +95,7 @@
 
 
                                 <div class="flex gap-5 justify-between items-center">
-                                    <a href="#popup5" class="button__order popup-link">Заказать</a>
+                                    <a href="#popup4" class="button__order popup-link"> <?php echo get_field('state') === 'В пути' ? 'Заказать' : 'Купить'; ?></a>
                                     <a href="<?php echo the_permalink(); ?>" class="button__circle">
                                         <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
                                     </a>

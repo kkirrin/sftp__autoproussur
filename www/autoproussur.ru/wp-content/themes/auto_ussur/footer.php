@@ -103,6 +103,7 @@
 
 
         <!-- Подобрать авто -->
+        <!-- Работает -->
         <section id="popup1" class="popup">
             <div class="popup__body">
                 <div class="popup__content">
@@ -118,12 +119,8 @@
                     </div>
 
                     <div class="form-wrapper">
-                        <input class="form__input" placeholder="Введите имя" />
-                        <input class="form__input" placeholder="Введите номер" />
-                        
-                        <button class="form__button">
-                            Подобрать автомобиль
-                        </button>
+                       
+                        <?php echo do_shortcode('[contact-form-7 id="b6b8490" title="Подобрать авто"]'); ?>
 
                         <p class="text-gray text-sm text-start pt-7">
                             Нажимая кнопку «Подобрать автомобиль» вы даёте <br> согласие на обработку персональных данных
@@ -135,7 +132,10 @@
             </div>
         </section>
 
+
+
         <!-- Получить бесплатный расчет -->
+        <!-- Работает -->
         <section id="popup2" class="popup">
             <div class="popup__body">
                 <div class="popup__content">
@@ -151,12 +151,7 @@
                     </div>
 
                     <div class="form-wrapper">
-                        <input class="form__input" placeholder="Введите имя" />
-                        <input class="form__input" placeholder="Введите номер" />
-                        
-                        <button class="form__button">
-                            Рассчитать стоимость
-                        </button>
+                        <?php echo do_shortcode('[contact-form-7 id="ef14532" title="Получить бесплатный расчет"]'); ?>
 
                         <p class="text-gray text-sm text-start pt-7">
                             Нажимая кнопку «Рассчитать стоимость» вы даёте <br> согласие на обработку персональных данных
@@ -169,6 +164,7 @@
         </section>
 
         <!-- Заявка на обратный звонок -->
+        <!-- Не нужна -->
         <section id="popup3" class="popup">
             <div class="popup__body">
                 <div class="popup__content">
@@ -184,12 +180,7 @@
                     </div>
 
                     <div class="form-wrapper">
-                        <input class="form__input" placeholder="Введите имя" />
-                        <input class="form__input" placeholder="Введите номер" />
-                        
-                        <button class="form__button">
-                            Заказать звонок
-                        </button>
+                       <?php echo do_shortcode('[contact-form-7 id="f632b96" title="Заявка на обратный звонок"]'); ?>
 
                         <p class="text-gray text-sm text-start pt-7">
                             Нажимая кнопку «Заказать звонок» вы даёте согласие <br> на обработку персональных данных
@@ -218,12 +209,7 @@
                     </div>
 
                     <div class="form-wrapper">
-                        <input class="form__input" placeholder="Введите имя" />
-                        <input class="form__input" placeholder="Введите номер" />
-                        
-                        <button class="form__button">
-                            Купить автомобиль
-                        </button>
+                        <?php echo do_shortcode('[contact-form-7 id="ff42d03" title="Заявка на покупку автомобиля"]'); ?>
 
                         <p class="text-gray text-sm text-start pt-7">
                             Нажимая кнопку «Заказать звонок» вы даёте согласие <br> на обработку персональных данных
@@ -310,6 +296,11 @@
                 </div>
             </div>
         </section>
+
+    <script type="text/javascript">
+        jQuery('#order_name').attr('value', "<?php echo get_field('marka_name') . ' ' . get_field('модель'); ?>");
+        jQuery('#order_price').attr('value', "<?php echo get_field('price'); ?>");
+    </script>
 
         
     <div class="scroll-top">

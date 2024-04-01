@@ -108,8 +108,8 @@ export const initFilterSlider = () => {
 
                 // If we need pagination
                 navigation: {
-                    nextEl: ".review-next",
-                    prevEl: ".review-prev",
+                    nextEl: ".filter-next",
+                    prevEl: ".filter-prev",
                 },
                 breakpoints: {
                     320: {
@@ -153,11 +153,10 @@ export const initPopularSlider = () => {
                 direction: 'horizontal',
                 spaceBetween: 5,
                 equalHeight: true,
-
                 // If we need pagination
                 navigation: {
-                    nextEl: ".review-next",
-                    prevEl: ".review-prev",
+                    nextEl: ".popular-next",
+                    prevEl: ".popular-prev",
                 },
                 breakpoints: {
                     320: {

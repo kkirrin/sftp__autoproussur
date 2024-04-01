@@ -14,6 +14,7 @@ import { init404 } from "./module/404.js";
 import { initStickyHeader } from "./module/sticky-header.js";
 import { initLoader } from './module/loader.js';
 import { initTabsReview } from "./module/tabsReview.js";
+// import { initMask } from './module/mask.js';
 
 initLoader();
 
@@ -38,7 +39,6 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-
     
     initMobileMenu();
     initScrollToTop();
@@ -55,6 +55,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initCardItemSlider();
     initStickyHeader();
     initTabsReview();
+    // initMask();
 
     baguetteBox.run('.gallery-wrapper');
 

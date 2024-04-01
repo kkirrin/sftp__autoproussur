@@ -2,11 +2,78 @@
 
 /* Импорт шрифтов */
 
+.wpcf7-form-control.wpcf7-submit.has-spinner.form__button {
+  background-color: rgb(183, 9, 10) !important;
+}
+
+.wpc-filters-main-wrap .wpc-filters-widget-controls-container a, .wpc-filters-main-wrap a.wpc-filters-reset-button, .wpc-filters-main-wrap a.wpc-filters-submit-button {
+  background-color: none !important;
+  border: none !important;
+}
+
+
+.wpc-filters-main-wrap a.wpc-filters-reset-button {
+  background-color: inherit !important;
+}
+
+/* Кастомный чекбокс */
+
+.wpc-term-item-content-wrapper label {
+  position: relative !important;
+  display: inline-block !important;
+  width: 40px !important;
+  height: 20px !important;
+  background-color: #ccc !important;
+  border-radius: 20px !important;
+  transition: background-color 0.3s !important;
+}
+
+.wpc-term-item-content-wrapper input {
+  display: none !important;
+}
+
+.wpc-term-item-content-wrapper input:checked + .wpc-term-item-content-wrapper label::before {
+  transform: translateX(20px);
+}
+
+
+.wpc-term-item-content-wrapper input:checked + .wpc-term-item-content-wrapper label {
+  background-color: rgb(32,32,32);
+}
+
+.wpc-term-item-content-wrapper input:checked + .wpc-term-item-content-wrapper label:before {
+  background-color: #fff;
+}
+
+
+
+.wpc-term-item-content-wrapper label::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.3s, background-color 0.3s;
+}
 
 /* Импорт кастомных стилей для компонентов */
 
 .contract__img__small {}
 
+
+.contract {
+  
+}
+
+.popup__today__btn {
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 4px 3px 2px -1px #333;
+}
 
 .form-field.field-rating {
   display: flex;
@@ -29,10 +96,10 @@
   height: 21px;
 }
 
-.review__item {
+.review__item__item {
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
   background: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -41,8 +108,8 @@
 }
 
 .review__img {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 150px;
+  max-height: 150px;
 }
 
 
@@ -226,6 +293,10 @@ label.file__button {
 
 }
 
+.wpc-edit-filter-set {
+  display: none;
+}
+
 
 .popup_promo.open {
   opacity: 1;
@@ -235,6 +306,11 @@ label.file__button {
 
 .wpc-filters-ul-list :nth-child(n+3) {
   display: none !important;
+}
+
+
+.wpc-checkbox-item.wpc-term-item.wpc-term-count-3.wpc-term-id-9 {
+  display: none;
 }
 
 
@@ -3273,6 +3349,13 @@ iframe {
 @media(max-width:769px) {
   .how__we__work div {
     height: -webkit-fill-available;
+  }
+}
+
+
+@media(max-width:480px) {
+  .how__we__work div {
+    height: 29vh;
   }
 }
 

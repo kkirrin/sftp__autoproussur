@@ -47,10 +47,16 @@ Template Name: about
                     </div>
                 </div>
 
-                 <!-- Акция -->
+                <!-- Акция -->
                 <div class="popup__today fixed right-0 top-2/3" style="z-index: 1000;">
-                    <section id="popup_promo" class="popup_promo" style="display: flex; justify-content: end;">
+                    <div id="popup_promo" class="popup_promo" style="display: flex; justify-content: end;">
                         <div class="">
+                            <button class="popup__today__btn" aria-label="Закрыть" tabindex="4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                                    <path d="M4 1.45508L19.9099 17.365" stroke="#333"/>
+                                    <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
+                                </svg>
+                            </button>
                             <div class="bg-black rounded-3xl p-10 relative w-[400px]">
                             <?php
                                 $my_posts = get_posts(array(
@@ -81,7 +87,7 @@ Template Name: about
                                 <a class="button popup-link flex py-4" href="#popup5" id="popup6__btn">Подробнее</a>
                             </div>
                         </div>
-                    </section>
+                                </div>
                 </div>
             </section>
 
@@ -400,7 +406,6 @@ Template Name: about
                     </div>
                     <ul>
                         <li class="pb-8">
-                            <img class="pb-2" src="./src/img/icons_nav/phonw.svg" alt="">
                             <a class="text-white font-bold" href="tel:79510288418">
                                 +7 951 028-84-18 
                             </a>
@@ -409,17 +414,14 @@ Template Name: about
                             </a>
                         </li>
                         <li class="pb-8">
-                            <img class="pb-2" src="./src/img/icons_nav/email.svg" alt="">
                             <a href="mailto:lehachechel10@gmail.com" class="text-white font-bold">lehachechel10@gmail.com</a>
                         
                         </li>
                         <li class="pb-8">
-                            <img class="pb-2" src="./src/img/icons_nav/geo.svg" alt="">
-                                <p class="text-white">г. Уссурийск, ул. Тургенева, 42</p>
+                            <p class="text-white">г. Уссурийск, ул. Тургенева, 42</p>
                         </li>
                         <li class="pb-8">
-                            <img class="pb-2" src="./src/img/icons_nav/clock.svg" alt="">
-                                <p class="text-white">Режим работы: 10:00–18:00</p>
+                            <p class="text-white">Режим работы: 10:00–18:00</p>
                         </li>
                         
                         <button class="bg-red text-white py-4 px-5 rounded-3xl" type="button">

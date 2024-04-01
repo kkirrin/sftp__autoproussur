@@ -29,7 +29,7 @@ Template Name: auto_ussur
                                 <li class="text-gray pb-2 pl-3 font-light">Подбор и доставка под ключ</li>
                                 <li class="text-gray pb-2 pl-3 font-light">Доставка по всей России</li>
                             </ul>
-                            <button class="btn__catalog pulse__btn"> Перейти в <br> каталог </button>
+                            <a class="btn__catalog pulse__btn" href="/catalog"> Перейти в <br> каталог </a>
                             <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 -z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__right.png'; ?>" alt="">
                             <img class="absolute bottom-0.5 left-0 -z-20" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__left.png'; ?>" alt="">
                             <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__car.png'; ?>" alt="">
@@ -53,7 +53,7 @@ Template Name: auto_ussur
                                 <li class="text-gray pb-2 pl-3 font-light">Подбор и доставка под ключ</li>
                                 <li class="text-gray pb-2 pl-3 font-light">Доставка по всей России</li>
                             </ul>
-                            <button class="btn__catalog pulse__btn"> Перейти в <br> каталог </button>
+                            <a class="btn__catalog pulse__btn" href="/catalog"> Перейти в <br> каталог </a>
                             <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 -z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__right.png'; ?>" alt="">
                             <img class="absolute bottom-0.5 left-0 -z-20" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__left.png'; ?>" alt="">
                             <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__car.png'; ?>" alt="">
@@ -77,7 +77,7 @@ Template Name: auto_ussur
                                 <li class="text-gray pb-2 pl-3 font-light">Подбор и доставка под ключ</li>
                                 <li class="text-gray pb-2 pl-3 font-light">Доставка по всей России</li>
                             </ul>
-                            <button class="btn__catalog pulse__btn"> Перейти в <br> каталог </button>
+                            <a class="btn__catalog pulse__btn" href="/catalog"> Перейти в <br> каталог </a>
                             <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 -z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__right.png'; ?>" alt="">
                             <img class="absolute bottom-0.5 left-0 -z-20" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__left.png'; ?>" alt="">
                             <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__car.png'; ?>" alt="">
@@ -92,10 +92,17 @@ Template Name: auto_ussur
                 </div>
             </div>
         </div>
+
         <!-- Акция -->
         <div class="popup__today fixed right-0 top-2/3" style="z-index: 1000;">
-            <section id="popup_promo" class="popup_promo" style="display: flex; justify-content: end;">
+            <div id="popup_promo" class="popup_promo" style="display: flex; justify-content: end;">
                 <div class="">
+                    <button class="popup__today__btn" aria-label="Закрыть" tabindex="4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                            <path d="M4 1.45508L19.9099 17.365" stroke="#333"/>
+                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
+                        </svg>
+                    </button>
                     <div class="bg-black rounded-3xl p-10 relative w-[400px]">
                     <?php
                         $my_posts = get_posts(array(
@@ -126,27 +133,35 @@ Template Name: auto_ussur
                         <a class="button popup-link flex py-4" href="#popup5" id="popup6__btn">Подробнее</a>
                     </div>
                 </div>
-            </section>
+                        </div>
         </div>
-
-
-
     </section>
     
     <!-- Фильтрация -->
     <section class="pt-12 md:pt-24 filter-swiper">
         <div class="container relative">
             
-            <div class="p-4 pb-10 bg-gray bg-opacity-10 rounded-2xl">
-                <div class=" pt-8 flex items-center justify-between">
-                    <h3 class="text-start font-normal md:text-3xl text-base">
+            <div class="p-4 pb-10 bg-gray bg-opacity-10 rounded-2xl relative">
+                <div class=" pt-8 flex items-center justify-between pb-6">
+                    <h2 class="text-4xl md:text-5xl font-bold text-black">
                         Подберите  автомобиль 
-                    </h3>       
+                    </h2>   
+                    
+                    <div class="arrows__slider">             
+                        <button
+                            class="filter-prev rounded-full bg-yellow p-4">
+                            <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_prev.svg'; ?>" alt="влево">
+                        </button>
+                        <button
+                            class="filter-next rounded-full bg-yellow p-4">
+                            <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_next.svg'; ?>" alt="вправо" >
+                        </button>
+                    </div>
 
                     <div class="flex flex-row gap-2">
-                        <input type="checkbox" id="customCheckbox" class="hidden-checkbox">
+                        <!-- <input type="checkbox" id="customCheckbox" class="hidden-checkbox">
                         <label for="customCheckbox" class="customCheckboxLabel"></label>
-                        <label>В наличии</label>
+                        <label>В наличии</label> -->
                     </div>
 
                 </div>    
@@ -157,98 +172,121 @@ Template Name: auto_ussur
                         <?php echo do_shortcode( '[fe_widget id=176]' ); ?>
                     </div>    
 
+                    <div class="filter-item w-0 min-w-[100%] overflow-hidden pt-12 md:pt-10">
+                        <div class="swiper-wrapper cars">                  
+                        <?php
+                           $categories_ids = array(3, 4, 5, 6, 7, 1);
+                           $my_posts = get_posts(array(
+                               'numberposts' => -1,
+                               'category__in' => $categories_ids, 
+                               'order' => 'title',
+                               'orderby' => 'rand',
+                               'post_type' => 'post',
+                               'suppress_filters' => true
+                           ));
+                            foreach ($my_posts as $post) : 
+                                setup_postdata($post);
+                                $photos = get_field('photo_slide', $post->ID);
+                                $firstPhoto = reset($photos);
+                            ?>
+                                <div class="swiper-slide flex flex-col w-[310px] relative">
+
+                                <?php echo get_field('state') ? '<span style="width: max-content; top: 10px; left: 10px;" class="absolute bg-yellow py-2 px-4 rounded-3xl">' . get_field('state') . '</span>' : ''; ?>
+
+                                <img class="rounded-3xl" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
+                                        <p class="font-bold text-black text-base md:text-xl pb-6 pt-5">
+                                        <?php echo get_field('marka_name', $post->ID); ?>
+                                        <?php echo get_field('model_name', $post->ID); ?>
+        
+                                        <ul>
+                                            <div class="flex justify-between flex-row">
+                                                    <li class="text-gray pb-2">Год выпуска</li>
+                                                    <li class="pb-6">
+                                                    <?= get_field('year') ? get_field('year') : '-'; ?>
+                                                    </li>
+                                            </div> 
+                                            <div class="flex justify-between flex-row">
+                                                    <li class="text-gray pb-2">Пробег</li>
+                                                    <li class="pb-6">
+                                                        <?php echo get_field('milleage') ? get_field('milleage') : '-'  ?>
+                                                    </li>
+                                            </div> 
+                                            <div class="flex justify-between flex-row">
+                                                    <li class="text-gray pb-2">Топливо</li>
+                                                    <li class="pb-6">
+                                                    <?php echo get_field('fuel') ? get_field('fuel') : '-'; ?>
+                                                    </li>
+                                            </div> 
+                                            <div class="flex justify-between flex-row">
+                                                    <li class="text-gray pb-2">Объём двигателя</li>
+                                                    <li class="pb-6">
+                                                        <?php echo get_field('volume') ? get_field('volume') : '-'; ?>
+                                                    </li>
+                                            </div> 
+                                            <div class="flex justify-between flex-row">
+                                                    <li class="text-gray pb-2">Привод</li>
+                                                    <li>
+                                                        <?php echo get_field('drive') ? get_field('drive') : '-'; ?>
+                                                    </li>
+                                            </div> 
+                                        </ul>
+        
+                                        <p class="text-black py-6 font-bold"> 
+                                            <?php echo get_field('price', $post->ID); ?> ₽
+                                        </p>
+        
+        
+                                        <div class="flex gap-5 justify-between items-center">
+                                            <a href="#popup4" class="button__order popup-link">
+                                                <?php echo get_field('state') === 'В пути' ? 'Заказать' : 'Купить'; ?>
+                                            </a>
+                                            <a href="<?php echo the_permalink(); ?>" class="button__circle">
+                                                <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
+                                            </a>
+                                        </div>
+
+                                        
+                                     
+                                        
+                                    </div>
+                                    
+
+        
+                            <?php endforeach; ?>
+                            <?php wp_reset_postdata(); ?>
+        
+        
+        
+                        </div>                      
+                    </div>
                 </div>         
-            </div>
-
-            <div class="filter-item w-0 min-w-[100%] overflow-hidden pt-12 md:pt-10">
-                <div class="swiper-wrapper">                  
-                <?php
-                   $categories_ids = array(3, 4, 5, 6, 7, 1);
-                   $my_posts = get_posts(array(
-                       'numberposts' => -1,
-                       'category__in' => $categories_ids, 
-                       'order' => 'title',
-                       'orderby' => 'rand',
-                       'post_type' => 'post',
-                       'suppress_filters' => true
-                   ));
-                    foreach ($my_posts as $post) : 
-                        setup_postdata($post);
-                        $photos = get_field('photo_slide', $post->ID);
-                        $firstPhoto = reset($photos);
-                    ?>
-                        <div class="swiper-slide flex flex-col w-[310px]">
-                        <img class="rounded-3xl pb-5" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
-                                <p class="font-bold text-black text-base md:text-xl pb-6">
-                                <?php echo get_field('marka_name', $post->ID); ?>
-                                <?php echo get_field('model_name', $post->ID); ?>
-
-                                <ul>
-                                    <div class="flex justify-between flex-row">
-                                            <li class="text-gray pb-2">Год выпуска</li>
-                                            <li class="pb-6">
-                                            <?= get_field('year') ? get_field('year') : '-'; ?>
-                                            </li>
-                                    </div> 
-                                    <div class="flex justify-between flex-row">
-                                            <li class="text-gray pb-2">Пробег</li>
-                                            <li class="pb-6">
-                                                <?php echo get_field('milleage') ? get_field('milleage') : '-'  ?>
-                                            </li>
-                                    </div> 
-                                    <div class="flex justify-between flex-row">
-                                            <li class="text-gray pb-2">Топливо</li>
-                                            <li class="pb-6">
-                                            <?php echo get_field('fuel') ? get_field('fuel') : '-'; ?>
-                                            </li>
-                                    </div> 
-                                    <div class="flex justify-between flex-row">
-                                            <li class="text-gray pb-2">Объём двигателя</li>
-                                            <li class="pb-6">
-                                                <?php echo get_field('volume') ? get_field('volume') : '-'; ?>
-                                            </li>
-                                    </div> 
-                                    <div class="flex justify-between flex-row">
-                                            <li class="text-gray pb-2">Привод</li>
-                                            <li>
-                                                <?php echo get_field('drive') ? get_field('drive') : '-'; ?>
-                                            </li>
-                                    </div> 
-                                </ul>
-
-                                <p class="text-black py-6"> 
-                                    <?php echo get_field('price', $post->ID); ?> ₽
-                                </p>
-
-
-                                <div class="flex gap-5 justify-between items-center">
-                                    <a href="#popup5" class="button__order popup-link">Заказать</a>
-                                    <a href="<?php echo the_permalink(); ?>" class="button__circle">
-                                        <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
-                                    </a>
-                                </div>
-                        </div>
-
-                    <?php endforeach; ?>
-                    <?php wp_reset_postdata(); ?>
-
-
-
-                </div>                      
-            </div>
                 
+            </div>
+            
+
         </div>
     </section>
 
    <!-- Популярные автомобили -->
     <section class="pt-12 md:pt-40 popular-swiper">
-        <div class="container">
+        <div class="container relative">
             <h2 class="text-4xl md:text-5xl font-bold text-black">
                 Популярные модели
             </h2>
 
+            <div class="arrows__slider">             
+                <button
+                    class="popular-prev rounded-full bg-yellow p-4">
+                    <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_prev.svg'; ?>" alt="влево">
+                </button>
+                <button
+                    class="popular-next rounded-full bg-yellow p-4">
+                    <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_next.svg'; ?>" alt="вправо" >
+                </button>
+            </div>
+
             <div class="popular-item w-0 min-w-[100%] overflow-hidden pt-6 md:pt-12">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper cars">
 
                 <?php
                     $my_posts = get_posts(array(
@@ -267,9 +305,12 @@ Template Name: auto_ussur
                     ?>
                     
 
-                    <div class="swiper-slide flex flex-col w-[310px]">
-                        <img class="rounded-3xl pb-5" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
-                        <p class="font-bold text-black text-base md:text-xl pb-6">
+                    <div class="swiper-slide flex flex-col w-[310px] relative">
+
+                        <?php echo get_field('state') ? '<span style="width: max-content; top: 10px; left: 10px;" class="absolute bg-yellow py-2 px-4 rounded-3xl">' . get_field('state') . '</span>' : ''; ?>
+
+                        <img class="rounded-3xl" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
+                        <p class="font-bold text-black text-base md:text-xl pb-6 pt-5">
                         <?php echo get_field('marka_name', $post->ID); ?>
                         <?php echo get_field('model_name', $post->ID); ?>
 
@@ -312,12 +353,16 @@ Template Name: auto_ussur
 
 
                         <div class="flex gap-5 justify-between items-center">
-                            <a href="#popup5" class="button__order popup-link">Заказать</a>
+                            <a href="#popup4" class="button__order popup-link">
+                                <?php echo get_field('state') === 'В пути' ? 'Заказать' : 'Купить'; ?>
+                            </a>
                             <a href="<?php echo the_permalink(); ?>" class="button__circle">
                                 <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
                             </a>
                         </div>
+                        
                     </div>    
+                
 
                     <?php endforeach; ?>
                     <?php wp_reset_postdata(); ?>
@@ -415,7 +460,7 @@ Template Name: auto_ussur
                     </div>
                 </div>
                 <div style="width: -webkit-fill-available;" class="h-min relative mt-0 md:mt-14 p-7 bg-black rounded-2xl">
-                    <img class="absolute -top-5 right-0 left-0 m-auto" src=".<?php echo get_template_directory_uri() . '/src/img/how/4.svg'; ?>" alt="">
+                    <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/4.svg'; ?>" alt="">
                     <div>
                         <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-bold">
                             Передача автомобиля или доставка по РФ
@@ -432,6 +477,7 @@ Template Name: auto_ussur
 
 
     <!-- Рассчитаем стоимость -->
+    
     <section class="pt-12 md:pt-36 relative p-5 md:p-0">
         <div class="container rounded-3xl relative  h-[45vh] sm:h-[55vh] md:h-[69vh]">
             <img class="block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/price/price__bg.png'; ?>" alt="">
@@ -440,7 +486,7 @@ Template Name: auto_ussur
                 <p class="text-sm md:font-base font-normal text-black py-5">
                     Заполните анкету и мы подберём автомобиль под ваш бюджет,<br> рассчитаем все расходы на покупку и доставку совершенно <br> бесплатно
                 </p>
-                <a href="#popup2" class="button__count popup-link">Рассчитать</a>
+                <a href="#popup2" class="button__count popup-link text-center">Рассчитать</a>
             </div>
 
         </div>
@@ -507,65 +553,15 @@ Template Name: auto_ussur
             
 
             <div class="review-wrapper overflow-hidden">
-                <div class="review-item">
-                    <div class="swiper-wrapper">
+                <div class="review-item p-0 md:p-10 overflow-hidden">
 
+                    <?php
+                        $file_path = 'review-slider-functions.php';
+                            require_once $file_path;
 
-                            <div class="swiper-slide p-5">
-                                   
-                         
-                                <div class="flex flex-col shadow-md bg-white p-7 rounded-2xl transform hover:scale-105 transition-all">
-                                    <div class="flex flex-row justify-between pb-7">
-                                    <div class="flex gap-5">
-                                        <p>Аватар</p>
-                                        <p>Дмитрий</p>
-                                    </div>
+                            echo showReviewSlider();
+                    ?>
 
-                                    <div class="flex gap-2">
-                                        <p>5.0</p>
-                                        <p><img src="./src/img/icons/star.svg" alt=""></p>
-                                    </div>
-                                </div>
-
-                                <div class="text-base pb-7 textFull">
-                                    Благодарю компанию AutoPROussur, в помощи приобретения автомобиля Toyota Raсtis из Японии. В особенности менеджеру Алексею, за отличное сотрудничество и понимание. Автомобиль был доставлен в срок, в состоянии соответствуещему фото без нареканий. Забирал машину сам, эмоции переполняли т.к оказалось лучше чем ожидал. Заказывайте автомобили через эту компанию, все честно, грамотно, и без всякого обмана!
-                                </div>
-
-                                <div class="flex gap-7 pb-7">
-                                    <img class="rounded-2xl" src="<?php echo get_template_directory_uri() . '/src/img/review/review_2.png'; ?>">
-                                    <img class="rounded-2xl" src="<?php echo get_template_directory_uri() . '/src/img/review/review_2.png'; ?>">
-                                </div>
-
-                                <div class="text-gray">
-                                    26.02.2024  
-                                </div>
-                                <!--                                         
-                                <div class="pt-4 pb-4 pr-3 pl-3">
-                                    <button class="watchFull text-yellow hover:text-red">Посмотреть полностью</buton>
-                                </div> -->
-                                </div>
-
-
-
-                            
-                        </div>   
-
-                        
-                        <!-- ?php
-                            }
-                            wp_reset_postdata();
-                        ?> -->
-                        <div class="swiper-slide p-5">
-                            <div class="flex flex-col rounded-2xl transform hover:scale-105 transition-all w-full">
-                                <video poster="<?php echo get_template_directory_uri() . '/src/img/review/review_3.png'; ?>"></video>
-                            </div>
-                        </div>            
-                        <div class="swiper-slide p-5">
-                            <div class="flex flex-col rounded-2xl transform hover:scale-105 transition-all">
-                                <video poster="<?php echo get_template_directory_uri() . '/src/img/review/review_1.png'; ?>"></video>
-                            </div>
-                        </div>            
-                    </div>
                 </div>
             </div>       
             
@@ -668,7 +664,6 @@ Template Name: auto_ussur
                 </div>
                 <ul>
                     <li class="pb-8">
-                        <img class="pb-2" src="<?php echo get_template_directory_uri() . '/src/img/icons_nav/phonw.svg'; ?>" alt="">
                         <a class="text-white font-bold" href="tel:79510288418">
                             +7 951 028-84-18 
                         </a>
@@ -677,16 +672,13 @@ Template Name: auto_ussur
                         </a>
                     </li>
                     <li class="pb-8">
-                        <img class="pb-2" src="<?php echo get_template_directory_uri() . '/src/img/icons_nav/email.svg'; ?>" alt="">
                         <a href="mailto:lehachechel10@gmail.com" class="text-white font-bold">lehachechel10@gmail.com</a>
                     
                     </li>
                     <li class="pb-8">
-                        <img class="pb-2" src="<?php echo get_template_directory_uri() . '/src/img/icons_nav/geo.svg'; ?>" alt="">
                             <p class="text-white">г. Уссурийск, ул. Тургенева, 42</p>
                     </li>
                     <li class="pb-8">
-                        <img class="pb-2" src="<?php echo get_template_directory_uri() . '/src/img/icons_nav/clock.svg'; ?>" alt="">
                             <p class="text-white">Режим работы: 10:00–18:00</p>
                     </li>
                     

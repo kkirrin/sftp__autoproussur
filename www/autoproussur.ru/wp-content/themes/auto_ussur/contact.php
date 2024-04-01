@@ -35,8 +35,14 @@ Template Name: contract
                 
                 <!-- Акция -->
                 <div class="popup__today fixed right-0 top-2/3" style="z-index: 1000;">
-                    <section id="popup_promo" class="popup_promo" style="display: flex; justify-content: end;">
+                    <div id="popup_promo" class="popup_promo" style="display: flex; justify-content: end;">
                         <div class="">
+                            <button class="popup__today__btn" aria-label="Закрыть" tabindex="4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                                    <path d="M4 1.45508L19.9099 17.365" stroke="#333"/>
+                                    <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
+                                </svg>
+                            </button>
                             <div class="bg-black rounded-3xl p-10 relative w-[400px]">
                             <?php
                                 $my_posts = get_posts(array(
@@ -67,7 +73,7 @@ Template Name: contract
                                 <a class="button popup-link flex py-4" href="#popup5" id="popup6__btn">Подробнее</a>
                             </div>
                         </div>
-                    </section>
+                                </div>
                 </div>
             </section>
 
