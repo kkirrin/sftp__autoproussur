@@ -17,19 +17,19 @@ Template Name: auto_ussur
             <div class="main-item w-0 min-w-[100%] overflow-hidden h-[58vh] md:h-[auto] rounded-3xl">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide relative -z-10">
-                        <div class="flex flex-col md:flex-row gap-5">
+                        <div class="flex flex-col md:flex-row gap-5 justify-between">
                         <div class="w-full md:w-1/3 relative rounded-2xl overflow-hidden h-[60vh] md:h-[auto]">
-                            <h2 class="mt-16 md:mt-5">
-                                <span class="text-red text-lg md:text-2xl font-normal">Автомобили из Японии <br></span> 
-                                <span class="font-extrabold text-4xl sm:text-6xl md:text-6xl">в Уссурийске по  <br> выгодной цене</span>
+                            <h2 class="mt-16 md:mt-5 flex flex-col">
+                                <span class="text-red text-lg md:text-2xl font-normal" style="margin-bottom: 10px;">Автомобили из Японии <br></span> 
+                                <span class="font-extrabold text-4xl sm:text-6xl md:text-6xl mt-5">в Уссурийске по  <br> выгодной цене</span>
                             </h2>
 
-                            <ul class="list-disc">
-                                <li class="text-gray pb-2 pl-3 font-light">Большой выбор автомобилей</li>
-                                <li class="text-gray pb-2 pl-3 font-light">Подбор и доставка под ключ</li>
-                                <li class="text-gray pb-2 pl-3 font-light">Доставка по всей России</li>
+                            <ul class="list-disc" style="padding-top: 25px; padding-left: 1rem;">
+                                <li class="text-gray pb-2 pl-3" style="font-weight: 500;">Большой выбор автомобилей</li>
+                                <li class="text-gray pb-2 pl-3" style="font-weight: 500;">Подбор и доставка под ключ</li>
+                                <li class="text-gray pb-2 pl-3" style="font-weight: 500;">Доставка по всей России</li>
                             </ul>
-                            <a class="btn__catalog pulse__btn" href="/catalog"> Перейти в <br> каталог </a>
+                            <a class="btn__catalog pulse__btn" href="/catalog"> Перейти <br> в каталог </a>
                             <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 -z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__right.png'; ?>" alt="">
                             <img class="absolute bottom-0.5 left-0 -z-20" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__left.png'; ?>" alt="">
                             <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__car.png'; ?>" alt="">
@@ -41,19 +41,19 @@ Template Name: auto_ussur
                         </div>
                     </div>
                     <div class="swiper-slide relative -z-10">
-                        <div class="flex flex-col md:flex-row gap-5">
+                        <div class="flex flex-col md:flex-row gap-5 justify-between">
                         <div class="w-full md:w-1/3 relative rounded-2xl overflow-hidden h-[60vh] md:h-[auto]">
-                            <h2 class="mt-16 md:mt-5">
-                                <span class="text-red text-lg md:text-2xl font-normal">Автомобили из Японии <br></span> 
-                                <span class="font-extrabold text-4xl sm:text-6xl md:text-6xl">в Уссурийске по  <br> выгодной цене</span>
+                            <h2 class="mt-16 md:mt-5 flex flex-col">
+                                <span class="text-red text-lg md:text-2xl font-normal" style="margin-bottom: 10px;">Автомобили из Японии <br></span> 
+                                <span class="font-extrabold text-4xl sm:text-6xl md:text-6xl mt-5">в Уссурийске по  <br> выгодной цене</span>
                             </h2>
 
-                            <ul class="list-disc">
+                            <ul class="list-disc" style="padding-top: 25px; padding-left: 1rem;">
                                 <li class="text-gray pb-2 pl-3 font-light">Большой выбор автомобилей</li>
                                 <li class="text-gray pb-2 pl-3 font-light">Подбор и доставка под ключ</li>
                                 <li class="text-gray pb-2 pl-3 font-light">Доставка по всей России</li>
                             </ul>
-                            <a class="btn__catalog pulse__btn" href="/catalog"> Перейти в <br> каталог </a>
+                            <a class="btn__catalog pulse__btn" href="/catalog"> Перейти <br> в каталог </a>
                             <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 -z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__right.png'; ?>" alt="">
                             <img class="absolute bottom-0.5 left-0 -z-20" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__left.png'; ?>" alt="">
                             <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__car.png'; ?>" alt="">
@@ -65,19 +65,19 @@ Template Name: auto_ussur
                         </div>
                     </div>
                     <div class="swiper-slide relative -z-10">
-                        <div class="flex flex-col md:flex-row gap-5">
+                        <div class="flex flex-col md:flex-row gap-5 justify-between">
                         <div class="w-full md:w-1/3 relative rounded-2xl overflow-hidden h-[60vh] md:h-[auto]">
-                            <h2 class="mt-16 md:mt-5">
-                                <span class="text-red text-lg md:text-2xl font-normal">Автомобили из Японии <br></span> 
-                                <span class="font-extrabold text-4xl sm:text-6xl md:text-6xl">в Уссурийске по  <br> выгодной цене</span>
+                            <h2 class="mt-16 md:mt-5 flex flex-col">
+                                <span class="text-red text-lg md:text-2xl font-normal" style="margin-bottom: 10px;">Автомобили из Японии <br></span> 
+                                <span class="font-extrabold text-4xl sm:text-6xl md:text-6xl mt-5">в Уссурийске по  <br> выгодной цене</span>
                             </h2>
 
-                            <ul class="list-disc">
+                            <ul class="list-disc" style="padding-top: 25px; padding-left: 1rem;">
                                 <li class="text-gray pb-2 pl-3 font-light">Большой выбор автомобилей</li>
                                 <li class="text-gray pb-2 pl-3 font-light">Подбор и доставка под ключ</li>
                                 <li class="text-gray pb-2 pl-3 font-light">Доставка по всей России</li>
                             </ul>
-                            <a class="btn__catalog pulse__btn" href="/catalog"> Перейти в <br> каталог </a>
+                            <a class="btn__catalog pulse__btn" href="/catalog"> Перейти <br> в каталог </a>
                             <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 -z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__right.png'; ?>" alt="">
                             <img class="absolute bottom-0.5 left-0 -z-20" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__left.png'; ?>" alt="">
                             <img class="scale-[.8] sm:scale-[1.2] md:scale-90 absolute -bottom-3 -right-4 z-10" src="<?php echo get_template_directory_uri() . '/src/img/main/circle__car.png'; ?>" alt="">
@@ -88,7 +88,6 @@ Template Name: auto_ussur
                         </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -141,9 +140,9 @@ Template Name: auto_ussur
     <section class="pt-12 md:pt-24 filter-swiper">
         <div class="container relative">
             
-            <div class="p-4 pb-10 bg-gray bg-opacity-10 rounded-2xl relative">
-                <div class=" pt-8 flex items-center justify-between pb-6">
-                    <h2 class="text-4xl md:text-5xl font-bold text-black">
+            <div class="p-0 md:p-4 pb-10 rounded-2xl">
+                <div class="p-4 pb-10 bg-gray bg-opacity-10 pt-8 flex items-center justify-between pb-6 title__auto">
+                    <h2 class="text-4xl md:text-5xl text-black" style="font-weight: 600;">
                         Подберите  автомобиль 
                     </h2>   
                     
@@ -192,11 +191,13 @@ Template Name: auto_ussur
                                 <div class="swiper-slide flex flex-col w-[310px] relative">
 
                                 <?php echo get_field('state') ? '<span style="width: max-content; top: 10px; left: 10px;" class="absolute bg-yellow py-2 px-4 rounded-3xl">' . get_field('state') . '</span>' : ''; ?>
-
-                                <img class="rounded-3xl" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
-                                        <p class="font-bold text-black text-base md:text-xl pb-6 pt-5">
+                                <a href="<?php echo the_permalink(); ?>">
+                                    <img class="rounded-3xl" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
+                                    <p class="font-bold text-black text-base md:text-xl pb-6 pt-5">
                                         <?php echo get_field('marka_name', $post->ID); ?>
                                         <?php echo get_field('model_name', $post->ID); ?>
+                                    </p>
+                                </a>
         
                                         <ul>
                                             <div class="flex justify-between flex-row">
@@ -237,8 +238,9 @@ Template Name: auto_ussur
         
         
                                         <div class="flex gap-5 justify-between items-center">
-                                            <a href="#popup4" class="button__order popup-link">
-                                                <?php echo get_field('state') === 'В пути' ? 'Заказать' : 'Купить'; ?>
+                                            <a href="#popup4" class="button__order popup-link text-center">
+                                                <!-- <?php echo get_field('state') === 'В пути' ? 'Заказать' : 'Купить'; ?> -->
+                                                Заказать
                                             </a>
                                             <a href="<?php echo the_permalink(); ?>" class="button__circle">
                                                 <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
@@ -270,7 +272,7 @@ Template Name: auto_ussur
    <!-- Популярные автомобили -->
     <section class="pt-12 md:pt-40 popular-swiper">
         <div class="container relative">
-            <h2 class="text-4xl md:text-5xl font-bold text-black">
+            <h2 class="text-4xl md:text-5xl text-black" style="font-weight: 600;">
                 Популярные модели
             </h2>
 
@@ -308,13 +310,15 @@ Template Name: auto_ussur
                     <div class="swiper-slide flex flex-col w-[310px] relative">
 
                         <?php echo get_field('state') ? '<span style="width: max-content; top: 10px; left: 10px;" class="absolute bg-yellow py-2 px-4 rounded-3xl">' . get_field('state') . '</span>' : ''; ?>
+                        <a href="<?php echo the_permalink(); ?>">
+                            <img class="rounded-3xl" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
+                            <p class="font-bold text-black text-base md:text-xl pb-6 pt-5">
+                                <?php echo get_field('marka_name', $post->ID); ?>
+                                <?php echo get_field('model_name', $post->ID); ?>
+                            </p>
+                        </a>
 
-                        <img class="rounded-3xl" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
-                        <p class="font-bold text-black text-base md:text-xl pb-6 pt-5">
-                        <?php echo get_field('marka_name', $post->ID); ?>
-                        <?php echo get_field('model_name', $post->ID); ?>
-
-                        <ul>
+                        <ul class="ul__car">
                             <div class="flex justify-between flex-row">
                                     <li class="text-gray pb-2">Год выпуска</li>
                                     <li class="pb-6">
@@ -353,8 +357,9 @@ Template Name: auto_ussur
 
 
                         <div class="flex gap-5 justify-between items-center">
-                            <a href="#popup4" class="button__order popup-link">
-                                <?php echo get_field('state') === 'В пути' ? 'Заказать' : 'Купить'; ?>
+                            <a href="#popup4" class="button__order popup-link text-center">
+                                <!-- <?php echo get_field('state') === 'В пути' ? 'Заказать' : 'Купить'; ?> -->
+                                Заказать
                             </a>
                             <a href="<?php echo the_permalink(); ?>" class="button__circle">
                                 <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
@@ -375,17 +380,17 @@ Template Name: auto_ussur
 
 
     <!-- Counter  -->
-    <section class="relative pt-20 z-0 pb-40">
-        <div class="container bg-red px-5 md:py-16 py-0 md:px-28 rounded-3xl relative h-[450px]">
+    <section class="relative pt-20 z-0 pb-40 p-2">
+        <div class="container bg-red px-5 md:py-16 py-0 md:px-28 rounded-3xl relative h-[363px]">
             <img class="sm:-top-20 sm:scale-[.7] md:scale-100 absolute md:top-0 right-0 -z-0" src="<?php echo get_template_directory_uri() . '/src/img/catalog/car_3.png'; ?>" alt="">
-            <h2 class="text-white text-center md:text-start font-bold md:text-3xl text-sm uppercase pt-60 md:pt-4 pb-8 z-10">
+            <h2 class="text-white text-center md:text-start md:text-4xl text-sm uppercase pt-60 md:pt-4 pb-8 z-10" style="font-weight: 600;">
                 AutoPROussur - ваш надеждый <br> партнёр в покупке автомобиля
             </h2>
             <p class="text-white text-center md:text-start font-medium">
                 Мы работаем для вас и сопровождаем на каждом этапе сделки
             </p>
 
-            <ul class="p-20 -mt-16 md:mt-24 right-0 absolute flex items-start md:justify-between justify-center flex-wrap gap-4 counter-list">
+            <ul class="right-0 absolute flex items-start md:justify-between justify-center flex-wrap gap-4 counter-list">
                 <li class="border bg-black rounded-3xl py-3 md:py-6 px-10 md:px-16 transform hover:scale-105 transition-all">
                     <p class="md:text-5xl text-3xl text-white pt-4 pb-2 inline-flex items-center">
                         <span class="ml-2 mr-4 md:text-5xl text-3xl">Более</span>
@@ -414,34 +419,34 @@ Template Name: auto_ussur
 
     
     <!-- Как происходит работа -->
-    <section class="pt-52 md:pt-36">
+    <section class="pt-51 md:pt-20 how__we__work__section">
         <div class="container relative h-max">
             <img class="hidden sm:hidden md:block absolute bg-no-repeat bg-center top-10 scale-75 md:scale-100" src="<?php echo get_template_directory_uri() . '/src/img/how/how__bg.png'; ?>" alt="">
             <img style="z-index: -20;" class="block sm:block md:hidden absolute bg-no-repeat bg-center top-10 scale-75 md:scale-100" src="<?php echo get_template_directory_uri() . '/src/img/how/how__bg__small.png'; ?>" alt="">
             
-            <h2 class="font-bold md:text-5xl text-4xl pb-0 md:text-start text-center">Как происходит работа?</h2>
+            <h2 class="md:text-5xl text-4xl pb-0 md:text-start text-center" style="font-weight: 600;">Как происходит работа?</h2>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 pt-10 how__we__work">
                 <div style="width: -webkit-fill-available;" class="h-min relative p-7  bg-black rounded-2xl">
                     <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/1.svg'; ?>" alt="">
                     <div>
-                        <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-bold">
+                        <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-semibold">
                             Выбор автомобиля
                         </p>
 
-                        <p class="text-center md:text-start text-gray text-base">
+                        <p class="text-center md:text-start text-gray text-base" style="font-weight: 400;">
                             Обговариваем и согласуем ваши требования к параметрам автомобиля и бюджет, помогаем в подборе
                         </p>
                     </div>
                 </div>
                 <div style="width: -webkit-fill-available;" class="h-min relative mt-0 md:mt-14 p-7  bg-black rounded-2xl">
                     <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/2.svg'; ?>" alt="">
-                    <div>g
-                        <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-bold">
+                    <div>
+                        <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-semibold">
                             Заключение договора
                         </p>
 
-                        <p class="text-center md:text-start text-gray text-base">
+                        <p class="text-center md:text-start text-gray text-base" style="font-weight: 400;">
                             От вас необходимы: ксерокопия паспорта, заверенная натариусом, снилса и инн
                         </p>
                         <a href="">Образец договора</a>
@@ -450,11 +455,11 @@ Template Name: auto_ussur
                 <div style="width: -webkit-fill-available;" class="h-min relative p-7 bg-black rounded-2xl">
                     <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/3.svg'; ?>" alt="">
                     <div>
-                        <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-bold">
+                        <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-semibold">
                             Вносится предоплата
                         </p>
 
-                        <p class="text-center md:text-start text-gray text-base">
+                        <p class="text-center md:text-start text-gray text-base" style="font-weight: 400;">
                             30 000–50 000 ₽ в зависимости от выбранного автомобиля
                         </p>
                     </div>
@@ -462,11 +467,11 @@ Template Name: auto_ussur
                 <div style="width: -webkit-fill-available;" class="h-min relative mt-0 md:mt-14 p-7 bg-black rounded-2xl">
                     <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/4.svg'; ?>" alt="">
                     <div>
-                        <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-bold">
+                        <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-semibold">
                             Передача автомобиля или доставка по РФ
                         </p>
 
-                        <p class="text-center md:text-start text-gray text-base">
+                        <p class="text-center md:text-start text-gray text-base" style="font-weight: 400;">
                             Вы вносите оставшеюся сумма и автомобиль с полным пакетом документов передаётся вам
                         </p>
                     </div>
@@ -482,7 +487,7 @@ Template Name: auto_ussur
         <div class="container rounded-3xl relative  h-[45vh] sm:h-[55vh] md:h-[69vh]">
             <img class="block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/price/price__bg.png'; ?>" alt="">
             <div class="p-5 md:p-32 text-center md:text-start">
-                <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative">РАССЧИТАЕМ СТОИМОСТЬ!</h2>
+                <h2 class="text-center md:text-start text-4xl lg:text-5xl relative" style="font-weight: 600;">РАССЧИТАЕМ СТОИМОСТЬ!</h2>
                 <p class="text-sm md:font-base font-normal text-black py-5">
                     Заполните анкету и мы подберём автомобиль под ваш бюджет,<br> рассчитаем все расходы на покупку и доставку совершенно <br> бесплатно
                 </p>
@@ -497,7 +502,7 @@ Template Name: auto_ussur
     <section class="pt-12 md:pt-36">
         <div class="container relative">
 
-            <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative pb-5 md:pb-10">Собственная стоянка в Уссурийске</h2>
+            <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Собственная стоянка в Уссурийске</h2>
 
             <div class="arrows__slider">             
                 <button
@@ -513,17 +518,17 @@ Template Name: auto_ussur
             <div class="parking-wrapper overflow-hidden">
                 <div class="parking-item">
                     <div class="swiper-wrapper gallery-wrapper">
-                        <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
+                        <div class="swiper-slide p-2 transform hover:scale-105 transition-all">
                             <a href="src/img/stop/stopping.png">
                                 <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                             </a>
                         </div>            
-                        <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
+                        <div class="swiper-slide p-2 transform hover:scale-105 transition-all">
                             <a href="src/img/stop/stopping.png">
                                 <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                             </a>
                         </div>            
-                        <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
+                        <div class="swiper-slide p-2 transform hover:scale-105 transition-all">
                             <a href="src/img/stop/stopping.png">
                                 <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                             </a>
@@ -538,7 +543,7 @@ Template Name: auto_ussur
     <section class="pt-12 md:pt-36">
         <div class="container relative">
 
-            <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative pb-5 md:pb-10">Отзывы реальных клиентов </h2>
+            <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Отзывы реальных клиентов </h2>
             
             <div class="arrows__slider">             
                 <button
@@ -552,8 +557,8 @@ Template Name: auto_ussur
             </div>
             
 
-            <div class="review-wrapper overflow-hidden">
-                <div class="review-item p-0 md:p-10 overflow-hidden">
+            <div class="review-wrapper">
+                <div class="review-item p-0 md:p-4 overflow-hidden">
 
                     <?php
                         $file_path = 'review-slider-functions.php';
@@ -571,7 +576,7 @@ Template Name: auto_ussur
     <!-- Банки партнеры -->
     <section class="pt-12 md:pt-36">
         <div class="container">
-            <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative pb-5">Банки-партнеры </h2>
+            <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5" style="font-weight: 600;">Банки-партнеры </h2>
             <p class="text-xl pb-8">Мы сотрудничаем с банками для вашего удобства</p>
             <div class="flex justify-center md:justify-start gap-10 items-center flex-wrap">
                 <img class="transform hover:scale-105 transition-all" src="<?php echo get_template_directory_uri() .'/src/img/banks/atb.png'; ?>" alt="">
@@ -582,11 +587,11 @@ Template Name: auto_ussur
     </section> 
 
     <!-- Ответы на частые вопросы -->
-        <section class="pt-12 md:pt-36">
+    <section class="pt-12 md:pt-36">
         <div class="container">
             <div class="faq__wrapper">
-                <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative pb-5 md:pb-10">Ответы на частые вопросы </h2>
-                <div class="faq__tabs _tabs">
+                <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Ответы на частые вопросы </h2>
+                <div class="faq__tabs _tabs flex flex-col md:flex-row gap-10">
                     <ul class="faq__list">
                         <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
                             <button class="faq__btn _tabs-button">Где производится продукция?</button>
@@ -608,7 +613,10 @@ Template Name: auto_ussur
                                 <p>Задаток выдаётся на поставку конкретной машины и гарантирует приобретение автомобиля покупателем. Часто задаток используется при отсутствии нужной комплектации и заказе её с завода-производителя. В документе указывают дату поставки и размер пени за просроченные дни.
                                 </p>
                             </div>
-                        </li>                              
+                        </li>                                                     
+                    </ul>
+
+                    <ul class="faq__list">
                         <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
                             <button class="faq__btn _tabs-button">Сколько времени уходит на покупку автомобиля?</button>
                             <div class="faq__content _tabs-content">
@@ -629,7 +637,7 @@ Template Name: auto_ussur
                                 <p>Задаток выдаётся на поставку конкретной машины и гарантирует приобретение автомобиля покупателем. Часто задаток используется при отсутствии нужной комплектации и заказе её с завода-производителя. В документе указывают дату поставки и размер пени за просроченные дни.
                                 </p>
                             </div>
-                        </li>                              
+                        </li>       
                     </ul>
                 </div>
             </div>
@@ -642,7 +650,7 @@ Template Name: auto_ussur
             <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="<?php echo get_template_directory_uri() . '/src/img/news/news.png'; ?>" alt="">
             <img class="block left-0 md:hidden absolute bottom-0" src="<?php echo get_template_directory_uri() . '/src/img/news/news_small.png'; ?>" alt="">
             <div class="p-4 md:p-16 z-100">
-                <h2 class="text-xl lg:text-5xl font-extrabold relative pb-4 text-white">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
+                <h2 class="text-xl lg:text-5xl relative pb-4 text-white" style="font-weight: 600;">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
                 <div class="flex justify-start gap-10">
                     <a href="">
                         <img src="<?php echo get_template_directory_uri() . '/src/img/icons/tg__white.svg'; ?>" alt="">
@@ -658,9 +666,9 @@ Template Name: auto_ussur
     <!-- Контакты -->
     <section class="pt-12 md:pt-36">
         <div class="container relative flex justify-between flex-wrap md:flex-row flex-col gap-10">
-            <div class="bg-black max-w-xl p-10 rounded-3xl">
+            <div class="bg-black max-w-xl p-10 rounded-3xl contact__div">
                 <div class="pb-5">
-                    <h2 class="text-start text-4xl lg:text-5xl font-extrabold relative text-white">Контакты </h2>
+                    <h2 class="text-start text-4xl lg:text-5xl relative text-white" style="font-weight: 600;">Контакты </h2>
                 </div>
                 <ul>
                     <li class="pb-8">

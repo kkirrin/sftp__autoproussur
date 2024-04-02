@@ -6,7 +6,7 @@
                 'posts_per_page' => -1
             )
         );
-        $review_box = '<div class="swiper-wrapper gap-1">';
+        $review_box = '<div class="swiper-wrapper">';
         foreach ($reviews->posts as $review) {
             $review_meta = get_post_meta($review->ID);
     
@@ -15,7 +15,7 @@
                 $short_name .= mb_substr($name_element, 0, 1);
             }
 
-            $review_box .= '<div class="swiper-slide review__item__item transform hover:scale-105 transition-all w-full" style="height: auto;">';
+            $review_box .= '<div class="swiper-slide review__item__item w-full" style="height: auto;">';
                 $review_box .= '<div class="flex justify-between" style="align-items:baseline;">';
                 $review_box .= '<div class="flex justify-center gap-5" style="align-items:baseline;">';
                 $review_box .= '<p class="avatar rounded-full bg-white text-light-green" style="margin-bottom: 10px; border-radius: 100%; background-color: rgb(237, 237, 237); padding: 10px 20px;">' . $short_name . '</p>';

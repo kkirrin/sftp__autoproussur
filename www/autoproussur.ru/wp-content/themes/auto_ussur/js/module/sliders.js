@@ -56,7 +56,7 @@ export const initReviewsSlider = () => {
                 // },
                 speed: 1000,
                 direction: 'horizontal',
-                spaceBetween: 5,
+                spaceBetween: 0,
                 // equalHeight: true,
 
                 // If we need pagination
@@ -79,7 +79,7 @@ export const initReviewsSlider = () => {
                     },
                     1200: {
                         slidesPerView: 3,
-                        spaceBetween:10
+                        spaceBetween:20
                     }
                     }
             });
@@ -197,7 +197,7 @@ export const initParkingSlider = () => {
                 // },
                 speed: 1500,
                 direction: 'horizontal',
-                spaceBetween: 5,
+                spaceBetween: 0,
                 equalHeight: true,
 
                 // If we need pagination

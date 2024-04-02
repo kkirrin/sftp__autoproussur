@@ -3,7 +3,7 @@
                 <a href="index.html">
                     <img class="block sm:hidden md:hidden" src="<?php echo get_template_directory_uri() .'/src/img/logo.svg'; ?>" alt="">
                 </a>
-                <div class="container flex justify-between md:flex-nowrap flex-wrap text-white pt-10">
+                <div class="flex justify-between md:flex-nowrap flex-wrap text-white pt-10">
                     <div class="hidden sm:block md:block">
                         <a href="index.html">
                             <img src="<?php echo get_template_directory_uri() .'/src/img/logo.svg'; ?>" alt="">
@@ -40,18 +40,18 @@
                     </div>
                     <div>
                         <ul class="text-gray md:text-base text-xs">
-                            <li class="pb-5">
-                                <a class=" font-bold text-black transform hover:scale-105 transition-all" href="tel:+79510288418">
+                            <li class="pb-2">
+                                <a style="font-weight: 600;" class=" text-black transform hover:scale-105 transition-all" href="tel:+79510288418">
                                     +7 951 028-84-18 
                                 </a>
                             </li>
-                            <li class="pb-5">
-                                <a class=" font-bold text-black transform hover:scale-105 transition-all" href="tel:+79510154751">
+                            <li class="pb-2">
+                                <a style="font-weight: 600;" class=" text-black transform hover:scale-105 transition-all" href="tel:+79510154751">
                                     +7 951 015-47-51
                                 </a>
                             </li>
-                            <li class="pb-5">
-                                <a href="mailto:lehachechel10@gmail.com" class=" font-bold text-black transform hover:scale-105 transition-all">lehachechel10@gmail.com</a>
+                            <li class="pb-2">
+                                <a href="mailto:lehachechel10@gmail.com" style="font-weight: 600;" class=" text-black transform hover:scale-105 transition-all">lehachechel10@gmail.com</a>
                             </li>
     
                             <li class=" text-black md:text-base text-xs block md:hidden">г. Уссурийск, 

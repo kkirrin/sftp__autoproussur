@@ -53,15 +53,15 @@
                                 <div class="card card--product">
                                     <div class="slider card__slider relative">
                                         <div class="swiper slider__slider">
-                                            <div class="swiper-wrapper gallery-wrapper pb-5">
+                                            <div class="swiper-wrapper gallery-wrapper">
                                      
                                                 <?php
                                                     $photos = get_field('photo_slide');
                                                     if ($photos) {
                                                         foreach ($photos as $photo) {
-                                                            echo '<div class="swiper-slide">';
+                                                            echo '<div class="swiper-slide" style="padding-right: 15px;">';
                                                             echo '<a href="' . esc_url($photo['url']) . '">';
-                                                            echo '<img class="rounded-3xl img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="' . esc_url($photo['url']) . '" alt="">';
+                                                            echo '<img style="border-radius: 20px;" class=" img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="' . esc_url($photo['url']) . '" alt="">';
                                                             echo '</a>';
                                                             echo '</div>';
                                                         }
@@ -80,7 +80,7 @@
                                                 $photos = get_field('photo_slide');
                                                 if ($photos) {
                                                     foreach ($photos as $photo) {
-                                                        echo '<div class="swiper-slide">';
+                                                        echo '<div class="swiper-slide" style="padding-top: 30px;">';
                                                         echo '<a href="' . esc_url($photo['url']) . '">';
                                                         echo '<img class="rounded-2xl img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="' . esc_url($photo['url']) . '" alt="">';
                                                         echo '</a>';
@@ -100,16 +100,19 @@
                         </section>
         
                         <div class="md:pt-0 pt-20 w-full md:w-1/3">
-                            <div class="font-bold md:text-4xl text-xl">
-                                <?php the_field('marka_name'); ?> <?php the_field('model_name'); ?>
+                            <div style="font-weight: 600;" class=" md:text-4xl text-xl">
+                                <!-- <?php the_field('marka_name'); ?> <?php the_field('model_name'); ?> -->
                             
                                 <div class="flex justify-start items-center gap-4 pb-7">
-                                        <p class="text-xs md:text-sm py-2 px-6 bg-yellow rounded-3xl">
+                                        <p class="text-xs md:text-sm py-2 bg-yellow rounded-3xl" style="font-weight: 500; padding-right: 26px; padding-left: 26px;">
                                             <?php the_field('state'); ?>
                                         </p>
-                                        <p class="text-xs md:text-sm py-2 px-6 bg-red rounded-3xl text-white">
-                                            <?php the_field('sale') ? 'sale' : '' ?> %
-                                        </p>
+                                        <?php echo get_field('sale') ? '
+                                            <p class="text-xs md:text-sm py-2 px-6 bg-red rounded-3xl text-white">
+                                                '.get_field('sale').'
+                                            </p>' 
+                                            : '';
+                                        ?>
                                 </div>
 
                                 <div class="flex justify-start items-center gap-5">
@@ -125,66 +128,66 @@
 
                             <div class="flex justify-between items-center pt-10">
                                 <ul>
-                                    <li class="md:text-base text-xs text-gray pb-5">
+                                    <li style="font-weight: 400; padding-bottom: 15px;" class="md:text-base text-xs text-gray">
                                         Топливо
                                     </li>
-                                    <li class="md:text-base text-xs text-gray pb-5">
+                                    <li style="font-weight: 400; padding-bottom: 15px;" class="md:text-base text-xs text-gray">
                                         Объем двигателя
                                     </li>
-                                    <li class="md:text-base text-xs text-gray pb-5">
+                                    <li style="font-weight: 400; padding-bottom: 15px;" class="md:text-base text-xs text-gray">
                                         Мощность
                                     </li>
-                                    <li class="md:text-base text-xs text-gray pb-5">
+                                    <li style="font-weight: 400; padding-bottom: 15px;" class="md:text-base text-xs text-gray">
                                         Коробка передач
                                     </li>
-                                    <li class="md:text-base text-xs text-gray pb-5">
+                                    <li style="font-weight: 400; padding-bottom: 15px;" class="md:text-base text-xs text-gray">
                                         Привод
                                     </li>
-                                    <li class="md:text-base text-xs text-gray pb-5">
+                                    <li style="font-weight: 400; padding-bottom: 15px;" class="md:text-base text-xs text-gray">
                                         Тип кузова
                                     </li>
-                                     <li class="md:text-base text-xs text-gray pb-5">
+                                     <li style="font-weight: 400; padding-bottom: 15px;" class="md:text-base text-xs text-gray">
                                         Пробег
                                     </li>
-                                     <li class="md:text-base text-xs text-gray pb-5">
+                                     <li style="font-weight: 400; padding-bottom: 15px;" class="md:text-base text-xs text-gray">
                                         Руль
                                     </li>
-                                    <li class="md:text-base text-xs text-gray pb-5">
+                                    <li style="font-weight: 400; padding-bottom: 15px;" class="md:text-base text-xs text-gray">
                                         Поколение
                                     </li>     
-                                    <li class="md:text-base text-xs text-gray pb-5">
+                                    <li style="font-weight: 400; padding-bottom: 15px;" class="md:text-base text-xs text-gray">
                                         Комплектация
                                     </li>     
                                 </ul>
                                 <ul>
-                                    <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
+                                    <li style="font-weight: 500; padding-bottom: 15px;" class="md:text-base text-xs font-semibold card_item--li">
                                         <?php echo get_field('fuel') ? get_field('fuel') : '-'; ?>
                                     </li>
-                                    <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
+                                    <li style="font-weight: 500; padding-bottom: 15px;" class="md:text-base text-xs font-semibold card_item--li">
                                         <?php echo get_field('volume') ? get_field('volume') : '-'; ?>
                                     </li>
-                                    <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
+                                    <li style="font-weight: 500; padding-bottom: 15px;" class="md:text-base text-xs font-semibold card_item--li">
                                         <?php echo get_field('capacity') ? get_field('capacity') : '-'; ?>
                                     </li>
-                                    <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
+                                    <li style="font-weight: 500; padding-bottom: 15px;" class="md:text-base text-xs font-semibold card_item--li">
                                         <?php echo get_field('transmission') ? get_field('transmission') : '-'; ?>
                                     </li>
-                                    <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
+                                    <li style="font-weight: 500; padding-bottom: 15px;" class="md:text-base text-xs font-semibold card_item--li">
                                         <?php echo get_field('drive') ? get_field('drive') : '-'; ?>
                                     </li>
-                                    <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
+                                    <li style="font-weight: 500; padding-bottom: 15px;" class="md:text-base text-xs font-semibold card_item--li">
                                         <?php echo get_field('kuzov') ? get_field('kuzov') : '-'; ?>
                                     </li>
-                                     <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
+                                     <li style="font-weight: 500; padding-bottom: 15px;" class="md:text-base text-xs font-semibold card_item--li">
                                         <?php echo get_field('milleage') ? get_field('milleage') : '-'; ?>
                                     </li>
-                                     <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
+                                     <li style="font-weight: 500; padding-bottom: 15px;" class="md:text-base text-xs font-semibold card_item--li">
                                         <?php echo get_field('rudder') ? get_field('rudder') : '-'; ?>
                                     </li>
-                                     <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
+                                     <li style="font-weight: 500; padding-bottom: 15px;" class="md:text-base text-xs font-semibold card_item--li">
                                         <?php echo get_field('generation') ? get_field('generation') : '-'; ?>
                                     </li>
-                                     <li class="md:text-base text-xs font-semibold pb-5 card_item--li">
+                                     <li style="font-weight: 500; padding-bottom: 15px;" class="md:text-base text-xs font-semibold card_item--li">
                                         <?php echo get_field('equipment') ? get_field('equipment') : '-'; ?>
                                     </li>
                                 </ul>
@@ -192,7 +195,7 @@
                                 
                             </div>
                             
-                            <a class="bg-red flex popup-link text-white justify-center py-4 px-5 rounded-2xl"
+                            <a class="bg-red flex popup-link text-white justify-center py-4 px-5 rounded-3xl"
                             href="#popup4"
                             >Купить
                         </a>

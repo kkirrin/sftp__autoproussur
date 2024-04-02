@@ -76,12 +76,13 @@ Template Name: catalog
                                 <div class="flex flex-col w-auto relative cars">
 
                                     <?php echo get_field('state') ? '<span style="width: max-content; top: 10px; left: 10px;" class="absolute bg-yellow py-2 px-4 rounded-3xl">' . get_field('state') . '</span>' : ''; ?>
-
-                                        <img class="rounded-3xl" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
+                                    <a href="<?php echo the_permalink(); ?>">
                                         <p class="font-bold text-black text-base md:text-xl pb-6 pt-5">
-                                        <span class="marka_name"><?php echo get_field('marka_name', $post->ID); ?></span>
-                                        <span class="model_name"> <?php echo get_field('model_name', $post->ID); ?></span>
-
+                                            <span class="marka_name"><?php echo get_field('marka_name', $post->ID); ?></span>
+                                            <span class="model_name"> <?php echo get_field('model_name', $post->ID); ?></span>
+                                            <img class="rounded-3xl" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
+                                        </p>
+                                    </a>
                                         <ul>
                                             <div class="flex justify-between flex-row">
                                                     <li class="text-gray pb-2">Год выпуска</li>
@@ -121,8 +122,9 @@ Template Name: catalog
 
 
                                         <div class="flex gap-5 justify-between items-center">
-                                            <a href="#popup4" class="button__order popup-link">
-                                                <?php echo get_field('state') === 'В пути' ? 'Заказать' : 'Купить'; ?>
+                                            <a href="#popup4" class="button__order popup-link text-center">
+                                                <!-- <?php echo get_field('state') === 'В пути' ? 'Заказать' : 'Купить'; ?> -->
+                                                Заказать
                                             </a>
                                             <a href="<?php echo the_permalink(); ?>" class="button__circle">
                                                 <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">

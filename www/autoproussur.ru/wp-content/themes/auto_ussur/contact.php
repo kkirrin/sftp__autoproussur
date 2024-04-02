@@ -81,7 +81,7 @@ Template Name: contract
             <!-- Карта -->
             <section class="pt-12 md:pt-14 ">
                 <div class="container">
-                    <h2 class="text-4xl md:text-5xl font-bold text-blac pb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-black pb-12">
                         Контактная информация
                     </h2>
 
@@ -118,7 +118,7 @@ Template Name: contract
             </section>
 
             <!-- Карта -->
-            <section class="pt-12 md:pt-36 contact__map">
+            <section class="pt-12 md:pt-14 contact__map">
                 <div class="container">
                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A40c23e493b20b3fcf4e84ebb21a3ba8f240084f4def0c23d942e3e03c164c6e9&amp;width=1228&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
@@ -128,35 +128,35 @@ Template Name: contract
             <section class="pt-12 md:pt-36">
                 <div class="container relative">
 
-                    <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative pb-5 md:pb-10">Собственная стоянка в Уссурийске</h2>
+                    <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Собственная стоянка в Уссурийске</h2>
 
                     <div class="arrows__slider">             
                         <button
                             class="parking-prev rounded-full bg-yellow p-4">
-                            <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow_prev.svg'; ?>" alt="влево">
+                            <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_prev.svg'; ?>" alt="влево">
                         </button>
                         <button
                             class="parking-next rounded-full bg-yellow p-4">
-                            <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow_next.svg'; ?>" alt="вправо" >
+                            <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_next.svg'; ?>" alt="вправо" >
                         </button>
                     </div>
-        
+
                     <div class="parking-wrapper overflow-hidden">
                         <div class="parking-item">
                             <div class="swiper-wrapper gallery-wrapper">
-                                <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
-                                    <a href="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>" ?>
-                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
+                                <div class="swiper-slide p-2 transform hover:scale-105 transition-all">
+                                    <a href="src/img/stop/stopping.png">
+                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                                     </a>
                                 </div>            
-                                <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
-                                    <a href="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>">
-                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
+                                <div class="swiper-slide p-2 transform hover:scale-105 transition-all">
+                                    <a href="src/img/stop/stopping.png">
+                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                                     </a>
                                 </div>            
-                                <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
-                                    <a href="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>">
-                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
+                                <div class="swiper-slide p-2 transform hover:scale-105 transition-all">
+                                    <a href="src/img/stop/stopping.png">
+                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                                     </a>
                                 </div>            
                             </div>
@@ -164,6 +164,7 @@ Template Name: contract
                     </div>       
                 </div>
             </section>
+
           
            <!-- Новости -->
            <section class="pt-12 md:pt-36 p-5 ">

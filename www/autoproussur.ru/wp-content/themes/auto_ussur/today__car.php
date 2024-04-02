@@ -51,11 +51,14 @@
                     ?>
                         <div class="swiper-slide flex flex-col w-[310px] relative">
                         <?php echo get_field('state') ? '<span style="width: max-content; top: 10px; left: 10px;" class="absolute bg-yellow py-2 px-4 rounded-3xl">' . get_field('state') . '</span>' : ''; ?>
-                        <img class="rounded-3xl pb-5" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
-                                <p class="font-bold text-black text-base md:text-xl pb-6">
+                        <a href="<?php echo the_permalink(); ?>">
+                        
+                            <img class="rounded-3xl pb-5" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
+                            <p class="font-bold text-black text-base md:text-xl pb-6">
                                 <?php echo get_field('marka_name', $post->ID); ?>
                                 <?php echo get_field('model_name', $post->ID); ?>
-
+                            </p>    
+                        </a>
                                 <ul>
                                     <div class="flex justify-between flex-row">
                                             <li class="text-gray pb-2">Год выпуска</li>

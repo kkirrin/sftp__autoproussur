@@ -45,6 +45,30 @@ Template Name: about
                         <button class="bg-red text-center rounded-3xl text-white py-4 px-6 text-lg font-bold"> Перейти в каталог </button>
 
                     </div>
+
+                    <ul class="right-0 absolute flex items-start md:justify-between justify-center flex-wrap gap-4 counter-list counter-list__about">
+                        <li class="border bg-black rounded-3xl py-3 md:py-6 px-10 md:px-16 transform hover:scale-105 transition-all">
+                            <p class="md:text-5xl text-3xl text-white pt-4 pb-2 inline-flex items-center">
+                                <span class="ml-2 mr-4 md:text-5xl text-3xl">Более</span>
+                                <span class="counter-years md:text-5xl text-3xl text-white w-8 sm:w-16"></span>
+                            </p>
+                            <p class="md:text-xl text-sm text-gray">лет на рынке</p>
+                        </li>
+                        <li class="border bg-black rounded-3xl py-3 md:py-6 px-10 md:px-16 transform hover:scale-105 transition-all">
+                            <p class="md:text-5xl text-3xl text-white pt-4 pb-2 inline-flex items-center">
+                                <span class="ml-2 mr-4 md:text-5xl text-3xl">Более</span>
+                                <span class="counter-items md:text-5xl text-3xl text-white w-8 sm:w-16"></span>
+                            </p>
+                            <p class="md:text-xl text-sm text-gray">довольных клиентов по всей России</p>
+                        </li>
+                        <li class="border bg-black rounded-3xl py-3 md:py-6 px-10 md:px-16 transform hover:scale-105 transition-all">
+                            <p class="md:text-5xl text-3xl text-white pt-4 pb-2 inline-flex items-center">
+                                <span class="ml-2 mr-4 md:text-5xl text-3xl">Более</span>
+                                <span class="counter-client md:text-5xl text-3xl text-white w-8 sm:w-16"></span>
+                            </p>
+                            <p class="md:text-xl text-sm text-gray">автомобилей продаём в год</p>
+                        </li>
+                    </ul>
                 </div>
 
                 <!-- Акция -->
@@ -91,36 +115,12 @@ Template Name: about
                 </div>
             </section>
 
-            <section class="pt-12 md:pt-32">
-                <div class="container">
-                    <ul class=" flex items-start md:justify-between justify-start flex-wrap gap-10 counter-list">
-                        <li class="border bg-black rounded-3xl py-6 px-16 transform hover:scale-105 transition-all">
-                            <p class="md:text-5xl text-3xl text-white pt-4 pb-2 inline-flex items-center">
-                                <span class="ml-2 mr-4">Более</span>
-                                <span class="counter-years md:text-5xl text-3xl text-white w-8 sm:w-16"></span>
-                            </p>
-                            <p class="md:text-xl text-sm text-gray">лет на рынке</p>
-                        </li>
-                        <li class="border bg-black rounded-3xl py-6 px-16 transform hover:scale-105 transition-all">
-                            <p class="md:text-5xl text-3xl text-white pt-4 pb-2 inline-flex items-center">
-                                <span class="ml-2 mr-4">Более</span>
-                                <span class="counter-items md:text-5xl text-3xl text-white w-8 sm:w-16"></span>
-                            </p>
-                            <p class="md:text-xl text-sm text-gray">довольных клиентов по всей России</p>
-                        </li>
-                        <li class="border bg-black rounded-3xl py-6 px-16 transform hover:scale-105 transition-all">
-                            <p class="md:text-5xl text-3xl text-white pt-4 pb-2 inline-flex items-center">
-                                <span class="ml-2 mr-4">Более</span>
-                                <span class="counter-client md:text-5xl text-3xl text-white w-8 sm:w-16"></span>
-                            </p>
-                            <p class="md:text-xl text-sm text-gray">автомобилей продаём в год</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+
+                    
+
 
               <!-- Как происходит работа -->
-              <section class="pt-12 md:pt-24">
+              <section class="how__we__work__section__about">
                 <div class="container relative h-max">
                     <img class="hidden sm:hidden md:block absolute bg-no-repeat bg-center top-10 scale-75 md:scale-100" src="<?php echo get_template_directory_uri() . '/src/img/how/how__bg.png' ;?>" alt="">
                     <img class="block sm:block md:hidden absolute bg-no-repeat bg-center top-10 scale-75 md:scale-100" src="<?php echo get_template_directory_uri() . '/src/img/how/how__bg__small.png' ;?>" alt="">
@@ -185,35 +185,35 @@ Template Name: about
             <section class="pt-12 md:pt-36">
                 <div class="container relative">
 
-                    <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative pb-5 md:pb-10">Собственная стоянка в Уссурийске</h2>
+                    <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Собственная стоянка в Уссурийске</h2>
 
                     <div class="arrows__slider">             
                         <button
                             class="parking-prev rounded-full bg-yellow p-4">
-                            <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow_prev.svg'; ?>" alt="влево">
+                            <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_prev.svg'; ?>" alt="влево">
                         </button>
                         <button
                             class="parking-next rounded-full bg-yellow p-4">
-                            <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow_next.svg'; ?>" alt="вправо" >
+                            <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_next.svg'; ?>" alt="вправо" >
                         </button>
                     </div>
-        
+
                     <div class="parking-wrapper overflow-hidden">
                         <div class="parking-item">
                             <div class="swiper-wrapper gallery-wrapper">
-                                <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
+                                <div class="swiper-slide p-2 transform hover:scale-105 transition-all">
                                     <a href="src/img/stop/stopping.png">
-                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
+                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                                     </a>
                                 </div>            
-                                <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
+                                <div class="swiper-slide p-2 transform hover:scale-105 transition-all">
                                     <a href="src/img/stop/stopping.png">
-                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
+                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                                     </a>
                                 </div>            
-                                <div class="swiper-slide p-5 transform hover:scale-105 transition-all">
+                                <div class="swiper-slide p-2 transform hover:scale-105 transition-all">
                                     <a href="src/img/stop/stopping.png">
-                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() .'/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
+                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
                                     </a>
                                 </div>            
                             </div>
@@ -226,88 +226,35 @@ Template Name: about
             <section class="pt-12 md:pt-36">
                 <div class="container relative">
 
-                    <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative pb-5 md:pb-10">Отзывы реальных клиентов </h2>
+                    <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Отзывы реальных клиентов </h2>
                     
                     <div class="arrows__slider">             
                         <button
                             class="review-prev rounded-full bg-yellow p-4">
-                            <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow_prev.svg'; ?>" alt="влево">
+                            <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_prev.svg'; ?>" alt="влево">
                         </button>
                         <button
                             class="review-next rounded-full bg-yellow p-4">
-                            <img src="<?php echo get_template_directory_uri() .'/src/img/icons/arrow_next.svg'; ?>" alt="вправо" >
+                            <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_next.svg'; ?>" alt="вправо" >
                         </button>
                     </div>
-                   
-        
-                    <div class="review-wrapper overflow-hidden">
-                        <div class="review-item">
-                            <div class="swiper-wrapper">
+                    
 
-                              
+                    <div class="review-wrapper">
+                        <div class="review-item p-0 md:p-4 overflow-hidden">
 
+                            <?php
+                                $file_path = 'review-slider-functions.php';
+                                    require_once $file_path;
 
-                                <div class="swiper-slide p-5">
-                                    
-                                   
-                                        <div class="flex flex-col shadow-md bg-white p-7 rounded-2xl transform hover:scale-105 transition-all">
-                                            <div class="flex flex-row justify-between pb-7">
-                                            <div class="flex gap-5">
-                                                <p>Аватар</p>
-                                                <p>Дмитрий</p>
-                                            </div>
+                                    echo showReviewSlider();
+                            ?>
 
-                                            <div class="flex gap-2">
-                                                <p>5.0</p>
-                                                <p><img src="<?php echo get_template_directory_uri() . '/src/img/icons/star.svg'; ?>" alt=""></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="text-base pb-7 textFull">
-                                            Благодарю компанию AutoPROussur, в помощи приобретения автомобиля Toyota Raсtis из Японии. В особенности менеджеру Алексею, за отличное сотрудничество и понимание. Автомобиль был доставлен в срок, в состоянии соответствуещему фото без нареканий. Забирал машину сам, эмоции переполняли т.к оказалось лучше чем ожидал. Заказывайте автомобили через эту компанию, все честно, грамотно, и без всякого обмана!
-                                        </div>
-
-                                        <div class="flex gap-7 pb-7">
-                                            <img class="rounded-2xl" src="<?php echo get_template_directory_uri() .'/src/img/review/review_2.png'; ?>">
-                                            <img class="rounded-2xl" src="<?php echo get_template_directory_uri() .'/src/img/review/review_2.png'; ?>">
-                                        </div>
-
-                                        <div class="text-gray">
-                                            26.02.2024  
-                                        </div>
-                                        <!--                                         
-                                        <div class="pt-4 pb-4 pr-3 pl-3">
-                                            <button class="watchFull text-yellow hover:text-red">Посмотреть полностью</buton>
-                                        </div> -->
-                                    </div>
-
-
-
-                                    
-                                </div>   
-
-                                
-<!--                                 
-                                ?php
-                                    }
-                                    wp_reset_postdata();
-                                ?> -->
-                                <div class="swiper-slide p-5">
-                                    <div class="flex flex-col rounded-2xl transform hover:scale-105 transition-all w-full">
-                                        <video poster="<?php echo get_template_directory_uri() .'/src/img/review/review_3.png'; ?>"></video>
-                                    </div>
-                                </div>            
-                                <div class="swiper-slide p-5">
-                                    <div class="flex flex-col rounded-2xl transform hover:scale-105 transition-all">
-                                        <video poster="<?php echo get_template_directory_uri() .'/src/img/review/review_1.png'; ?>"></video>
-                                    </div>
-                                </div>            
-                            </div>
                         </div>
                     </div>       
                     
                 </div>
-            </section>
+            </section> 
 
             <!-- Банки партнеры -->
             <section class="pt-12 md:pt-36">
@@ -322,12 +269,12 @@ Template Name: about
                 </div>
             </section> 
 
-            <!-- Ответы на частые вопросы -->
+          <!-- Ответы на частые вопросы -->
             <section class="pt-12 md:pt-36">
                 <div class="container">
                     <div class="faq__wrapper">
-                        <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative pb-5 md:pb-10">Ответы на частые вопросы </h2>
-                        <div class="faq__tabs _tabs">
+                        <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Ответы на частые вопросы </h2>
+                        <div class="faq__tabs _tabs flex flex-col md:flex-row gap-10">
                             <ul class="faq__list">
                                 <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
                                     <button class="faq__btn _tabs-button">Где производится продукция?</button>
@@ -349,7 +296,10 @@ Template Name: about
                                         <p>Задаток выдаётся на поставку конкретной машины и гарантирует приобретение автомобиля покупателем. Часто задаток используется при отсутствии нужной комплектации и заказе её с завода-производителя. В документе указывают дату поставки и размер пени за просроченные дни.
                                         </p>
                                     </div>
-                                </li>                              
+                                </li>                                                     
+                            </ul>
+
+                            <ul class="faq__list">
                                 <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
                                     <button class="faq__btn _tabs-button">Сколько времени уходит на покупку автомобиля?</button>
                                     <div class="faq__content _tabs-content">
@@ -370,7 +320,7 @@ Template Name: about
                                         <p>Задаток выдаётся на поставку конкретной машины и гарантирует приобретение автомобиля покупателем. Часто задаток используется при отсутствии нужной комплектации и заказе её с завода-производителя. В документе указывают дату поставки и размер пени за просроченные дни.
                                         </p>
                                     </div>
-                                </li>                              
+                                </li>       
                             </ul>
                         </div>
                     </div>
@@ -397,12 +347,13 @@ Template Name: about
             </div>
         </section>
 
+      
         <!-- Контакты -->
         <section class="pt-12 md:pt-36">
             <div class="container relative flex justify-between flex-wrap md:flex-row flex-col gap-10">
-                <div class="bg-black max-w-xl p-10 rounded-3xl">
+                <div class="bg-black max-w-xl p-10 rounded-3xl contact__div">
                     <div class="pb-5">
-                        <h2 class="text-xl lg:text-5xl text-jost font-extrabold text-white relative">Контакты </h2>
+                        <h2 class="text-start text-4xl lg:text-5xl relative text-white" style="font-weight: 600;">Контакты </h2>
                     </div>
                     <ul>
                         <li class="pb-8">
@@ -418,15 +369,15 @@ Template Name: about
                         
                         </li>
                         <li class="pb-8">
-                            <p class="text-white">г. Уссурийск, ул. Тургенева, 42</p>
+                                <p class="text-white">г. Уссурийск, ул. Тургенева, 42</p>
                         </li>
                         <li class="pb-8">
-                            <p class="text-white">Режим работы: 10:00–18:00</p>
+                                <p class="text-white">Режим работы: 10:00–18:00</p>
                         </li>
                         
-                        <button class="bg-red text-white py-4 px-5 rounded-3xl" type="button">
+                        <a class="bg-red text-white py-4 px-5 rounded-3xl" href="https://api.whatsapp.com/send/?phone=79510154751">
                             Написать на WhatsApp
-                        </button>
+                        </a>
                     </ul>
                 </div>
 
