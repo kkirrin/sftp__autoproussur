@@ -34,7 +34,7 @@
                 $review_box .= '</div>';
 
                 $review_box .= '<div class="flex justify-start gap-3 py-5 gallery-wrapper">';
-                    $review_box .= '<a href="' . $review_meta['featured_image'][0] . '">';
+                    $review_box .= '<a href="' . $review_meta['featured_image'][0] . '" style="margin-bottom: 10px;">';
                     if (isset($review_meta['featured_image'])) {
 
                         $review_box .= '<img class="review__img rounded-lg" src="' . $review_meta['featured_image'][0] . '" alt="">';

@@ -18,7 +18,7 @@ Template Name: auto_ussur
                 <div class="swiper-wrapper">
                     <div class="swiper-slide relative -z-10">
                         <div class="flex flex-col md:flex-row gap-5 justify-between">
-                        <div class="w-full md:w-1/3 relative rounded-2xl overflow-hidden h-[60vh] md:h-[auto]">
+                        <div class="w-full md:w-1/3 relative rounded-2xl overflow-hidden h-[63vh] md:h-[auto]">
                             <h2 class="mt-16 md:mt-5 flex flex-col">
                                 <span class="text-red text-lg md:text-2xl font-normal" style="margin-bottom: 10px;">Автомобили из Японии <br></span> 
                                 <span class="font-extrabold text-4xl sm:text-6xl md:text-6xl mt-5">в Уссурийске по  <br> выгодной цене</span>
@@ -42,7 +42,7 @@ Template Name: auto_ussur
                     </div>
                     <div class="swiper-slide relative -z-10">
                         <div class="flex flex-col md:flex-row gap-5 justify-between">
-                        <div class="w-full md:w-1/3 relative rounded-2xl overflow-hidden h-[60vh] md:h-[auto]">
+                        <div class="w-full md:w-1/3 relative rounded-2xl overflow-hidden h-[63vh] md:h-[auto]">
                             <h2 class="mt-16 md:mt-5 flex flex-col">
                                 <span class="text-red text-lg md:text-2xl font-normal" style="margin-bottom: 10px;">Автомобили из Японии <br></span> 
                                 <span class="font-extrabold text-4xl sm:text-6xl md:text-6xl mt-5">в Уссурийске по  <br> выгодной цене</span>
@@ -66,7 +66,7 @@ Template Name: auto_ussur
                     </div>
                     <div class="swiper-slide relative -z-10">
                         <div class="flex flex-col md:flex-row gap-5 justify-between">
-                        <div class="w-full md:w-1/3 relative rounded-2xl overflow-hidden h-[60vh] md:h-[auto]">
+                        <div class="w-full md:w-1/3 relative rounded-2xl overflow-hidden h-[63vh] md:h-[auto]">
                             <h2 class="mt-16 md:mt-5 flex flex-col">
                                 <span class="text-red text-lg md:text-2xl font-normal" style="margin-bottom: 10px;">Автомобили из Японии <br></span> 
                                 <span class="font-extrabold text-4xl sm:text-6xl md:text-6xl mt-5">в Уссурийске по  <br> выгодной цене</span>
@@ -394,21 +394,21 @@ Template Name: auto_ussur
 
             <ul class="right-0 absolute flex items-start md:justify-between justify-center flex-wrap gap-4 counter-list">
                 <li class="border bg-black rounded-3xl py-3 md:py-6 px-10 md:px-16 transform hover:scale-105 transition-all">
-                    <p class="flex justify-center md:text-5xl text-3xl text-white pt-4 pb-2 ">
+                    <p class="flex justify-center md:justify-start md:text-5xl text-3xl text-white pt-4 pb-2 ">
                         <span class="ml-2 mr-4 md:text-5xl text-2xl">Более</span>
                         <span class="counter-years md:text-5xl text-2xl text-white w-8 sm:w-16"></span>
                     </p>
                     <p class="md:text-xl text-sm text-gray">лет на рынке</p>
                 </li>
                 <li class="border bg-black rounded-3xl py-3 md:py-6 px-10 md:px-16 transform hover:scale-105 transition-all">
-                    <p class="flex justify-center md:text-5xl text-3xl text-white pt-4 pb-2 pr-10 md:pr-0">
+                    <p class="flex justify-center md:justify-start md:text-5xl text-3xl text-white pt-4 pb-2 pr-10 md:pr-0">
                         <span class="ml-2 mr-4 md:text-5xl text-2xl">Более</span>
                         <span class="counter-items md:text-5xl text-2xl text-white w-8 sm:w-16"></span>
                     </p>
                     <p class="md:text-xl text-sm text-gray">довольных клиентов по всей России</p>
                 </li>
                 <li class="border bg-black rounded-3xl py-3 md:py-6 px-10 md:px-16 transform hover:scale-105 transition-all">
-                    <p class="flex justify-center md:text-5xl text-3xl text-white pt-4 pb-2 pr-10 md:pr-0">
+                    <p class="flex justify-center md:justify-start md:text-5xl text-3xl text-white pt-4 pb-2 pr-10 md:pr-0">
                         <span class="ml-2 mr-4 md:text-5xl text-2xl">Более</span>
                         <span class="counter-client md:text-5xl text-2xl text-white w-8 sm:w-16"></span>
                     </p>
@@ -655,7 +655,7 @@ Template Name: auto_ussur
         <div class="container h-[40vh] md:h-auto bg-black relative rounded-2xl overflow-hidden">
             <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="<?php echo get_template_directory_uri() . '/src/img/news/news.png'; ?>" alt="">
             <img class="block left-0 md:hidden absolute bottom-0" src="<?php echo get_template_directory_uri() . '/src/img/news/news_small.png'; ?>" alt="">
-            <div class="pt-5 md:pt-0 p-0 md:p-4 md:p-16 z-100">
+            <div class="pt-5 md:pt-14 p-0 md:p-4 md:p-16 z-100">
                 <h2 class="text-center md:text-start text-2xl lg:text-5xl relative pb-4 text-white" style="font-weight: 600;">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
                 <div class="flex justify-center md:justify-start gap-2 md:gap-10">
                     <a href="">

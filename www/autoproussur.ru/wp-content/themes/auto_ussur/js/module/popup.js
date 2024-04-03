@@ -16,7 +16,6 @@ export const initPopup = () => {
 
 
     const popup6__btn = document.querySelector('#popup6__btn');
-    console.log(popup6__btn);
 
     if(promo) {
     popupPromoBtn.addEventListener('click', function(e) {
@@ -56,6 +55,7 @@ export const initPopup = () => {
         
             const name = document.querySelector('#order-name').value = marka_name;
             const price =  document.querySelector('#order-price').value = model_price;
+
 
         });
     });

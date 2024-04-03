@@ -4,6 +4,50 @@
 /* Импорт шрифтов */
 
 @media(max-width: 480px) {
+  .last__item__footer {
+    padding-left: 90px;
+  }
+}
+
+@media(max-width: 420px) {
+  .last__item__footer {
+    padding-left: 70px;
+  }
+}
+
+@media(max-width: 403px) {
+  .last__item__footer {
+    padding-left: 50px;
+  }
+}
+
+@media(max-width: 385px) {
+  .last__item__footer {
+    padding-left: 30px;
+  }
+}
+
+@media(max-width: 385px) {
+  .last__item__footer {
+    padding-left: 30px;
+  }
+}
+
+
+@media(max-width: 363px) {
+  .last__item__footer {
+    padding-left: 10px;
+  }
+}
+
+@media(max-width: 347px) {
+  .last__item__footer {
+    padding-left: 0px;
+  }
+}
+
+
+@media(max-width: 480px) {
   .slider__thumb {
     height: 16vh !important;
   }
@@ -16,22 +60,34 @@
   .img_car__small {
     border-radius: 10px;
   }
+  iframe {
+    width: -webkit-fill-available !important;
+  }
+  .contact__div {
+    width: -webkit-fill-available !important;
+  }
 }
 
 
 @media(max-width:425px) {
   .contact__div {
-    width: 393px
+    width: -webkit-fill-available !important;
   }
 }
 
 
 @media(max-width: 410px) {
   iframe {
-    width: 374px;
+    width: -webkit-fill-available !important;
   }
   .contact__div {
-    width: 363px;
+    width: -webkit-fill-available !important;
+  }
+}
+
+@media(max-width: 375px) {
+  .contact__div {
+    width: 330px;
   }
 }
 
@@ -40,7 +96,7 @@
     width: 347px;
   }
   .contact__div {
-    width: 339px;
+    width: -webkit-fill-available !important;
   }
 }
 
@@ -1135,7 +1191,7 @@ label.file__button {
 }
 
 .btn__menu--mobile.active svg {
-  transition: 1s ease;
+  /* transition: 1s ease; */
   stroke: white;
 }
 
@@ -2861,6 +2917,10 @@ span.counter-items,
   height: 60vh;
 }
 
+.h-\[63vh\]{
+  height: 63vh;
+}
+
 .h-full{
   height: 100%;
 }
@@ -3686,7 +3746,9 @@ iframe {
 @media(max-width:480px) {
   iframe {
     width: 396px;
+    height: 69vh;
   }
+  
 }
 
 @media(max-width:426px) {
@@ -3769,7 +3831,7 @@ iframe {
 
 @media(max-width:480px) {
   .how__we__work div {
-    height: 29vh;
+    height: 31vh;
   }
 }
 

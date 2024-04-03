@@ -274,7 +274,7 @@ Template Name: about
                 <div class="container">
                     <div class="faq__wrapper">
                         <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Ответы на частые вопросы </h2>
-                        <div class="faq__tabs _tabs flex flex-col md:flex-row gap-10">
+                        <div class="faq__tabs _tabs flex flex-col md:flex-row gap-0 md:gap-10">
                             <ul class="faq__list">
                                 <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
                                     <button class="faq__btn _tabs-button">Где производится продукция?</button>

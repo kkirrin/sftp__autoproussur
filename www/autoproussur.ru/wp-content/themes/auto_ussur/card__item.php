@@ -269,7 +269,7 @@
             
         
             <!-- Популярные автомобили -->
-            <section class="pt-12 md:pt-40 popular-swiper">
+            <section class="pt-12 md:pt-40 popular-swiper cars">
                 <div class="container relative">
                     <h2 class="text-4xl md:text-5xl text-black" style="font-weight: 600;">
                         Популярные модели

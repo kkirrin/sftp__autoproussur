@@ -9,36 +9,40 @@
                             <img src="<?php echo get_template_directory_uri() .'/src/img/logo.svg'; ?>" alt="">
                         </a>
                     </div>
-                    <div>
-                        <ul class="text-gray md:text-base text-xs columns-1 sm:columns-1 md:columns-3">
-                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
-                                <a href='/catalog' class="text-base">
-                                    Каталог
-                                </a>
-                            </li>  
-                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
-                                <a href='/about__company' class="text-base">
-                                    О компании
-                                </a>
-                            </li>  
-                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
-                                <a href='/reviews' class="text-base">
-                                    Отзывы
-                                </a>
-                            </li>  
-                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
-                                <a href='/contacts' class="text-base">
-                                    Контакты
-                                </a>
-                            </li>  
-                            <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
-                                <a href='/contract' class="text-base">
-                                    Договор
-                                </a>
-                            </li>  
-                        </ul>
-                    </div>
-                    <div>
+
+
+                        <div>
+                            <ul class="text-gray md:text-base text-xs columns-1 sm:columns-1 md:columns-3">
+                                <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                    <a href='/catalog' class="text-base">
+                                        Каталог
+                                    </a>
+                                </li>  
+                                <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                    <a href='/about__company' class="text-base">
+                                        О компании
+                                    </a>
+                                </li>  
+                                <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                    <a href='/reviews' class="text-base">
+                                        Отзывы
+                                    </a>
+                                </li>  
+                                <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                    <a href='/contacts' class="text-base">
+                                        Контакты
+                                    </a>
+                                </li>  
+                                <li class="pb-5 md:pb-8 text-black transform hover:scale-105 transition-all font-semibold">
+                                    <a href='/contract' class="text-base">
+                                        Договор
+                                    </a>
+                                </li>  
+                            </ul>
+                        </div>
+                    
+                    <div class="last__item__footer">
+
                         <ul class="text-gray text-base">
                             <li class="pb-2">
                                 <a style="font-weight: 600;" class="text-base text-black transform hover:scale-105 transition-all" href="tel:+79510288418">
@@ -53,14 +57,14 @@
                             <li class="pb-2">
                                 <a href="mailto:lehachechel10@gmail.com" style="font-weight: 600;" class=" text-black transform hover:scale-105 transition-all">lehachechel10@gmail.com</a>
                             </li>
-    
+                            
                             <li class=" text-black text-base block md:hidden">г. Уссурийск, 
-                                ул. Тургенева, 42</li>
-    
+                                </br class="block md:hidden"> ул. Тургенева, 42</li>
+                                
                           
-                        </ul>
-                    </div>
-    
+                            </ul>
+                        </div>
+                        
                     <div>
                         <p class="text-black md:text-base text-xs hidden md:block">г. Уссурийск, 
                             ул. Тургенева, 42</p>
