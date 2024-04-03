@@ -109,7 +109,7 @@
                                         </p>
                                         <?php echo get_field('sale') ? '
                                             <p class="text-xs md:text-sm py-2 px-6 bg-red rounded-3xl text-white">
-                                                '.get_field('sale').'
+                                                '.get_field('sale').'%
                                             </p>' 
                                             : '';
                                         ?>
@@ -119,11 +119,13 @@
                                     <p class="font-bold md:text-2xl text-lg">
                                         <?php the_field('price'); ?>₽
                                     </p>
-                                     <p class="text-gray text-sm">
-                                        <?php the_field('old_price'); ?>₽
-                                    </p>
+                                    <?php if(get_field('old_price')): ?>
+                                        <p class="text-gray text-xs">
+                                            <?php echo get_field('old_price'); ?>₽
+                                        </p>
+                                    <?php endif; ?>
                                 </div>
-                                
+                                                                
                             </div>
 
                             <div class="flex justify-between items-center pt-10">
@@ -196,7 +198,7 @@
                             </div>
                             
                             <a class="bg-red flex popup-link text-white justify-center py-4 px-5 rounded-3xl"
-                            href="#popup4"
+                            href="#popup8"
                             >Купить
                         </a>
                         </div>
@@ -237,6 +239,8 @@
                                         <?php echo get_field('model_name', $post->ID); ?>
                                     </p>
 
+                                    
+
                             <?php endforeach; ?>
                             <?php wp_reset_postdata(); ?>
                             
@@ -250,15 +254,26 @@
 
             
         
-             <!-- Популярные автомобили -->
+            <!-- Популярные автомобили -->
             <section class="pt-12 md:pt-40 popular-swiper">
-                <div class="container">
-                    <h2 class="text-4xl md:text-5xl font-bold text-black">
+                <div class="container relative">
+                    <h2 class="text-4xl md:text-5xl text-black" style="font-weight: 600;">
                         Популярные модели
                     </h2>
 
+                    <div class="arrows__slider">             
+                        <button
+                            class="popular-prev rounded-full bg-yellow p-4">
+                            <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_prev.svg'; ?>" alt="влево">
+                        </button>
+                        <button
+                            class="popular-next rounded-full bg-yellow p-4">
+                            <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow_next.svg'; ?>" alt="вправо" >
+                        </button>
+                    </div>
+
                     <div class="popular-item w-0 min-w-[100%] overflow-hidden pt-6 md:pt-12">
-                        <div class="swiper-wrapper">
+                        <div class="swiper-wrapper cars">
 
                         <?php
                             $my_posts = get_posts(array(
@@ -277,34 +292,39 @@
                             ?>
                             
 
-                            <div class="swiper-slide flex flex-col w-[310px]">
-                                <img class="rounded-3xl pb-4" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
-                                <p class="font-bold text-black text-base md:text-xl pb-6">
-                                <?php echo get_field('marka_name', $post->ID); ?>
-                                <?php echo get_field('model_name', $post->ID); ?>
+                            <div class="swiper-slide flex flex-col w-[310px] relative">
 
-                                <ul>
+                                <?php echo get_field('state') ? '<span style="width: max-content; top: 10px; left: 10px;" class="absolute bg-yellow py-2 px-4 rounded-3xl">' . get_field('state') . '</span>' : ''; ?>
+                                <a href="<?php echo the_permalink(); ?>">
+                                    <img class="rounded-3xl" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
+                                    <p class="font-bold text-black text-base md:text-xl pb-6 pt-5">
+                                        <?php echo get_field('marka_name', $post->ID); ?>
+                                        <?php echo get_field('model_name', $post->ID); ?>
+                                    </p>
+                                </a>
+
+                                <ul class="ul__car">
                                     <div class="flex justify-between flex-row">
                                             <li class="text-gray pb-2">Год выпуска</li>
-                                            <li class="pb-6">
+                                            <li class="pb-2 md:pb-6">
                                             <?= get_field('year') ? get_field('year') : '-'; ?>
                                             </li>
                                     </div> 
                                     <div class="flex justify-between flex-row">
                                             <li class="text-gray pb-2">Пробег</li>
-                                            <li class="pb-6">
+                                            <li class="pb-2 md:pb-6">
                                                 <?php echo get_field('milleage') ? get_field('milleage') : '-'  ?>
                                             </li>
                                     </div> 
                                     <div class="flex justify-between flex-row">
                                             <li class="text-gray pb-2">Топливо</li>
-                                            <li class="pb-6">
+                                            <li class="pb-2 md:pb-6">
                                             <?php echo get_field('fuel') ? get_field('fuel') : '-'; ?>
                                             </li>
                                     </div> 
                                     <div class="flex justify-between flex-row">
                                             <li class="text-gray pb-2">Объём двигателя</li>
-                                            <li class="pb-6">
+                                            <li class="pb-2 md:pb-6">
                                                 <?php echo get_field('volume') ? get_field('volume') : '-'; ?>
                                             </li>
                                     </div> 
@@ -322,12 +342,16 @@
 
 
                                 <div class="flex gap-5 justify-between items-center">
-                                    <a href="#popup4" class="button__order popup-link">Заказать</a>
+                                    <a href="<?php echo the_permalink(); ?>" class="button__order popup-link text-center">
+                                        Заказать
+                                    </a>
                                     <a href="<?php echo the_permalink(); ?>" class="button__circle">
                                         <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
                                     </a>
                                 </div>
+                                
                             </div>    
+                        
 
                             <?php endforeach; ?>
                             <?php wp_reset_postdata(); ?>
@@ -337,21 +361,61 @@
 
                 </div>
             </section>
+
                 
-          <!-- Рассчитаем стоимость -->
-          <section class="pt-12 md:pt-36 relative p-5 md:p-0">
-            <div class="container rounded-3xl relative  h-[38vh] sm:h-[55vh] md:h-[69vh]">
-                <img class="block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/price/price__bg.png'; ?>" alt="">
-                <div class="p-5 md:p-32 text-center md:text-start">
-                    <h2 class="text-xl lg:text-5xl text-jost font-extrabold relative text-black">РАССЧИТАЕМ СТОИМОСТЬ!</h2>
-                    <p class="text-sm md:font-base font-normal text-black py-5">
-                        Заполните анкету и мы подберём автомобиль под ваш бюджет,<br> рассчитаем все расходы на покупку и доставку совершенно <br> бесплатно
-                    </p>
-                    <a href="#popup2" class="button__count popup-link text-center">Рассчитать</a>
+           <!-- Рассчитаем стоимость -->
+            <section class="pt-12 md:pt-32 relative p-5 md:p-0">
+                <div class="container rounded-3xl relative  h-[45vh] sm:h-[55vh] md:h-[69vh]">
+                    <img class="block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/price/price__bg.png'; ?>" alt="">
+                    <div class="p-5 md:p-32 text-center md:text-start">
+                        <h2 class="text-center md:text-start text-3xl lg:text-5xl relative" style="font-weight: 600;">РАССЧИТАЕМ СТОИМОСТЬ!</h2>
+                        <p class="text-sm md:font-base text-black py-5" style="font-weight: 500;">
+                            Заполните анкету и мы подберём автомобиль под ваш бюджет,<br> рассчитаем все расходы на покупку и доставку совершенно <br> бесплатно
+                        </p>
+                        <a href="#popup2" class="button__count popup-link text-center">Рассчитать</a>
+                    </div>
+
                 </div>
- 
-            </div>
-        </section>
+            </section>
+
+             <!-- Заявка на купить авто -->
+             <section id="popup8" class="popup">
+                <div class="popup__body">
+                    <div class="popup__content">
+                        <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                                <path d="M4 1.45508L19.9099 17.365" stroke="#333"/>
+                                <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#333"/>
+                                </svg>
+                        </button>
+                        <h2 class="text-start text-black z-10  md:text-4xl text-xl pb-7 font-bold">Хотите купить автомобиль?</h2>
+                        <div class="flex items-start justify-start">
+                            <p class="text-black md:text-base text-sm text-start pb-7">Оставьте контакты и наш менеджер свяжется с вами 
+                                в течение 15 минут и проконсультирует по всем вопросам</p>
+                        </div>
+
+                        <div class="form-wrapper">
+                            <?php echo do_shortcode('[contact-form-7 id="ff42d03" title="Заявка на покупку автомобиля"]'); ?>
+
+                            <p class="text-gray text-sm text-start pt-7">
+                                Нажимая кнопку «Заказать звонок» вы даёте согласие <br> на обработку персональных данных
+                            </p>
+
+                            <p class="text-red text-start font-bold pt-7">Если не хотите ждать напишите на <a class="nav-link" href="https://api.whatsapp.com/send/?phone=79510154751" class="underline">WhatsApp<a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script type="text/javascript">
+                jQuery(document).ready(function() {
+                    jQuery('#order-name').val("<?php the_field('marka_name'); ?> <?php the_field('model_name'); ?>");
+                    jQuery('#order-price').val("<?php echo get_field('price'); ?>");
+                });
+            </script>
+      
+
 
         
     </main>

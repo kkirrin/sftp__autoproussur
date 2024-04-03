@@ -45,7 +45,7 @@
         
                     <div class="flex md:hidden items-center justify-between gap-2">
                         <a href="/" class="flex md:hidden items-center justify-between gap-2">
-                            <img src="<?php echo get_template_directory_uri() . '/logo.png'; ?>" class="" alt="логотип в шапке">
+                            <img width="100px" src="<?php echo get_template_directory_uri() . '/logo.png'; ?>" class="" alt="логотип в шапке">
                         </a>
                     </div>
         
@@ -58,7 +58,7 @@
                         </li>
 
                         <li class="flex flex-col">
-                            <a class="text-black font-bold nav-link" href="tel:+79510154751">
+                            <a class="text-black font-bold nav-link" href="tel:+79510288418">
                                 8 (951) 028-84-18 
                             </a>
                             <a class="text-black font-bold nav-link" href="tel:+79510154751">
@@ -105,13 +105,13 @@
         
                         <li class="flex xs:flex sm:flex md:hidden sm:list-none">
                             <a href="https://www.instagram.com/geometry_nhk/">
-                                <img class="transform hover:scale-105 transition-all p-2" src="<?php echo get_template_directory_uri() . '/src/img/icons/tg.svg'; ?>" alt="" >
+                                <img width="60px" class="transform hover:scale-105 transition-all p-2" src="<?php echo get_template_directory_uri() . '/src/img/icons/tg.svg'; ?>" alt="" >
                             </a>
                         </li>
         
                         <li class="flex xs:flex sm:flex md:hidden">
                             <a class="nav-link" href="https://api.whatsapp.com/send/?phone=79510154751">
-                            <img class="transform hover:scale-105 transition-all p-2" src="<?php echo get_template_directory_uri() . '/src/img/icons/sap.svg'; ?>" alt="" >
+                            <img width="60px" class="transform hover:scale-105 transition-all p-2" src="<?php echo get_template_directory_uri() . '/src/img/icons/sap.svg'; ?>" alt="" >
                             </a>
                         </li>
 

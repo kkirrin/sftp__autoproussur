@@ -39,7 +39,7 @@ Template Name: catalog
                 
                 <div class="p-4 pb-10 bg-gray bg-opacity-10 rounded-2xl">
                     <div class=" pt-8 flex items-center justify-between">
-                        <h2 class="text-4xl md:text-5xl font-bold text-black pb-10">
+                        <h2 class="text-4xl md:text-5xl font-bold text-black pb-10 text-center md:text-start">
                             Подберите  автомобиль 
                         </h2>       
 
@@ -75,36 +75,37 @@ Template Name: catalog
                             ?>
                                 <div class="flex flex-col w-auto relative cars">
 
-                                    <?php echo get_field('state') ? '<span style="width: max-content; top: 10px; left: 10px;" class="absolute bg-yellow py-2 px-4 rounded-3xl">' . get_field('state') . '</span>' : ''; ?>
-                                    <a href="<?php echo the_permalink(); ?>">
-                                        <p class="font-bold text-black text-base md:text-xl pb-6 pt-5">
-                                            <span class="marka_name"><?php echo get_field('marka_name', $post->ID); ?></span>
-                                            <span class="model_name"> <?php echo get_field('model_name', $post->ID); ?></span>
-                                            <img class="rounded-3xl" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
-                                        </p>
-                                    </a>
-                                        <ul>
+                                <?php echo get_field('state') ? '<span style="width: max-content; top: 10px; left: 10px;" class="absolute bg-yellow py-2 px-4 rounded-3xl">' . get_field('state') . '</span>' : ''; ?>
+                                <a href="<?php echo the_permalink(); ?>">
+                                    <img class="rounded-3xl" src="<?php echo $firstPhoto['url']; ?>" alt="<?php echo $firstPhoto['alt']; ?>">
+                                    <p class="font-bold text-black text-base md:text-xl pb-6 pt-5">
+                                        <?php echo get_field('marka_name', $post->ID); ?>
+                                        <?php echo get_field('model_name', $post->ID); ?>
+                                    </p>
+                                </a>
+        
+                                        <ul class="ul__car">
                                             <div class="flex justify-between flex-row">
                                                     <li class="text-gray pb-2">Год выпуска</li>
-                                                    <li class="pb-6">
+                                                    <li class="pb-2 md:pb-6">
                                                     <?= get_field('year') ? get_field('year') : '-'; ?>
                                                     </li>
                                             </div> 
                                             <div class="flex justify-between flex-row">
                                                     <li class="text-gray pb-2">Пробег</li>
-                                                    <li class="pb-6">
+                                                    <li class="pb-2 md:pb-6">
                                                         <?php echo get_field('milleage') ? get_field('milleage') : '-'  ?>
                                                     </li>
                                             </div> 
                                             <div class="flex justify-between flex-row">
                                                     <li class="text-gray pb-2">Топливо</li>
-                                                    <li class="pb-6">
+                                                    <li class="pb-2 md:pb-6">
                                                     <?php echo get_field('fuel') ? get_field('fuel') : '-'; ?>
                                                     </li>
                                             </div> 
                                             <div class="flex justify-between flex-row">
                                                     <li class="text-gray pb-2">Объём двигателя</li>
-                                                    <li class="pb-6">
+                                                    <li class="pb-2 md:pb-6">
                                                         <?php echo get_field('volume') ? get_field('volume') : '-'; ?>
                                                     </li>
                                             </div> 
@@ -115,12 +116,12 @@ Template Name: catalog
                                                     </li>
                                             </div> 
                                         </ul>
-
-                                        <p class="text-black py-6"> 
+        
+                                        <p class="text-black py-6 font-bold"> 
                                             <?php echo get_field('price', $post->ID); ?> ₽
                                         </p>
-
-
+        
+        
                                         <div class="flex gap-5 justify-between items-center">
                                             <a href="#popup4" class="button__order popup-link text-center">
                                                 <!-- <?php echo get_field('state') === 'В пути' ? 'Заказать' : 'Купить'; ?> -->
@@ -130,11 +131,16 @@ Template Name: catalog
                                                 <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
                                             </a>
                                         </div>
-                                    </div>
-        
 
-                                <?php endforeach; ?>
-                                <?php wp_reset_postdata(); ?>
+                                        
+                                     
+                                        
+                                    </div>
+                                    
+
+        
+                            <?php endforeach; ?>
+                            <?php wp_reset_postdata(); ?>
                 </div>
             </div>
 
@@ -185,17 +191,18 @@ Template Name: catalog
 
         
         <!-- Рассчитаем стоимость -->
-        <section class="pt-12 md:pt-36 relative p-5 md:p-0">
+        
+        <section class="pt-12 md:pt-32 relative p-5 md:p-0">
             <div class="container rounded-3xl relative  h-[45vh] sm:h-[55vh] md:h-[69vh]">
-                <img class="block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() .'/src/img/price/price__bg.png'; ?>" alt="">
+                <img class="block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/price/price__bg.png'; ?>" alt="">
                 <div class="p-5 md:p-32 text-center md:text-start">
-                    <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative">РАССЧИТАЕМ СТОИМОСТЬ!</h2>
-                    <p class="text-sm md:font-base font-normal text-black py-5">
+                    <h2 class="text-center md:text-start text-3xl lg:text-5xl relative" style="font-weight: 600;">РАССЧИТАЕМ СТОИМОСТЬ!</h2>
+                    <p class="text-sm md:font-base text-black py-5" style="font-weight: 500;">
                         Заполните анкету и мы подберём автомобиль под ваш бюджет,<br> рассчитаем все расходы на покупку и доставку совершенно <br> бесплатно
                     </p>
                     <a href="#popup2" class="button__count popup-link text-center">Рассчитать</a>
                 </div>
-    
+
             </div>
         </section>
 

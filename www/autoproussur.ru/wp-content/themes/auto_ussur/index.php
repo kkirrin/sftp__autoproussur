@@ -142,7 +142,7 @@ Template Name: auto_ussur
             
             <div class="p-0 md:p-4 pb-10 rounded-2xl">
                 <div class="p-4 pb-10 bg-gray bg-opacity-10 pt-8 flex items-center justify-between pb-6 title__auto">
-                    <h2 class="text-4xl md:text-5xl text-black" style="font-weight: 600;">
+                    <h2 class="text-4xl md:text-5xl text-black text-center md:text-start" style="font-weight: 600;">
                         Подберите  автомобиль 
                     </h2>   
                     
@@ -199,28 +199,28 @@ Template Name: auto_ussur
                                     </p>
                                 </a>
         
-                                        <ul>
+                                        <ul class="ul__car">
                                             <div class="flex justify-between flex-row">
                                                     <li class="text-gray pb-2">Год выпуска</li>
-                                                    <li class="pb-6">
+                                                    <li class="pb-2 md:pb-6">
                                                     <?= get_field('year') ? get_field('year') : '-'; ?>
                                                     </li>
                                             </div> 
                                             <div class="flex justify-between flex-row">
                                                     <li class="text-gray pb-2">Пробег</li>
-                                                    <li class="pb-6">
+                                                    <li class="pb-2 md:pb-6">
                                                         <?php echo get_field('milleage') ? get_field('milleage') : '-'  ?>
                                                     </li>
                                             </div> 
                                             <div class="flex justify-between flex-row">
                                                     <li class="text-gray pb-2">Топливо</li>
-                                                    <li class="pb-6">
+                                                    <li class="pb-2 md:pb-6">
                                                     <?php echo get_field('fuel') ? get_field('fuel') : '-'; ?>
                                                     </li>
                                             </div> 
                                             <div class="flex justify-between flex-row">
                                                     <li class="text-gray pb-2">Объём двигателя</li>
-                                                    <li class="pb-6">
+                                                    <li class="pb-2 md:pb-6">
                                                         <?php echo get_field('volume') ? get_field('volume') : '-'; ?>
                                                     </li>
                                             </div> 
@@ -270,7 +270,7 @@ Template Name: auto_ussur
     </section>
 
    <!-- Популярные автомобили -->
-    <section class="pt-12 md:pt-40 popular-swiper">
+    <section class="pt-12 md:pt-20 popular-swiper">
         <div class="container relative">
             <h2 class="text-4xl md:text-5xl text-black" style="font-weight: 600;">
                 Популярные модели
@@ -321,25 +321,25 @@ Template Name: auto_ussur
                         <ul class="ul__car">
                             <div class="flex justify-between flex-row">
                                     <li class="text-gray pb-2">Год выпуска</li>
-                                    <li class="pb-6">
+                                    <li class="pb-2 md:pb-6">
                                     <?= get_field('year') ? get_field('year') : '-'; ?>
                                     </li>
                             </div> 
                             <div class="flex justify-between flex-row">
                                     <li class="text-gray pb-2">Пробег</li>
-                                    <li class="pb-6">
+                                    <li class="pb-2 md:pb-6">
                                         <?php echo get_field('milleage') ? get_field('milleage') : '-'  ?>
                                     </li>
                             </div> 
                             <div class="flex justify-between flex-row">
                                     <li class="text-gray pb-2">Топливо</li>
-                                    <li class="pb-6">
+                                    <li class="pb-2 md:pb-6">
                                     <?php echo get_field('fuel') ? get_field('fuel') : '-'; ?>
                                     </li>
                             </div> 
                             <div class="flex justify-between flex-row">
                                     <li class="text-gray pb-2">Объём двигателя</li>
-                                    <li class="pb-6">
+                                    <li class="pb-2 md:pb-6">
                                         <?php echo get_field('volume') ? get_field('volume') : '-'; ?>
                                     </li>
                             </div> 
@@ -430,11 +430,11 @@ Template Name: auto_ussur
                 <div style="width: -webkit-fill-available;" class="h-min relative p-7  bg-black rounded-2xl">
                     <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/1.svg'; ?>" alt="">
                     <div>
-                        <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-semibold">
+                        <p class="text-start md:text-center md:text-start text-white text-xl pt-10 md:pt-12 pb-5 font-semibold">
                             Выбор автомобиля
                         </p>
 
-                        <p class="text-center md:text-start text-gray text-base" style="font-weight: 400;">
+                        <p class="text-start md:text-center md:text-start text-gray text-base" style="font-weight: 400;">
                             Обговариваем и согласуем ваши требования к параметрам автомобиля и бюджет, помогаем в подборе
                         </p>
                     </div>
@@ -442,24 +442,24 @@ Template Name: auto_ussur
                 <div style="width: -webkit-fill-available;" class="h-min relative mt-0 md:mt-14 p-7  bg-black rounded-2xl">
                     <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/2.svg'; ?>" alt="">
                     <div>
-                        <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-semibold">
+                        <p class="text-start md:text-start md:text-center md:text-start text-white text-xl pt-10 md:pt-12 pb-5 font-semibold">
                             Заключение договора
                         </p>
 
-                        <p class="text-center md:text-start text-gray text-base" style="font-weight: 400;">
+                        <p class="text-start md:text-center md:text-start text-gray text-base" style="font-weight: 400;">
                             От вас необходимы: ксерокопия паспорта, заверенная натариусом, снилса и инн
                         </p>
-                        <a href="">Образец договора</a>
+                        <a class="text-start md:text-center md:text-start text-gray text-base text-white" style="text-decoration: underline;" href="">Образец договора</a>
                     </div>
                 </div>
                 <div style="width: -webkit-fill-available;" class="h-min relative p-7 bg-black rounded-2xl">
                     <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/3.svg'; ?>" alt="">
                     <div>
-                        <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-semibold">
+                        <p class="text-start md:text-center md:text-center md:text-start text-white text-xl pt-10 md:pt-12 pb-5 font-semibold">
                             Вносится предоплата
                         </p>
 
-                        <p class="text-center md:text-start text-gray text-base" style="font-weight: 400;">
+                        <p class="text-start md:text-center text-gray text-base" style="font-weight: 400;">
                             30 000–50 000 ₽ в зависимости от выбранного автомобиля
                         </p>
                     </div>
@@ -467,11 +467,11 @@ Template Name: auto_ussur
                 <div style="width: -webkit-fill-available;" class="h-min relative mt-0 md:mt-14 p-7 bg-black rounded-2xl">
                     <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/4.svg'; ?>" alt="">
                     <div>
-                        <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-semibold">
+                        <p class="text-start md:text-center md:text-start text-white text-xl pt-10 md:pt-12 pb-5 font-semibold">
                             Передача автомобиля или доставка по РФ
                         </p>
 
-                        <p class="text-center md:text-start text-gray text-base" style="font-weight: 400;">
+                        <p class="text-start md:text-center text-gray text-base" style="font-weight: 400;">
                             Вы вносите оставшеюся сумма и автомобиль с полным пакетом документов передаётся вам
                         </p>
                     </div>
@@ -483,12 +483,12 @@ Template Name: auto_ussur
 
     <!-- Рассчитаем стоимость -->
     
-    <section class="pt-12 md:pt-36 relative p-5 md:p-0">
+    <section class="pt-12 md:pt-32 relative p-5 md:p-0">
         <div class="container rounded-3xl relative  h-[45vh] sm:h-[55vh] md:h-[69vh]">
             <img class="block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/price/price__bg.png'; ?>" alt="">
             <div class="p-5 md:p-32 text-center md:text-start">
-                <h2 class="text-center md:text-start text-4xl lg:text-5xl relative" style="font-weight: 600;">РАССЧИТАЕМ СТОИМОСТЬ!</h2>
-                <p class="text-sm md:font-base font-normal text-black py-5">
+                <h2 class="text-center md:text-start text-3xl lg:text-5xl relative" style="font-weight: 600;">РАССЧИТАЕМ СТОИМОСТЬ!</h2>
+                <p class="text-sm md:font-base text-black py-5" style="font-weight: 500;">
                     Заполните анкету и мы подберём автомобиль под ваш бюджет,<br> рассчитаем все расходы на покупку и доставку совершенно <br> бесплатно
                 </p>
                 <a href="#popup2" class="button__count popup-link text-center">Рассчитать</a>
@@ -499,10 +499,10 @@ Template Name: auto_ussur
 
 
     <!-- Собственная стоянка в Уссурийске -->
-    <section class="pt-12 md:pt-36">
+    <section class="pt-12 md:pt-32">
         <div class="container relative">
 
-            <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Собственная стоянка в Уссурийске</h2>
+            <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Собственная <br class="block md:hidden"> стоянка <br class="block md:hidden">  в Уссурийске</h2>
 
             <div class="arrows__slider">             
                 <button
@@ -540,10 +540,10 @@ Template Name: auto_ussur
     </section>
 
     <!-- Секция отзывы -->
-    <section class="pt-12 md:pt-36">
+    <section class="pt-12 md:pt-32">
         <div class="container relative">
 
-            <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Отзывы реальных клиентов </h2>
+            <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Отзывы  <br class="block md:hidden">  реальных  <br class="block md:hidden"> клиентов </h2>
             
             <div class="arrows__slider">             
                 <button
@@ -574,7 +574,7 @@ Template Name: auto_ussur
     </section> 
 
     <!-- Банки партнеры -->
-    <section class="pt-12 md:pt-36">
+    <section class="pt-12 md:pt-32">
         <div class="container">
             <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5" style="font-weight: 600;">Банки-партнеры </h2>
             <p class="text-xl pb-8">Мы сотрудничаем с банками для вашего удобства</p>
@@ -587,11 +587,11 @@ Template Name: auto_ussur
     </section> 
 
     <!-- Ответы на частые вопросы -->
-    <section class="pt-12 md:pt-36">
+    <section class="pt-12 md:pt-32">
         <div class="container">
             <div class="faq__wrapper">
                 <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Ответы на частые вопросы </h2>
-                <div class="faq__tabs _tabs flex flex-col md:flex-row gap-10">
+                <div class="faq__tabs _tabs flex flex-col md:flex-row gap-0 md:gap-10">
                     <ul class="faq__list">
                         <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
                             <button class="faq__btn _tabs-button">Где производится продукция?</button>
@@ -645,13 +645,13 @@ Template Name: auto_ussur
     </section>
     
     <!-- Новости -->
-    <section class="pt-12 md:pt-36 p-5 ">
+    <section class="pt-12 md:pt-32 p-5 ">
         <div class="container h-[40vh] md:h-auto bg-black relative rounded-2xl overflow-hidden">
             <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="<?php echo get_template_directory_uri() . '/src/img/news/news.png'; ?>" alt="">
             <img class="block left-0 md:hidden absolute bottom-0" src="<?php echo get_template_directory_uri() . '/src/img/news/news_small.png'; ?>" alt="">
             <div class="p-4 md:p-16 z-100">
-                <h2 class="text-xl lg:text-5xl relative pb-4 text-white" style="font-weight: 600;">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
-                <div class="flex justify-start gap-10">
+                <h2 class="text-center md:text-start text-2xl lg:text-5xl relative pb-4 text-white" style="font-weight: 600;">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
+                <div class="flex justify-center md:justify-start gap-2 md:gap-10">
                     <a href="">
                         <img src="<?php echo get_template_directory_uri() . '/src/img/icons/tg__white.svg'; ?>" alt="">
                     </a>
@@ -664,7 +664,7 @@ Template Name: auto_ussur
     </section>
 
     <!-- Контакты -->
-    <section class="pt-12 md:pt-36">
+    <section class="pt-12 md:pt-32">
         <div class="container relative flex justify-between flex-wrap md:flex-row flex-col gap-10">
             <div class="bg-black max-w-xl p-10 rounded-3xl contact__div">
                 <div class="pb-5">
@@ -672,22 +672,24 @@ Template Name: auto_ussur
                 </div>
                 <ul>
                     <li class="pb-8">
-                        <a class="text-white font-bold" href="tel:79510288418">
-                            +7 951 028-84-18 
-                        </a>
-                        <a class="text-white font-bold" href="tel:+79510154751">
-                            +7 951 015-47-51
-                        </a>
-                    </li>
-                    <li class="pb-8">
-                        <a href="mailto:lehachechel10@gmail.com" class="text-white font-bold">lehachechel10@gmail.com</a>
-                    
-                    </li>
-                    <li class="pb-8">
                             <p class="text-white">г. Уссурийск, ул. Тургенева, 42</p>
                     </li>
                     <li class="pb-8">
-                            <p class="text-white">Режим работы: 10:00–18:00</p>
+                        <a class="text-white" style="font-weight: 600;" href="tel:79510288418">
+                            +7 951 028-84-18, 
+                        </a>
+                        <a class="text-white" style="font-weight: 600;" href="tel:+79510154751">
+                            +7 951 015-47-51
+                        </a>
+                    </li>
+                    
+                    <li class="pb-8">
+                        <p class="text-white">Режим работы: 10:00–18:00</p>
+                    </li>
+
+                    <li class="pb-8">
+                        <a href="mailto:lehachechel10@gmail.com" class="text-white" style="font-weight: 600;">lehachechel10@gmail.com</a>
+                    
                     </li>
                     
                     <a class="bg-red text-white py-4 px-5 rounded-3xl" href="https://api.whatsapp.com/send/?phone=79510154751">

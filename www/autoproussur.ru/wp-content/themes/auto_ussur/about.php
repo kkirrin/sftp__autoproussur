@@ -328,65 +328,65 @@ Template Name: about
             </section>
             
           
-           <!-- Новости -->
-           <section class="pt-12 md:pt-36 p-5 ">
-            <div class="container h-[40vh] md:h-auto bg-black relative rounded-2xl overflow-hidden">
-                <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="<?php echo get_template_directory_uri() .'/src/img/news/news.png'; ?>" alt="">
-                <img class="block left-0 md:hidden absolute bottom-0" src="<?php echo get_template_directory_uri() .'/src/img/news/news_small.png'; ?>" alt="">
-                <div class="p-4 md:p-16 z-100">
-                    <h2 class="text-xl lg:text-5xl font-extrabold relative pb-4 text-white">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
-                    <div class="flex justify-start gap-10">
-                        <a href="">
-                            <img src="<?php echo get_template_directory_uri() .'/src/img/icons/tg__white.svg'; ?>" alt="">
-                        </a>
-                        <a href="">
-                            <img src="<?php echo get_template_directory_uri() .'/src/img/icons/youtube__white.svg'; ?>" alt="">
-                        </a>
+            <!-- Новости -->
+            <section class="pt-12 md:pt-32 p-5 ">
+                <div class="container h-[40vh] md:h-auto bg-black relative rounded-2xl overflow-hidden">
+                    <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="<?php echo get_template_directory_uri() . '/src/img/news/news.png'; ?>" alt="">
+                    <img class="block left-0 md:hidden absolute bottom-0" src="<?php echo get_template_directory_uri() . '/src/img/news/news_small.png'; ?>" alt="">
+                    <div class="p-4 md:p-16 z-100">
+                        <h2 class="text-center md:text-start text-2xl lg:text-5xl relative pb-4 text-white" style="font-weight: 600;">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
+                        <div class="flex justify-center md:justify-start gap-2 md:gap-10">
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri() . '/src/img/icons/tg__white.svg'; ?>" alt="">
+                            </a>
+                            <a href="">
+                                <img src="<?php echo get_template_directory_uri() . '/src/img/icons/youtube__white.svg'; ?>" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-      
-        <!-- Контакты -->
-        <section class="pt-12 md:pt-36">
-            <div class="container relative flex justify-between flex-wrap md:flex-row flex-col gap-10">
-                <div class="bg-black max-w-xl p-10 rounded-3xl contact__div">
-                    <div class="pb-5">
-                        <h2 class="text-start text-4xl lg:text-5xl relative text-white" style="font-weight: 600;">Контакты </h2>
-                    </div>
-                    <ul>
-                        <li class="pb-8">
-                            <a class="text-white font-bold" href="tel:79510288418">
-                                +7 951 028-84-18 
-                            </a>
-                            <a class="text-white font-bold" href="tel:+79510154751">
-                                +7 951 015-47-51
-                            </a>
-                        </li>
-                        <li class="pb-8">
-                            <a href="mailto:lehachechel10@gmail.com" class="text-white font-bold">lehachechel10@gmail.com</a>
-                        
-                        </li>
-                        <li class="pb-8">
-                                <p class="text-white">г. Уссурийск, ул. Тургенева, 42</p>
-                        </li>
-                        <li class="pb-8">
+            <!-- Контакты -->
+            <section class="pt-12 md:pt-32">
+                <div class="container relative flex justify-between flex-wrap md:flex-row flex-col gap-10">
+                    <div class="bg-black max-w-xl p-10 rounded-3xl contact__div">
+                        <div class="pb-5">
+                            <h2 class="text-start text-4xl lg:text-5xl relative text-white" style="font-weight: 600;">Контакты </h2>
+                        </div>
+                        <ul>
+                            <li class="pb-8">
+                                    <p class="text-white">г. Уссурийск, ул. Тургенева, 42</p>
+                            </li>
+                            <li class="pb-8">
+                                <a class="text-white" style="font-weight: 600;" href="tel:79510288418">
+                                    +7 951 028-84-18, 
+                                </a>
+                                <a class="text-white" style="font-weight: 600;" href="tel:+79510154751">
+                                    +7 951 015-47-51
+                                </a>
+                            </li>
+                            
+                            <li class="pb-8">
                                 <p class="text-white">Режим работы: 10:00–18:00</p>
-                        </li>
-                        
-                        <a class="bg-red text-white py-4 px-5 rounded-3xl" href="https://api.whatsapp.com/send/?phone=79510154751">
-                            Написать на WhatsApp
-                        </a>
-                    </ul>
-                </div>
+                            </li>
 
-                <div class="rounded-3xl">
-                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7d14f03da43a713481229bc3e5293be7da1905bc838564f5aeb4bef5ac84089a&amp;width=900&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+                            <li class="pb-8">
+                                <a href="mailto:lehachechel10@gmail.com" class="text-white" style="font-weight: 600;">lehachechel10@gmail.com</a>
+                            
+                            </li>
+                            
+                            <a class="bg-red text-white py-4 px-5 rounded-3xl" href="https://api.whatsapp.com/send/?phone=79510154751">
+                                Написать на WhatsApp
+                            </a>
+                        </ul>
+                    </div>
+
+                    <div class="rounded-3xl">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7d14f03da43a713481229bc3e5293be7da1905bc838564f5aeb4bef5ac84089a&amp;width=900&amp;height=600&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
                 </div>
-            </div>
-        </section> 
-            
+            </section> 
     </main>
                                 
 

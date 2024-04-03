@@ -3,6 +3,9 @@
 
 /* Импорт шрифтов */
 
+
+
+
 .contact__div {
   width: 450px;
 }
@@ -488,6 +491,31 @@ label.file__button {
 
 }
 
+
+
+
+@media(max-width:480px) {
+  .popup_promo {
+    scale: 0.9;
+    right: -20px;
+  }
+}
+
+
+@media(max-width:375px) {
+  .popup_promo {
+    scale: 0.8;
+    right: -42px;
+  }
+}
+
+@media(max-width:321px) {
+  .popup_promo {
+    scale: 0.7;
+    right: -61px;
+  }
+}
+
 .wpc-edit-filter-set {
   display: none;
 }
@@ -615,7 +643,7 @@ label.file__button {
     width: 350px !important;
   }
   .select2.select2-container.select2-container--default {
-    width: 355px !important;
+    width: 320px !important;
   }
   
 }
@@ -636,7 +664,7 @@ label.file__button {
 
 @media(max-width:400px) {
   .select2-container.select2-container--default {
-    width: 300px !important;
+    width: 289px !important;
   }
   
 }
@@ -646,7 +674,7 @@ label.file__button {
     width: 280px !important;
   }
   .select2.select2-container.select2-container--default {
-    width: 300px !important;
+    width: 289px !important;
   }
   
 }
@@ -666,7 +694,7 @@ label.file__button {
     width: 250px !important;
   }
   .select2.select2-container.select2-container--default {
-    width: 240px !important;
+    width: 230px !important;
   }
   
 }
@@ -862,8 +890,15 @@ label.file__button {
   border-radius: 40px;
   position: absolute;
   bottom: 100px;
-  right: 380px;
+  right: 392px;
   transition: all 0.6s ease-in-out;
+}
+
+@media(max-width: 1440px) {
+  .button__count {
+    right: 392px;
+    bottom: 100px;
+  }
 }
 
 .button__count:hover {
@@ -883,11 +918,11 @@ label.file__button {
   }
 }
 
-@media(max-width:1441px) {
+/* @media(max-width:1441px) {
   .button__count {
     bottom: 182px;
   }
-}
+} */
 
 @media(max-width:480px) {
   .button__count {
@@ -1541,7 +1576,7 @@ label.file__button {
   }
 
   .faq__btn {
-    font-size: 14px;
+    font-size: 16px;
     padding: 20px 65px 20px 14px;
   }
 
@@ -2527,7 +2562,7 @@ span.counter-items,
 }
 
 .-right-4{
-  right: -1rem;
+  right: -2rem;
 }
 
 .-right-5{
@@ -2664,7 +2699,7 @@ span.counter-items,
 }
 
 .h-\[40vh\]{
-  height: 40vh;
+  height: 44vh;
 }
 
 .h-\[450px\]{
@@ -3545,6 +3580,13 @@ iframe {
 .counter-list {
   margin-top: 1rem;
   padding: 5rem;
+}
+
+@media(max-width:1440px) {
+.counter-list {
+  margin-top: 1rem;
+  padding: 4rem;
+}
 }
 
 
