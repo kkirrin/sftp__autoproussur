@@ -105,21 +105,21 @@
         
                         <li class="flex xs:flex sm:flex md:hidden sm:list-none">
                             <a href="https://www.instagram.com/geometry_nhk/">
-                                <img width="60px" class="transform hover:scale-105 transition-all p-2" src="<?php echo get_template_directory_uri() . '/src/img/icons/tg.svg'; ?>" alt="" >
+                                <img width="50px" class="transform hover:scale-105 transition-all p-2" src="<?php echo get_template_directory_uri() . '/src/img/icons/tg.svg'; ?>" alt="" >
                             </a>
                         </li>
         
-                        <li class="flex xs:flex sm:flex md:hidden">
+                        <li class="flex xs:flex sm:flex md:hidden pr-3">
                             <a class="nav-link" href="https://api.whatsapp.com/send/?phone=79510154751">
-                            <img width="60px" class="transform hover:scale-105 transition-all p-2" src="<?php echo get_template_directory_uri() . '/src/img/icons/sap.svg'; ?>" alt="" >
+                            <img width="50px" class="transform hover:scale-105 transition-all p-2" src="<?php echo get_template_directory_uri() . '/src/img/icons/sap.svg'; ?>" alt="" >
                             </a>
                         </li>
 
                         <button class="btn__menu--mobile md:hidden flex z-100">
                                 <svg class="h-3 w-3" viewBox="0 0 64 48">
-                                    <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
-                                    <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
-                                    <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                                    <path style="padding-bottom: 2px;" d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                                    <path style="padding-bottom: 2px;" d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                                    <path style="padding-bottom: 2px;" d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
                                 </svg>
                         </button>
                     </div>
@@ -129,20 +129,14 @@
                         <div class="container">
 
                             <nav class="catalog-menu">
-                                <!-- <?php wp_nav_menu([
-                                    'theme_location' => 'mobile-menu',
-                                    'container' => 'ul',
-                                    'menu_class' => 'mobile-menu--nav', 
-                                    ]); 
-                                ?> -->
                                     <ul>
                                         <li class="text-white pt-2 pb-5 nav-link"><a href="/catalog">Каталог</a></li>
                                         <li class="text-white pt-2 pb-5 nav-link"><a href="/about">О компании</a></li>
                                         <li class="text-white pt-2 pb-5 nav-link"><a href="/review">Отзывы</a></li>
-                                        <li class="text-white pt-2 pb-5 nav-link"><a href="/contact"></a>Контакты</li>
+                                        <li class="text-white pt-2 pb-5 nav-link"><a href="/contacts">Контакты</a></li>
                                         <li class="text-white pt-2 pb-5 nav-link"><a href="/contract">Договор</a></li>
 
-                                        <li class="mr-4 flex pt-2 pb-5 gap-2">
+                                        <li class="mr-4 flex pt-2 pb-10">
                                             <img src="" alt="">
                                             <a class="text-white font-bold nav-link" href="tel:+79532109127">
                                                 +7-953-210-91-27

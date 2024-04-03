@@ -10,7 +10,7 @@
             <h1 class="visually-hidden">Скрытый заголовок</h1>
 
 
-            <section class="pt-32">
+            <section class="pt-20 md:pt-32">
                 <div class="container">
 
                     <div class="breadcrumb">

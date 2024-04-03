@@ -11,7 +11,7 @@ Template Name: catalog
         <h1 class="visually-hidden">Скрытый заголовок</h1>   
         
 
-        <section class="pt-32">
+        <section class="pt-20 md:pt-32">
             <div class="container">
 
                 <div class="breadcrumb">
@@ -34,7 +34,7 @@ Template Name: catalog
 
 
         <!-- Фильтрация -->
-        <section class="pt-12 md:pt-24 filter-swiper">
+        <section class="pt-12 md:pt-14 filter-swiper filter">
             <div class="container relative">
                 
                 <div class="p-4 pb-10 bg-gray bg-opacity-10 rounded-2xl">
@@ -53,6 +53,7 @@ Template Name: catalog
                     
                     <div class="w-full rounded-xl">
                         <?php echo do_shortcode( '[fe_widget id=152]' ); ?>
+                        <button class="block md:hidden text-center underline" style="font-weight: 600;" id="expand-btn">Развернуть</button>   
                     </div>   
                     
 
@@ -190,11 +191,16 @@ Template Name: catalog
         </section>
 
         
+ 
         <!-- Рассчитаем стоимость -->
         
         <section class="pt-12 md:pt-32 relative p-5 md:p-0">
             <div class="container rounded-3xl relative  h-[45vh] sm:h-[55vh] md:h-[69vh]">
-                <img class="block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/price/price__bg.png'; ?>" alt="">
+
+                <img class="hidden md:block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/price/price__bg.png'; ?>" alt="">
+
+                <img class="block md:hidden absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/price/price__small.png'; ?>" alt="">
+                
                 <div class="p-5 md:p-32 text-center md:text-start">
                     <h2 class="text-center md:text-start text-3xl lg:text-5xl relative" style="font-weight: 600;">РАССЧИТАЕМ СТОИМОСТЬ!</h2>
                     <p class="text-sm md:font-base text-black py-5" style="font-weight: 500;">

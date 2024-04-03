@@ -17,7 +17,7 @@ export const initMainSlider = () => {
                   },
                   695: {
                       slidesPerView: 1,
-                      spaceBetween: 15
+                      spaceBetween: 15,
                   },
                   767: {
                       slidesPerView: 1,
@@ -114,11 +114,11 @@ export const initFilterSlider = () => {
                 breakpoints: {
                     320: {
                         slidesPerView: 1,
-                        spaceBetween: 15
+                        spaceBetween: 15,     
                     },
                     695: {
                         slidesPerView: 2,
-                        spaceBetween: 15
+                        spaceBetween: 15,
                     },
                     769: {
                         slidesPerView: 2,
@@ -236,18 +236,20 @@ export const initCardItemSlider = function initCardItemSlider() {
     var swiper = new Swiper('.slider__thumb', {
       loop: true,
       spaceBetween: 16,
-      slidesPerView: 5,
       freeMode: true,
       watchSlidesProgress: true,
       autoHeight: true,
+
       breakpoints: {
         320: {
-          slidesPerView: 4,
-          spaceBetween: 8
+          slidesPerView: 3,
+          spaceBetween: 8,
+
         },
         768: {
-          slidesPerView: 5,
-          spaceBetween: 16
+          slidesPerView: 3,
+          spaceBetween: 16,
+
         },
         1024: {
           slidesPerView: 4,
@@ -266,11 +268,11 @@ export const initCardItemSlider = function initCardItemSlider() {
       breakpoints: {
         480: {
           slidesPerView: 1,
-          spaceBetween: 8
+          spaceBetween: 8, 
         },
         768: {
           slidesPerView: 2,
-          spaceBetween: 16
+          spaceBetween: 16,
         },
         1024: {
           slidesPerView: 2,
@@ -297,11 +299,19 @@ export const initCardItemSlider = function initCardItemSlider() {
       breakpoints: {
         320: {
           slidesPerView: 1.5,
-          spaceBetween: 8
+          spaceBetween: 8,
+          grid: {
+            row:3,
+            cols: 2,
+          }
         },
         768: {
           slidesPerView: 2.5,
-          spaceBetween: 16
+          spaceBetween: 16,
+          grid: {
+            row:3,
+            cols: 2,
+          }
         },
         1024: {
           slidesPerView: 4,

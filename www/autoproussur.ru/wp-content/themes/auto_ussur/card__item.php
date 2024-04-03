@@ -11,7 +11,7 @@
 <main>
             <h1 class="visually-hidden">Скрытый заголовок</h1>   
 
-            <section class="pt-32">
+            <section class="pt-20 md:pt-32">
                 <div class="container">
 
                     <div class="breadcrumb">
@@ -48,7 +48,7 @@
                     </h2>
                     <div class="flex flex-col md:flex-row  gap-10 ">
                         <section class="section product__item w-full md:w-2/3">
-                            <div class="container">
+                            <div class="">
                                 <div class="section__wrapper">
                                 <div class="card card--product">
                                     <div class="slider card__slider relative">
@@ -59,9 +59,9 @@
                                                     $photos = get_field('photo_slide');
                                                     if ($photos) {
                                                         foreach ($photos as $photo) {
-                                                            echo '<div class="swiper-slide" style="padding-right: 15px;">';
+                                                            echo '<div class="swiper-slide pr-0 md:pr-15">';
                                                             echo '<a href="' . esc_url($photo['url']) . '">';
-                                                            echo '<img style="border-radius: 20px;" class=" img_car md:w-[460px] md:h-[340px] w-[335px] h-[290px]" src="' . esc_url($photo['url']) . '" alt="">';
+                                                            echo '<img style="border-radius: 20px;" class=" img_car md:w-[460px] md:h-[340px] w-auto h-[290px] object-cover" src="' . esc_url($photo['url']) . '" alt="">';
                                                             echo '</a>';
                                                             echo '</div>';
                                                         }
@@ -73,8 +73,8 @@
                                        
                                         
         
-                                        <div class="swiper slider__thumb md:pt-10 pt-5 md:w-full w-80 md:relative absolute">
-                                            <div class="swiper-wrapper">
+                                        <div class="swiper slider__thumb md:pt-10 pt-5 md:w-full md:relative absolute h-[16vh] md:h-auto">
+                                            <div class="swiper-wrapper h-[16vh] md:h-auto">
 
                                             <?php
                                                 $photos = get_field('photo_slide');
@@ -82,7 +82,7 @@
                                                     foreach ($photos as $photo) {
                                                         echo '<div class="swiper-slide" style="padding-top: 30px;">';
                                                         echo '<a href="' . esc_url($photo['url']) . '">';
-                                                        echo '<img class="rounded-2xl img_car md:w-[120px] md:h-[100px] w-[60px] h-[60px]" src="' . esc_url($photo['url']) . '" alt="">';
+                                                        echo '<img class="img_car img_car__small md:w-[120px] md:h-[100px] w-[80px] h-[80px]" src="' . esc_url($photo['url']) . '" alt="">';
                                                         echo '</a>';
                                                         echo '</div>';
                                                     }
@@ -99,11 +99,11 @@
                             </div>
                         </section>
         
-                        <div class="md:pt-0 pt-20 w-full md:w-1/3">
+                        <div class="md:pt-0 pt-10 w-full md:w-1/3">
                             <div style="font-weight: 600;" class=" md:text-4xl text-xl">
                                 <!-- <?php the_field('marka_name'); ?> <?php the_field('model_name'); ?> -->
                             
-                                <div class="flex justify-start items-center gap-4 pb-7">
+                                <div class="flex justify-start items-center gap-4 pb-7 hidden md:flex">
                                         <p class="text-xs md:text-sm py-2 bg-yellow rounded-3xl" style="font-weight: 500; padding-right: 26px; padding-left: 26px;">
                                             <?php the_field('state'); ?>
                                         </p>
@@ -114,21 +114,35 @@
                                             : '';
                                         ?>
                                 </div>
-
-                                <div class="flex justify-start items-center gap-5">
-                                    <p class="font-bold md:text-2xl text-lg">
-                                        <?php the_field('price'); ?>₽
-                                    </p>
-                                    <?php if(get_field('old_price')): ?>
-                                        <p class="text-gray text-xs">
-                                            <?php echo get_field('old_price'); ?>₽
+                                
+                                <div class="flex justify-between">
+                                    <div class="flex justify-start md:justify-start items-start md:items-center gap-5 flex-col md:flex-row">
+                                        <p class="font-bold md:text-2xl text-xl">
+                                            <?php the_field('price'); ?>₽
                                         </p>
-                                    <?php endif; ?>
-                                </div>
-                                                                
-                            </div>
+                                        <?php if(get_field('old_price')): ?>
+                                            <p class="text-gray text-xs" style="text-decoration: line-through;">
+                                                <?php echo get_field('old_price'); ?>₽
+                                            </p>
 
-                            <div class="flex justify-between items-center pt-10">
+                                            <?php endif; ?>
+                                    </div>                              
+                                    
+
+                                    <div class="flex justify-start items-center gap-4 pb-7 block md:hidden flex-col md:flex-row">
+                                        <p class="text-xs md:text-sm py-2 bg-yellow rounded-3xl" style="font-weight: 500; padding-right: 26px; padding-left: 26px;">
+                                            <?php the_field('state'); ?>
+                                        </p>
+                                        <?php echo get_field('sale') ? '
+                                            <p class="text-xs md:text-sm py-2 px-6 bg-red rounded-3xl text-white">
+                                                '.get_field('sale').'%
+                                            </p>' 
+                                            : '';
+                                        ?>
+                                    </div>
+                                </div>
+
+                            <div class="flex justify-between items-center pt-2 pb-5 md:pb-10">
                                 <ul>
                                     <li style="font-weight: 400; padding-bottom: 15px;" class="md:text-base text-xs text-gray">
                                         Топливо
@@ -189,7 +203,7 @@
                                      <li style="font-weight: 500; padding-bottom: 15px;" class="md:text-base text-xs font-semibold card_item--li">
                                         <?php echo get_field('generation') ? get_field('generation') : '-'; ?>
                                     </li>
-                                     <li style="font-weight: 500; padding-bottom: 15px;" class="md:text-base text-xs font-semibold card_item--li">
+                                     <li style="font-weight: 500;" class="md:text-base text-xs font-semibold card_item--li">
                                         <?php echo get_field('equipment') ? get_field('equipment') : '-'; ?>
                                     </li>
                                 </ul>
@@ -197,7 +211,7 @@
                                 
                             </div>
                             
-                            <a class="bg-red flex popup-link text-white justify-center py-4 px-5 rounded-3xl"
+                            <a style="border-radius: 40px;" class="bg-red flex popup-link text-white justify-center py-4 px-5 text-base md:text-2xl"
                             href="#popup8"
                             >Купить
                         </a>
@@ -363,10 +377,16 @@
             </section>
 
                 
-           <!-- Рассчитаем стоимость -->
+           
+            <!-- Рассчитаем стоимость -->
+            
             <section class="pt-12 md:pt-32 relative p-5 md:p-0">
                 <div class="container rounded-3xl relative  h-[45vh] sm:h-[55vh] md:h-[69vh]">
-                    <img class="block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/price/price__bg.png'; ?>" alt="">
+
+                    <img class="hidden md:block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/price/price__bg.png'; ?>" alt="">
+
+                    <img class="block md:hidden absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/price/price__small.png'; ?>" alt="">
+                    
                     <div class="p-5 md:p-32 text-center md:text-start">
                         <h2 class="text-center md:text-start text-3xl lg:text-5xl relative" style="font-weight: 600;">РАССЧИТАЕМ СТОИМОСТЬ!</h2>
                         <p class="text-sm md:font-base text-black py-5" style="font-weight: 500;">

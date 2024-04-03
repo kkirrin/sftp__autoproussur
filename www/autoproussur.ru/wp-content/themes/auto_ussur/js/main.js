@@ -1,3 +1,4 @@
+
 import { initMobileMenu } from "./module/nav.js";
 import { initReviewsSlider } from "./module/sliders.js";
 import { initScrollToTop } from "./module/scroll-to-top.js";
@@ -15,6 +16,7 @@ import { initStickyHeader } from "./module/sticky-header.js";
 import { initLoader } from './module/loader.js';
 import { initTabsReview } from "./module/tabsReview.js";
 // import { initMask } from './module/mask.js';
+import { initShowFilter } from './module/showFilter.js';
 
 initLoader();
 
@@ -56,6 +58,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initStickyHeader();
     initTabsReview();
     // initMask();
+    initShowFilter();
 
     baguetteBox.run('.gallery-wrapper');
 
@@ -71,7 +74,6 @@ window.addEventListener('DOMContentLoaded', () => {
         
     //     jQuery('label[for="'+ input_file.attr('id') +'"].file__button').text(file_name);
     // });
-
 
 
 });

@@ -10,7 +10,7 @@ Template Name: about
 <main>
             <h1 class="visually-hidden">Скрытый заголовок</h1>   
 
-            <section class="pt-32">
+            <section class="pt-20 md:pt-32">
                 <div class="container">
 
                     <div class="breadcrumb">
@@ -42,33 +42,33 @@ Template Name: about
                             Ориентирована на предоставление услуг<br> по выбору, приобретению и доставке <br>Японских автомобилей
                         </p>
 
-                        <button class="bg-red text-center rounded-3xl text-white py-4 px-6 text-lg font-bold"> Перейти в каталог </button>
+                        <a href="/catalog" class="bg-red text-center rounded-3xl text-white py-4 px-6 text-lg font-bold"> Перейти в каталог </a>
 
                     </div>
 
                     <ul class="right-0 absolute flex items-start md:justify-between justify-center flex-wrap gap-4 counter-list counter-list__about">
                         <li class="border bg-black rounded-3xl py-3 md:py-6 px-10 md:px-16 transform hover:scale-105 transition-all">
-                            <p class="md:text-5xl text-3xl text-white pt-4 pb-2 inline-flex items-center">
-                                <span class="ml-2 mr-4 md:text-5xl text-3xl">Более</span>
-                                <span class="counter-years md:text-5xl text-3xl text-white w-8 sm:w-16"></span>
+                            <p class="flex justify-center md:text-5xl text-3xl text-white pt-4 pb-2 ">
+                                <span class="ml-2 mr-4 md:text-5xl text-2xl">Более</span>
+                                <span class="counter-years md:text-5xl text-2xl text-white w-8 sm:w-16"></span>
                             </p>
                             <p class="md:text-xl text-sm text-gray">лет на рынке</p>
                         </li>
                         <li class="border bg-black rounded-3xl py-3 md:py-6 px-10 md:px-16 transform hover:scale-105 transition-all">
-                            <p class="md:text-5xl text-3xl text-white pt-4 pb-2 inline-flex items-center">
-                                <span class="ml-2 mr-4 md:text-5xl text-3xl">Более</span>
-                                <span class="counter-items md:text-5xl text-3xl text-white w-8 sm:w-16"></span>
-                            </p>
+                        <p class="flex justify-center md:text-5xl text-3xl text-white pt-4 pb-2 pr-10 md:pr-0">
+                            <span class="ml-2 mr-4 md:text-5xl text-2xl">Более</span>
+                            <span class="counter-items md:text-5xl text-2xl text-white w-8 sm:w-16"></span>
+                        </p>
                             <p class="md:text-xl text-sm text-gray">довольных клиентов по всей России</p>
                         </li>
                         <li class="border bg-black rounded-3xl py-3 md:py-6 px-10 md:px-16 transform hover:scale-105 transition-all">
-                            <p class="md:text-5xl text-3xl text-white pt-4 pb-2 inline-flex items-center">
-                                <span class="ml-2 mr-4 md:text-5xl text-3xl">Более</span>
-                                <span class="counter-client md:text-5xl text-3xl text-white w-8 sm:w-16"></span>
+                            <p class="flex justify-center md:text-5xl text-3xl text-white pt-4 pb-2 pr-10 md:pr-0">
+                                <span class="ml-2 mr-4 md:text-5xl text-2xl">Более</span>
+                                <span class="counter-client md:text-5xl text-2xl text-white w-8 sm:w-16"></span>
                             </p>
                             <p class="md:text-xl text-sm text-gray">автомобилей продаём в год</p>
                         </li>
-                    </ul>
+                    </ul> 
                 </div>
 
                 <!-- Акция -->
@@ -355,10 +355,10 @@ Template Name: about
                             <h2 class="text-start text-4xl lg:text-5xl relative text-white" style="font-weight: 600;">Контакты </h2>
                         </div>
                         <ul>
-                            <li class="pb-8">
+                            <li class="pb-6">
                                     <p class="text-white">г. Уссурийск, ул. Тургенева, 42</p>
                             </li>
-                            <li class="pb-8">
+                            <li class="pb-6">
                                 <a class="text-white" style="font-weight: 600;" href="tel:79510288418">
                                     +7 951 028-84-18, 
                                 </a>
@@ -367,11 +367,11 @@ Template Name: about
                                 </a>
                             </li>
                             
-                            <li class="pb-8">
+                            <li class="pb-6">
                                 <p class="text-white">Режим работы: 10:00–18:00</p>
                             </li>
 
-                            <li class="pb-8">
+                            <li class="pb-6">
                                 <a href="mailto:lehachechel10@gmail.com" class="text-white" style="font-weight: 600;">lehachechel10@gmail.com</a>
                             
                             </li>

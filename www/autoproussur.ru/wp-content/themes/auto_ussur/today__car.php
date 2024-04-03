@@ -10,7 +10,7 @@
 
     <h1 class="visually-hidden">Скрытый заголовок</h1>
 
-    <section class="pt-32">
+    <section class="pt-20 md:pt-32">
         <div class="container">
 
             <div class="breadcrumb">
@@ -31,7 +31,7 @@
         </div>
     </section>
 
-    <section class="pt-12 md:pt-20">
+    <section class="pt-12 md:pt-14">
         <div class="container relative">
             <div class="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-10">
             <?php

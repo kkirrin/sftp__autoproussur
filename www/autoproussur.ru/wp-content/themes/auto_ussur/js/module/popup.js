@@ -51,17 +51,21 @@ export const initPopup = () => {
     cars.forEach(car => {
         car.addEventListener('click', function (e) {
             const object = e.target.parentNode.parentNode.childNodes;
-            console.log(object);
             const marka_name = e.target.parentNode.parentNode.childNodes[3].innerText;
             const model_price = e.target.parentNode.parentNode.childNodes[7].innerText;
         
             const name = document.querySelector('#order-name').value = marka_name;
             const price =  document.querySelector('#order-price').value = model_price;
-            
-            console.log(name);
-            console.log(price);
+
         });
     });
+    
+    // jQuery('.cars').each(function (index, event) {
+    //     jQuery(event).off('click').on('click', function (e) {
+    //         const object = jQuery(e.target).parents('#test').eq(0).children('a');
+    //         console.log(object);
+    //     })
+    // })
 
 
 
