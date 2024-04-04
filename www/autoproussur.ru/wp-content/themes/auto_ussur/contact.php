@@ -118,14 +118,14 @@ Template Name: contract
             </section>
 
             <!-- Карта -->
-            <section class="pt-12 md:pt-14 contact__map">
+            <section class="pt-16 md:pt-14 contact__map">
                 <div class="container">
                     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A40c23e493b20b3fcf4e84ebb21a3ba8f240084f4def0c23d942e3e03c164c6e9&amp;width=1228&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
                 </div>
             </section>
 
            <!-- Собственная стоянка в Уссурийске -->
-            <section class="pt-12 md:pt-32">
+            <section class="pt-16 md:pt-32">
                 <div class="container relative">
 
                     <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Собственная <br class="block md:hidden"> стоянка <br class="block md:hidden">  в Уссурийске</h2>
@@ -166,7 +166,7 @@ Template Name: contract
             </section>
           
              <!-- Новости -->
-            <section class="pt-12 md:pt-32 p-5 ">
+            <section class="pt-16 md:pt-32 p-5 ">
                 <div class="container h-[40vh] md:h-auto bg-black relative rounded-2xl overflow-hidden">
                     <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="<?php echo get_template_directory_uri() . '/src/img/news/news.png'; ?>" alt="">
                     <img class="block left-0 md:hidden absolute bottom-0" src="<?php echo get_template_directory_uri() . '/src/img/news/news_small.png'; ?>" alt="">

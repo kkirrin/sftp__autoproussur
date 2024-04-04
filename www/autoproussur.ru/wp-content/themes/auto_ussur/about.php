@@ -182,7 +182,7 @@ Template Name: about
             </section>
 
             <!-- Собственная стоянка в Уссурийске -->
-            <section class="pt-12 md:pt-36">
+            <section class="pt-16 md:pt-36">
                 <div class="container relative">
 
                     <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Собственная стоянка в Уссурийске</h2>
@@ -223,7 +223,7 @@ Template Name: about
             </section>
 
             <!-- Секция отзывы -->
-            <section class="pt-12 md:pt-36">
+            <section class="pt-16 md:pt-36">
                 <div class="container relative">
 
                     <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Отзывы реальных клиентов </h2>
@@ -257,7 +257,7 @@ Template Name: about
             </section> 
 
             <!-- Банки партнеры -->
-            <section class="pt-12 md:pt-36">
+            <section class="pt-16 md:pt-36">
                 <div class="container">
                     <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative pb-5 md:pb-10">Банки-партнеры </h2>
                     <p class="text-xl pb-8">Мы сотрудничаем с банками для вашего удобства</p>
@@ -269,12 +269,12 @@ Template Name: about
                 </div>
             </section> 
 
-          <!-- Ответы на частые вопросы -->
-            <section class="pt-12 md:pt-36">
+            <!-- Ответы на частые вопросы -->
+            <section class="pt-16 md:pt-32">
                 <div class="container">
                     <div class="faq__wrapper">
                         <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Ответы на частые вопросы </h2>
-                        <div class="faq__tabs _tabs flex flex-col md:flex-row gap-0 md:gap-10">
+                        <div class="faq__tabs _tabs flex flex-col md:flex-row">
                             <ul class="faq__list">
                                 <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
                                     <button class="faq__btn _tabs-button">Где производится продукция?</button>
@@ -329,7 +329,7 @@ Template Name: about
             
           
             <!-- Новости -->
-            <section class="pt-12 md:pt-32 p-5 ">
+            <section class="pt-16 md:pt-32 p-5 ">
                 <div class="container h-[40vh] md:h-auto bg-black relative rounded-2xl overflow-hidden">
                     <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="<?php echo get_template_directory_uri() . '/src/img/news/news.png'; ?>" alt="">
                     <img class="block left-0 md:hidden absolute bottom-0" src="<?php echo get_template_directory_uri() . '/src/img/news/news_small.png'; ?>" alt="">
@@ -348,9 +348,9 @@ Template Name: about
             </section>
 
             <!-- Контакты -->
-            <section class="pt-12 md:pt-32">
+            <section class="pt-16 md:pt-32">
                 <div class="container relative flex justify-between flex-wrap md:flex-row flex-col gap-10">
-                    <div class="bg-black max-w-xl p-10 rounded-3xl contact__div">
+                    <div class="bg-black p-10 rounded-3xl contact__div">
                         <div class="pb-5">
                             <h2 class="text-start text-4xl lg:text-5xl relative text-white" style="font-weight: 600;">Контакты </h2>
                         </div>

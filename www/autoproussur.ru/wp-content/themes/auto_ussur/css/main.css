@@ -2,6 +2,59 @@
 @import url(https://bestfonts.pro/font/muller);
 
 /* Импорт шрифтов */
+@media(max-width:480px) {
+
+  .faq__content {
+    padding: 5px 45px 10px 14px !important;
+  }
+  .faq__btn::before {
+    top: 8px !important;
+  }
+}
+
+
+@media(max-width: 480px) {
+  .counter__item--item {
+    padding-right: 30px !important; 
+  }
+ 
+ 
+}
+
+@media(max-width:480px) {
+  .catalog .select2.select2-container.select2-container--default {
+    width: 310px !important;
+}
+}
+
+@media(max-width:400px) {
+  .catalog .select2.select2-container.select2-container--default {
+    width: 280px !important;
+}
+}
+
+
+@media(max-width:375px) {
+  .catalog .select2.select2-container.select2-container--default {
+    width: 270px !important;
+}
+}
+
+@media(max-width:320px) {
+  .catalog .select2.select2-container.select2-container--default {
+    width: 220px !important;
+}
+}
+
+#expand-btn {
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+
+.select2-selection__arrow {
+  margin-top: 5px;
+}
 
 @media(max-width: 480px) {
   .last__item__footer {
@@ -247,6 +300,14 @@
 
 .wpc-filters-section.wpc-filters-section-249.wpc-filter-category.wpc-filter-taxonomy.wpc-filter-layout-checkboxes.wpc-filter-full-height.wpc-filter-terms-count-6.wpc-filter-visible-term-names {
   position: inherit !important;
+}
+
+.wrapper__bg__filter {
+  background-color: #F4F4F4;
+  /* padding: 20px; */
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .wpc-filters-widget-wrapper {
@@ -794,10 +855,54 @@ label.file__button {
     width: 350px !important;
   }
   .select2.select2-container.select2-container--default {
-    width: 320px !important;
+    width: 343px !important;
   }
   
 }
+
+@media(max-width:423px) {
+  .select2.select2-container.select2-container--default {
+    width: 330px !important;
+  }
+  
+}
+
+
+@media(max-width:401px) {
+  .select2.select2-container.select2-container--default {
+    width: 323px !important;
+  }
+  
+}
+
+@media(max-width:393px) {
+  .select2.select2-container.select2-container--default {
+    width: 313px !important;
+  }
+  
+}
+
+@media(max-width:383px) {
+  .select2.select2-container.select2-container--default {
+    width: 303px !important;
+  }
+  
+}
+
+@media(max-width:375px) {
+  .select2.select2-container.select2-container--default {
+    width: 288px !important;
+  }
+  
+}
+
+@media(max-width:333px) {
+  .select2.select2-container.select2-container--default {
+    width: 252px !important;
+  }
+  
+}
+
 
 @media(max-width:426px) {
   .select2-container.select2-container--default {
@@ -3333,6 +3438,10 @@ span.counter-items,
   padding-right: 15px;
 }
 
+.pr-15 {
+  padding-right: 15px;
+}
+
 .pr-0 {
   padding-right: 0;
 }
@@ -3346,6 +3455,9 @@ span.counter-items,
 
 .pt-12{
   padding-top: 2rem;
+}
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .pt-2{

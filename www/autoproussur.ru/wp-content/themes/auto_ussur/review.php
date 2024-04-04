@@ -152,7 +152,7 @@
                 </div>
             </section>
 
-            <!-- Ответы на частые вопросы -->
+             <!-- Ответы на частые вопросы -->
             <section class="pt-12 md:pt-32">
                 <div class="container">
                     <div class="faq__wrapper">

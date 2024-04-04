@@ -34,7 +34,7 @@ Template Name: catalog
 
 
         <!-- Фильтрация -->
-        <section class="pt-12 md:pt-14 filter-swiper filter">
+        <section class="pt-12 md:pt-14 filter-swiper filter catalog">
             <div class="container relative">
                 
                 <div class="p-4 pb-10 bg-gray bg-opacity-10 rounded-2xl">
@@ -51,9 +51,9 @@ Template Name: catalog
 
                     </div>    
                     
-                    <div class="w-full rounded-xl">
+                    <div class="w-full rounded-xl wrapper__bg__filter">
                         <?php echo do_shortcode( '[fe_widget id=152]' ); ?>
-                        <button class="block md:hidden text-center underline" style="font-weight: 600;" id="expand-btn">Развернуть</button>   
+                        <button class="flex md:hidden text-center underline" style="font-weight: 600;" id="expand-btn">Развернуть</button>   
                     </div>   
                     
 
@@ -194,7 +194,7 @@ Template Name: catalog
  
         <!-- Рассчитаем стоимость -->
         
-        <section class="pt-12 md:pt-32 relative p-5 md:p-0">
+        <section class="pt-16 md:pt-32 relative p-5 md:p-0">
             <div class="container rounded-3xl relative  h-[45vh] sm:h-[55vh] md:h-[69vh]">
 
                 <img class="hidden md:block absolute inset-0 -z-10 object-cover md:object-fill w-full h-full rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/price/price__bg.png'; ?>" alt="">

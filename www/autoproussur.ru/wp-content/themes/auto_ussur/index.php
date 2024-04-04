@@ -167,10 +167,10 @@ Template Name: auto_ussur
                 
                 <div class="w-full rounded-xl">
 
-                    <div class="w-full rounded-xl">
+                    <div class="w-full rounded-xl wrapper__bg__filter">
                         <?php echo do_shortcode( '[fe_widget id=176]' ); ?>
 
-                        <button class="block md:hidden text-center underline" style="font-weight: 600;" id="expand-btn">Развернуть</button>   
+                        <button style='margin-bottom: 10px;' class="flex md:hidden text-center underline" style="font-weight: 600;" id="expand-btn">Развернуть</button>   
                     </div>    
 
                     <div class="filter-item w-0 min-w-[100%] overflow-hidden pt-12 md:pt-10">
@@ -401,14 +401,14 @@ Template Name: auto_ussur
                     <p class="md:text-xl text-sm text-gray">лет на рынке</p>
                 </li>
                 <li class="border bg-black rounded-3xl py-3 md:py-6 px-10 md:px-16 transform hover:scale-105 transition-all">
-                    <p class="flex justify-center md:justify-start md:text-5xl text-3xl text-white pt-4 pb-2 pr-10 md:pr-0">
+                    <p class="counter__item--item flex justify-center md:justify-start md:text-5xl text-3xl text-white pt-4 pb-2 pr-15 md:pr-0">
                         <span class="ml-2 mr-4 md:text-5xl text-2xl">Более</span>
                         <span class="counter-items md:text-5xl text-2xl text-white w-8 sm:w-16"></span>
                     </p>
                     <p class="md:text-xl text-sm text-gray">довольных клиентов по всей России</p>
                 </li>
                 <li class="border bg-black rounded-3xl py-3 md:py-6 px-10 md:px-16 transform hover:scale-105 transition-all">
-                    <p class="flex justify-center md:justify-start md:text-5xl text-3xl text-white pt-4 pb-2 pr-10 md:pr-0">
+                    <p class="counter__item--item flex justify-center md:justify-start md:text-5xl text-3xl text-white pt-4 pb-2 pr-15 md:pr-0">
                         <span class="ml-2 mr-4 md:text-5xl text-2xl">Более</span>
                         <span class="counter-client md:text-5xl text-2xl text-white w-8 sm:w-16"></span>
                     </p>
@@ -698,7 +698,7 @@ Template Name: auto_ussur
                     
                     </li>
                     
-                    <a class="bg-red text-white py-4 px-2 md:px-5 rounded-3xl" href="https://api.whatsapp.com/send/?phone=79510154751">
+                    <a class="bg-red text-white py-4 px-5 rounded-3xl" href="https://api.whatsapp.com/send/?phone=79510154751">
                         Написать на WhatsApp
                     </a>
                 </ul>
