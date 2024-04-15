@@ -213,17 +213,21 @@
                                         <?php echo get_field('equipment') ? get_field('equipment') : '-'; ?>
                                     </li>
                                 </ul>
-                               
+                                
                                 
                             </div>
+                            
                             
                             <a style="border-radius: 40px;" class="bg-red flex popup-link text-white justify-center py-4 px-5 text-base md:text-2xl"
                             href="#popup8"
                             >Купить
                         </a>
-                        </div>
-                   </div>
+                        
+                    </div>
                 </div>
+            </div>
+            
+            <?php echo the_content(); ?>
 
                 <!-- Акция -->
                 <div class="popup__today fixed right-0 top-2/3" style="z-index: 1000;">
