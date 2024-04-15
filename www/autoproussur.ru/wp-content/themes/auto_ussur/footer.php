@@ -215,6 +215,18 @@
                     <div class="form-wrapper">
                         <?php echo do_shortcode('[contact-form-7 id="ff42d03" title="Заявка на покупку автомобиля"]'); ?>
 
+                        <div class="flex md:justify-between flex-col md:flex-row gap-2">
+                            <a class="text-black font-bold nav-link" href="tel:<?php echo get_field('tel_1'); ?>">
+                                <?php echo get_field('tel_1'); ?>
+                            </a>
+                            <a class="text-black font-bold nav-link" href="tel:<?php echo get_field('tel_2'); ?>">
+                                <?php echo get_field('tel_2'); ?>
+                            </a>
+                            <a class="text-black font-bold nav-link" href="tel:<?php echo get_field('tel_3'); ?>">
+                                <?php echo get_field('tel_3'); ?>
+                            </a>
+                        </div>
+
                         <p class="text-gray text-sm text-start pt-7">
                             Нажимая кнопку «Заказать звонок» вы даёте согласие <br> на обработку персональных данных
                         </p>

@@ -26,6 +26,9 @@
                             <li class="breadcrumb__item">
                                 <span class="font-bold text-bg-black">Договор</span>
                             </li>
+                            <li class="breadcrumb__item">
+                                <span class="font-bold text-bg-black"><a class="text-start md:text-center md:text-start text-base" style="text-decoration: underline;" href="https://autoproussur.ru/wp-content/uploads/2024/04/Андрей-Инкин_Агентский-договор_автомобиль_2024-1.doc">Скачать образец договора</a></span>
+                            </li>
                         </ul>
                     </div>
             </section>

@@ -145,6 +145,9 @@
                             <div class="flex justify-between items-center pt-2 pb-5 md:pb-10">
                                 <ul>
                                     <li style="font-weight: 400; padding-bottom: 15px;" class="md:text-base text-xs text-gray">
+                                        Год выпуска
+                                    </li>
+                                    <li style="font-weight: 400; padding-bottom: 15px;" class="md:text-base text-xs text-gray">
                                         Топливо
                                     </li>
                                     <li style="font-weight: 400; padding-bottom: 15px;" class="md:text-base text-xs text-gray">
@@ -176,6 +179,9 @@
                                     </li>     
                                 </ul>
                                 <ul>
+                                    <li style="font-weight: 500; padding-bottom: 15px;" class="md:text-base text-xs font-semibold card_item--li">
+                                        <?php echo get_field('year') ? get_field('year') : '-'; ?>
+                                    </li>
                                     <li style="font-weight: 500; padding-bottom: 15px;" class="md:text-base text-xs font-semibold card_item--li">
                                         <?php echo get_field('fuel') ? get_field('fuel') : '-'; ?>
                                     </li>
@@ -319,10 +325,10 @@
 
                                 <ul class="ul__car">
                                     <div class="flex justify-between flex-row">
-                                            <li class="text-gray pb-2">Год выпуска</li>
-                                            <li class="pb-2 md:pb-6">
-                                            <?= get_field('year') ? get_field('year') : '-'; ?>
-                                            </li>
+                                        <li class="text-gray pb-2">Год выпуска</li>
+                                        <li class="pb-2 md:pb-6">
+                                        <?= get_field('year') ? get_field('year') : '-'; ?>
+                                        </li>
                                     </div> 
                                     <div class="flex justify-between flex-row">
                                             <li class="text-gray pb-2">Пробег</li>
@@ -416,6 +422,21 @@
 
                         <div class="form-wrapper">
                             <?php echo do_shortcode('[contact-form-7 id="ff42d03" title="Заявка на покупку автомобиля"]'); ?>
+
+
+                            <div class="flex md:justify-between flex-col md:flex-row gap-2">
+                                <a class="text-black font-bold nav-link" href="tel:<?php echo get_field('tel_1'); ?>">
+                                    <?php echo get_field('tel_1'); ?>
+                                </a>
+                                <a class="text-black font-bold nav-link" href="tel:<?php echo get_field('tel_2'); ?>">
+                                    <?php echo get_field('tel_2'); ?>
+                                </a>
+                                <a class="text-black font-bold nav-link" href="tel:<?php echo get_field('tel_3'); ?>">
+                                    <?php echo get_field('tel_3'); ?>
+                                </a>
+                            </div>
+                            
+
 
                             <p class="text-gray text-sm text-start pt-7">
                                 Нажимая кнопку «Заказать звонок» вы даёте согласие <br> на обработку персональных данных

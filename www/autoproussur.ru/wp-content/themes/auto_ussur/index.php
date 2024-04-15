@@ -432,12 +432,12 @@ Template Name: auto_ussur
                 <div style="width: -webkit-fill-available;" class="h-min relative p-7  bg-black rounded-2xl">
                     <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/1.svg'; ?>" alt="">
                     <div class="md:pl-0 pl-[30px]">
-                        <p class="text-start md:text-center md:text-start text-white text-xl pt-10 md:pt-12 pb-5 font-semibold">
-                            Выбор автомобиля
+                        <p class="text-start md:text-center md:text-start text-white text-xl pt-10 md:pt-12 pb-5 font-semibold">                
+                            <?php echo get_field('how_we_work_11'); ?>
                         </p>
 
-                        <p class="text-start md:text-center md:text-start text-gray text-base" style="font-weight: 400;">
-                            Обговариваем и согласуем ваши требования к параметрам автомобиля и бюджет, помогаем в подборе
+                        <p class="text-start md:text-center md:text-start text-gray text-base" style="font-weight: 400;">            
+                        <?php echo get_field('how_we_work_1'); ?>
                         </p>
                     </div>
                 </div>
@@ -445,24 +445,24 @@ Template Name: auto_ussur
                     <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/2.svg'; ?>" alt="">
                     <div class="md:pl-0 pl-[30px]">
                         <p class="text-start md:text-start md:text-center md:text-start text-white text-xl pt-10 md:pt-12 pb-5 font-semibold">
-                            Заключение договора
+                          <?php echo get_field('how_we_work_22'); ?>
                         </p>
 
                         <p class="text-start md:text-center md:text-start text-gray text-base" style="font-weight: 400;">
-                            От вас необходимы: ксерокопия паспорта, заверенная натариусом, снилса и инн
+                            <?php echo get_field('how_we_work_2'); ?>
                         </p>
-                        <a class="text-start md:text-center md:text-start text-gray text-base text-white" style="text-decoration: underline;" href="">Образец договора</a>
+                        <a class="text-start md:text-center md:text-start text-gray text-base text-white" style="text-decoration: underline;" href="https://autoproussur.ru/wp-content/uploads/2024/04/Андрей-Инкин_Агентский-договор_автомобиль_2024-1.doc">Образец договора</a>
                     </div>
                 </div>
                 <div style="width: -webkit-fill-available;" class="h-min relative p-7 bg-black rounded-2xl">
                     <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/3.svg'; ?>" alt="">
                     <div class="md:pl-0 pl-[30px]">
-                        <p class="text-start md:text-center md:text-center md:text-start text-white text-xl pt-10 md:pt-12 pb-5 font-semibold">
-                            Вносится предоплата
+                        <p class="text-start md:text-center md:text-center md:text-start text-white text-xl pt-10 md:pt-12 pb-5 font-semibold">       
+                            <?php echo get_field('how_we_work_33'); ?>
                         </p>
 
                         <p class="text-start md:text-center text-gray text-base" style="font-weight: 400;">
-                            30 000–50 000 ₽ в зависимости от выбранного автомобиля
+                            <?php echo get_field('how_we_work_3'); ?>
                         </p>
                     </div>
                 </div>
@@ -470,11 +470,13 @@ Template Name: auto_ussur
                     <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/4.svg'; ?>" alt="">
                     <div class="md:pl-0 pl-[30px]">
                         <p class="text-start md:text-center md:text-start text-white text-xl pt-10 md:pt-12 pb-5 font-semibold">
-                            Передача автомобиля или доставка по РФ
+                            
+                            <?php echo get_field('how_we_work_44'); ?>
                         </p>
 
                         <p class="text-start md:text-center text-gray text-base" style="font-weight: 400;">
-                            Вы вносите оставшеюся сумма и автомобиль с полным пакетом документов передаётся вам
+                            
+                            <?php echo get_field('how_we_work_4'); ?>
                         </p>
                     </div>
                 </div>

@@ -115,65 +115,63 @@ Template Name: about
                 </div>
             </section>
 
-
-                    
-
-
-              <!-- Как происходит работа -->
-            <section class="how__we__work__section__about">
+            <!-- Как происходит работа -->
+            <section class="pt-51 md:pt-20 how__we__work__section">
                 <div class="container relative h-max">
-                    <img class="hidden sm:hidden md:block absolute bg-no-repeat bg-center top-10 scale-75 md:scale-100" src="<?php echo get_template_directory_uri() . '/src/img/how/how__bg.png' ;?>" alt="">
-                    <img class="block sm:block md:hidden absolute bg-no-repeat bg-center top-10 scale-75 md:scale-100" src="<?php echo get_template_directory_uri() . '/src/img/how/how__bg__small.png' ;?>" alt="">
+                    <img class="hidden sm:hidden md:block absolute bg-no-repeat bg-center top-10 scale-75 md:scale-100" src="<?php echo get_template_directory_uri() . '/src/img/how/how__bg.png'; ?>" alt="">
+                    <img style="z-index: -20;" class="block sm:block md:hidden absolute bg-no-repeat bg-center top-10 scale-75 md:scale-100" src="<?php echo get_template_directory_uri() . '/src/img/how/how__bg__small.png'; ?>" alt="">
                     
-                    <h2 class="text-center md:text-start text-4xl lg:text-5xl font-extrabold relative pb-5 md:pb-10">Как происходит работа?</h2>
+                    <h2 class="md:text-5xl text-4xl pb-0 md:text-start text-center" style="font-weight: 600;">Как происходит работа?</h2>
                     
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 pt-10 how__we__work">
                         <div style="width: -webkit-fill-available;" class="h-min relative p-7  bg-black rounded-2xl">
-                            <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() .'/src/img/how/1.svg'; ?>" alt="">
-                            <div>
-                                <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-bold">
-                                    Выбор автомобиля
+                            <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/1.svg'; ?>" alt="">
+                            <div class="md:pl-0 pl-[30px]">
+                                <p class="text-start md:text-center md:text-start text-white text-xl pt-10 md:pt-12 pb-5 font-semibold">                
+                                    <?php echo get_field('how_we_work_11'); ?>
                                 </p>
 
-                                <p class="text-center md:text-start text-gray text-base">
-                                    Обговариваем и согласуем ваши требования к параметрам автомобиля и бюджет, помогаем в подборе
+                                <p class="text-start md:text-center md:text-start text-gray text-base" style="font-weight: 400;">            
+                                <?php echo get_field('how_we_work_1'); ?>
                                 </p>
                             </div>
                         </div>
                         <div style="width: -webkit-fill-available;" class="h-min relative mt-0 md:mt-14 p-7  bg-black rounded-2xl">
-                            <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() .'/src/img/how/2.svg'; ?>" alt="">
-                            <div>g
-                                <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-bold">
-                                    Заключение договора
+                            <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/2.svg'; ?>" alt="">
+                            <div class="md:pl-0 pl-[30px]">
+                                <p class="text-start md:text-start md:text-center md:text-start text-white text-xl pt-10 md:pt-12 pb-5 font-semibold">
+                                <?php echo get_field('how_we_work_22'); ?>
                                 </p>
 
-                                <p class="text-center md:text-start text-gray text-base">
-                                    От вас необходимы: ксерокопия паспорта, заверенная натариусом, снилса и инн
+                                <p class="text-start md:text-center md:text-start text-gray text-base" style="font-weight: 400;">
+                                    <?php echo get_field('how_we_work_2'); ?>
                                 </p>
-                                <a href="">Образец договора</a>
+                                <a class="text-start md:text-center md:text-start text-gray text-base text-white" style="text-decoration: underline;" href="https://autoproussur.ru/wp-content/uploads/2024/04/Андрей-Инкин_Агентский-договор_автомобиль_2024-1.doc">Образец договора</a>
                             </div>
                         </div>
                         <div style="width: -webkit-fill-available;" class="h-min relative p-7 bg-black rounded-2xl">
-                            <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() .'/src/img/how/3.svg'; ?>" alt="">
-                            <div>
-                                <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-bold">
-                                    Вносится предоплата
+                            <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/3.svg'; ?>" alt="">
+                            <div class="md:pl-0 pl-[30px]">
+                                <p class="text-start md:text-center md:text-center md:text-start text-white text-xl pt-10 md:pt-12 pb-5 font-semibold">       
+                                    <?php echo get_field('how_we_work_33'); ?>
                                 </p>
 
-                                <p class="text-center md:text-start text-gray text-base">
-                                    30 000–50 000 ₽ в зависимости от выбранного автомобиля
+                                <p class="text-start md:text-center text-gray text-base" style="font-weight: 400;">
+                                    <?php echo get_field('how_we_work_3'); ?>
                                 </p>
                             </div>
                         </div>
                         <div style="width: -webkit-fill-available;" class="h-min relative mt-0 md:mt-14 p-7 bg-black rounded-2xl">
-                            <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() .'/src/img/how/4.svg'; ?>" alt="">
-                            <div>
-                                <p class="text-center md:text-start text-white text-xl pt-12 pb-5 font-bold">
-                                    Передача автомобиля или доставка по РФ
+                            <img class="absolute -top-5 right-0 left-0 m-auto" src="<?php echo get_template_directory_uri() . '/src/img/how/4.svg'; ?>" alt="">
+                            <div class="md:pl-0 pl-[30px]">
+                                <p class="text-start md:text-center md:text-start text-white text-xl pt-10 md:pt-12 pb-5 font-semibold">
+                                    
+                                    <?php echo get_field('how_we_work_44'); ?>
                                 </p>
 
-                                <p class="text-center md:text-start text-gray text-base">
-                                    Вы вносите оставшеюся сумма и автомобиль с полным пакетом документов передаётся вам
+                                <p class="text-start md:text-center text-gray text-base" style="font-weight: 400;">
+                                    
+                                    <?php echo get_field('how_we_work_4'); ?>
                                 </p>
                             </div>
                         </div>
