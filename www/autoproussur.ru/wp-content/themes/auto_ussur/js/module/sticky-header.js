@@ -1,4 +1,3 @@
-
 export const initStickyHeader = () => {
 
     const header = document.querySelector('header');

@@ -101,7 +101,7 @@
 
                                 <div class="flex gap-5 justify-between items-center">
                                     <!-- <a href="#popup4" class="button__order popup-link"> <?php echo get_field('state') === 'В пути' ? 'Заказать' : 'Купить'; ?></a> -->
-                                    <a href="#popup4" class="button__order popup-link">Заказать</a>
+                                    <a href="<?php echo the_permalink(); ?>" class="button__order">Заказать</a>
                                     <a href="<?php echo the_permalink(); ?>" class="button__circle">
                                         <img src="<?php echo get_template_directory_uri() . '/src/img/icons/arrow__order.svg'; ?>" alt="">
                                     </a>
@@ -116,24 +116,24 @@
     </section>
 
 
-    <!-- Новости -->
-    <section class="pt-12 md:pt-32 p-5 ">
-        <div class="container h-[40vh] md:h-auto bg-black relative rounded-2xl overflow-hidden">
-            <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="<?php echo get_template_directory_uri() . '/src/img/news/news.png'; ?>" alt="">
-            <img class="block left-0 md:hidden absolute bottom-0" src="<?php echo get_template_directory_uri() . '/src/img/news/news_small.png'; ?>" alt="">
-            <div class="pt-5 md:pt-0 p-0 md:p-4 md:p-16 z-100">
-                <h2 class="text-center md:text-start text-2xl lg:text-5xl relative pb-4 text-white" style="font-weight: 600;">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
-                <div class="flex justify-center md:justify-start gap-2 md:gap-10">
-                    <a href="">
-                        <img src="<?php echo get_template_directory_uri() . '/src/img/icons/tg__white.svg'; ?>" alt="">
-                    </a>
-                    <a href="">
-                        <img src="<?php echo get_template_directory_uri() . '/src/img/icons/youtube__white.svg'; ?>" alt="">
-                    </a>
+       <!-- Новости -->
+       <section class="pt-16 md:pt-32 p-5 ">
+            <div class="container h-[40vh] md:h-auto bg-black relative rounded-2xl overflow-hidden">
+                <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="<?php echo get_template_directory_uri() . '/src/img/news/news.png'; ?>" alt="">
+                <img class="block left-0 md:hidden absolute bottom-0" src="<?php echo get_template_directory_uri() . '/src/img/news/news_small.png'; ?>" alt="">
+                <div class="p-4 md:p-16 z-100">
+                    <h2 class="text-center md:text-start text-2xl lg:text-5xl relative pb-4 text-white" style="font-weight: 600;">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
+                    <div class="flex justify-center md:justify-start gap-2 md:gap-10">
+                        <a href="https://t.me/autoprouss">
+                            <img src="<?php echo get_template_directory_uri() . '/src/img/icons/tg__white.svg'; ?>" alt="">
+                        </a>
+                        <a href="">
+                            <img src="<?php echo get_template_directory_uri() . '/src/img/icons/youtube__white.svg'; ?>" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
     <!-- Заявка на купить авто -->
@@ -154,6 +154,21 @@
 
             <div class="form-wrapper">
                 <?php echo do_shortcode('[contact-form-7 id="ff42d03" title="Заявка на покупку автомобиля"]'); ?>
+
+
+            <div class="flex md:justify-between flex-col md:flex-row gap-2">
+                <a class="text-black font-bold nav-link" href="tel:<?php echo get_field('tel_1'); ?>">
+                    <?php echo get_field('tel_1'); ?>
+                </a>
+                <a class="text-black font-bold nav-link" href="tel:<?php echo get_field('tel_2'); ?>">
+                    <?php echo get_field('tel_2'); ?>
+                </a>
+                <a class="text-black font-bold nav-link" href="tel:<?php echo get_field('tel_3'); ?>">
+                    <?php echo get_field('tel_3'); ?>
+                </a>
+            </div>
+
+
 
                 <p class="text-gray text-sm text-start pt-7">
                     Нажимая кнопку «Заказать звонок» вы даёте согласие <br> на обработку персональных данных
