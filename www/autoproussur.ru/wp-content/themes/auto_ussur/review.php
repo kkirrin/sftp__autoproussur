@@ -152,7 +152,8 @@
                 </div>
             </section>
 
-             <!-- Ответы на частые вопросы -->
+          
+            <!-- Ответы на частые вопросы -->
             <section class="pt-12 md:pt-32">
                 <div class="container">
                     <div class="faq__wrapper">
@@ -160,23 +161,23 @@
                         <div class="faq__tabs _tabs flex flex-col md:flex-row">
                             <ul class="faq__list">
                                 <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
-                                    <button class="faq__btn _tabs-button">Где производится продукция?</button>
+                                    <button class="faq__btn _tabs-button"><?php echo get_field('faq11'); ?></button>
                                     <div class="faq__content _tabs-content">
-                                        <p>Задаток выдаётся на поставку конкретной машины и гарантирует приобретение автомобиля покупателем. Часто задаток используется при отсутствии нужной комплектации и заказе её с завода-производителя. В документе указывают дату поставки и размер пени за просроченные дни.
+                                        <p><?php echo get_field('faq1'); ?>
                                         </p>
                                     </div>
                                 </li>                              
                                 <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
-                                    <button class="faq__btn _tabs-button">Сколько времени уходит на покупку автомобиля?</button>
+                                    <button class="faq__btn _tabs-button"><?php echo get_field('faq22'); ?></button>
                                     <div class="faq__content _tabs-content">
-                                        <p>Задаток выдаётся на поставку конкретной машины и гарантирует приобретение автомобиля покупателем. Часто задаток используется при отсутствии нужной комплектации и заказе её с завода-производителя. В документе указывают дату поставки и размер пени за просроченные дни.
+                                        <p><?php echo get_field('faq2'); ?>
                                         </p>
                                     </div>
                                 </li>                              
                                 <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
-                                    <button class="faq__btn _tabs-button">Для чего нужен задаток? Входит ли он в цену машины?</button>
+                                    <button class="faq__btn _tabs-button"><?php echo get_field('faq33'); ?></button>
                                     <div class="faq__content _tabs-content">
-                                        <p>Задаток выдаётся на поставку конкретной машины и гарантирует приобретение автомобиля покупателем. Часто задаток используется при отсутствии нужной комплектации и заказе её с завода-производителя. В документе указывают дату поставки и размер пени за просроченные дни.
+                                        <p><?php echo get_field('faq3'); ?>
                                         </p>
                                     </div>
                                 </li>                                                     
@@ -184,23 +185,23 @@
 
                             <ul class="faq__list">
                                 <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
-                                    <button class="faq__btn _tabs-button">Сколько времени уходит на покупку автомобиля?</button>
+                                    <button class="faq__btn _tabs-button"><?php echo get_field('faq44'); ?></button>
                                     <div class="faq__content _tabs-content">
-                                        <p>Задаток выдаётся на поставку конкретной машины и гарантирует приобретение автомобиля покупателем. Часто задаток используется при отсутствии нужной комплектации и заказе её с завода-производителя. В документе указывают дату поставки и размер пени за просроченные дни.
+                                        <p><?php echo get_field('faq4'); ?>
                                         </p>
                                     </div>
                                 </li>                              
                                 <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
-                                    <button class="faq__btn _tabs-button">Сколько времени уходит на покупку автомобиля?</button>
+                                    <button class="faq__btn _tabs-button"><?php echo get_field('faq55'); ?></button>
                                     <div class="faq__content _tabs-content">
-                                        <p>Задаток выдаётся на поставку конкретной машины и гарантирует приобретение автомобиля покупателем. Часто задаток используется при отсутствии нужной комплектации и заказе её с завода-производителя. В документе указывают дату поставки и размер пени за просроченные дни.
+                                        <p><?php echo get_field('faq5'); ?>
                                         </p>
                                     </div>
                                 </li>                              
                                 <li class="faq__item _tabs-accordion wow fadeInUp" data-wow-delay="0.2s">
-                                    <button class="faq__btn _tabs-button">Сколько времени уходит на покупку автомобиля?</button>
+                                    <button class="faq__btn _tabs-button"><?php echo get_field('faq66'); ?></button>
                                     <div class="faq__content _tabs-content">
-                                        <p>Задаток выдаётся на поставку конкретной машины и гарантирует приобретение автомобиля покупателем. Часто задаток используется при отсутствии нужной комплектации и заказе её с завода-производителя. В документе указывают дату поставки и размер пени за просроченные дни.
+                                        <p><?php echo get_field('faq6'); ?>
                                         </p>
                                     </div>
                                 </li>       
@@ -211,11 +212,11 @@
             </section>
             
             <!-- Новости -->
-            <section class="pt-12 md:pt-32 p-5 ">
+            <section class="pt-16 md:pt-32 p-5 ">
                 <div class="container h-[40vh] md:h-auto bg-black relative rounded-2xl overflow-hidden">
                     <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="<?php echo get_template_directory_uri() . '/src/img/news/news.png'; ?>" alt="">
                     <img class="block left-0 md:hidden absolute bottom-0" src="<?php echo get_template_directory_uri() . '/src/img/news/news_small.png'; ?>" alt="">
-                    <div class="pt-5 md:pt-0 p-0 md:p-4 md:p-16 z-100">
+                    <div class="p-4 md:p-16 z-100">
                         <h2 class="text-center md:text-start text-2xl lg:text-5xl relative pb-4 text-white" style="font-weight: 600;">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
                         <div class="flex justify-center md:justify-start gap-2 md:gap-10">
                             <a href="">

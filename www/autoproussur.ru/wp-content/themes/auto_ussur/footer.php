@@ -90,7 +90,7 @@
                 </div>
                 
                 <div class="py-10">
-                    <div class="flex items-start md:items-center justify-between text-gray pt-10 flex-col flex-row">
+                    <div class="flex items-start md:items-center justify-between text-gray pt-10 flex-col md:flex-row">
                         <div class="md:text-sm text-xs">
                             © AutoPROussur. Все права защищены
                         </div>

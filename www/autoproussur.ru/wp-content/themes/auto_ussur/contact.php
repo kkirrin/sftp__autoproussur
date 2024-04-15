@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: contract
+Template Name: contacts
 */
 ?>
 
@@ -124,11 +124,11 @@ Template Name: contract
                 </div>
             </section>
 
-           <!-- Собственная стоянка в Уссурийске -->
-            <section class="pt-16 md:pt-32">
+            <!-- Собственная стоянка в Уссурийске -->
+            <section class="pt-16 md:pt-36">
                 <div class="container relative">
 
-                    <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Собственная <br class="block md:hidden"> стоянка <br class="block md:hidden">  в Уссурийске</h2>
+                    <h2 class="text-center md:text-start text-4xl lg:text-5xl relative pb-5 md:pb-10" style="font-weight: 600;">Собственная стоянка в Уссурийске</h2>
 
                     <div class="arrows__slider">             
                         <button
@@ -143,34 +143,33 @@ Template Name: contract
 
                     <div class="parking-wrapper overflow-hidden">
                         <div class="parking-item">
-                            <div class="swiper-wrapper gallery-wrapper">
-                                <div class="swiper-slide p-2 transform hover:scale-105 transition-all">
-                                    <a href="src/img/stop/stopping.png">
-                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
-                                    </a>
-                                </div>            
-                                <div class="swiper-slide p-2 transform hover:scale-105 transition-all">
-                                    <a href="src/img/stop/stopping.png">
-                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
-                                    </a>
-                                </div>            
-                                <div class="swiper-slide p-2 transform hover:scale-105 transition-all">
-                                    <a href="src/img/stop/stopping.png">
-                                        <img class="rounded-3xl" src="<?php echo get_template_directory_uri() . '/src/img/stop/stopping.png'; ?>" alt="" data-caption="Image caption">
-                                    </a>
-                                </div>            
+                            <div class="swiper-wrapper gallery-wrapper">   
+                                <?php
+                                    $photos = get_field('parking__auto');
+                                    if ($photos) {
+                                        foreach ($photos as $photo) {
+                                            echo '<div class="swiper-slide p-2 transform hover:scale-105 transition-all">';
+                                            echo '<a href="' . esc_url($photo['url']) . '">';
+                                            echo '<img class="rounded-3xl"src="' . esc_url($photo['url']) . '" alt="" data-caption="Image caption">';
+                                            echo '</a>';
+                                            echo '</div>';
+                                        }
+                                    } else {
+                                        echo 'No photos found.'; 
+                                    }
+                                ?>      
                             </div>
                         </div> 
                     </div>       
                 </div>
             </section>
-          
-             <!-- Новости -->
+       
+            <!-- Новости -->
             <section class="pt-16 md:pt-32 p-5 ">
                 <div class="container h-[40vh] md:h-auto bg-black relative rounded-2xl overflow-hidden">
                     <img class="hidden md:block absolute -right-52 md:right-0 object-cover" style="height: -webkit-fill-available;" src="<?php echo get_template_directory_uri() . '/src/img/news/news.png'; ?>" alt="">
                     <img class="block left-0 md:hidden absolute bottom-0" src="<?php echo get_template_directory_uri() . '/src/img/news/news_small.png'; ?>" alt="">
-                    <div class="pt-5 md:pt-0 p-0 md:p-4 md:p-16 z-100">
+                    <div class="p-4 md:p-16 z-100">
                         <h2 class="text-center md:text-start text-2xl lg:text-5xl relative pb-4 text-white" style="font-weight: 600;">Следите за новостями в <br>нашем telegram-канале или <br> на youtube </h2>
                         <div class="flex justify-center md:justify-start gap-2 md:gap-10">
                             <a href="">
@@ -183,6 +182,7 @@ Template Name: contract
                     </div>
                 </div>
             </section>
+            
     </main>
 
 <?php get_footer(); ?>

@@ -104,7 +104,7 @@
                         </li>
         
                         <li class="flex xs:flex sm:flex md:hidden sm:list-none">
-                            <a href="https://www.instagram.com/geometry_nhk/">
+                            <a href="https://t.me/autoprouss">
                                 <img width="50px" class="transform hover:scale-105 transition-all p-2" src="<?php echo get_template_directory_uri() . '/src/img/icons/tg.svg'; ?>" alt="" >
                             </a>
                         </li>
@@ -157,13 +157,13 @@
                                             </a>
                                         </li>
                                         <li class="mr-2 list-none pt-2 pb-5 gap-2">
-                                            <a href="https://www.instagram.com/geometry_nhk/">
+                                            <a href="https://t.me/autoprouss">
                                                 <img class="" src="<?php echo get_template_directory_uri() . '/src/img/icons/tg__white1.svg'; ?>" alt="" >
                                             </a>
                                         </li>
                                         
                                         <li class="mr-4 list-none pt-2 pb-5 gap-2 padding__bottom__link">
-                                            <a href="https://api.whatsapp.com/send/?phone=79532109127">
+                                            <a href="">
                                                 <img class="" src="<?php echo get_template_directory_uri() . '/src/img/icons/youtube_white.svg'; ?>" alt="" >
                                             </a>
                                         </li>
