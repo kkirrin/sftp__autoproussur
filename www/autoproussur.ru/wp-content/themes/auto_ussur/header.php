@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Алиса знает, что делать, центр развлечений - это игровое пространство по мотивам мультфильма режиссера Тимура Бекмамбетова">
+        content="Компания по подбору автомобилей из Японии и Китая">
     <title>AutoPROussur</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
